@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>game_icon_sequeeze baccart </title>
+    <defs>
+        <linearGradient x1="50%" y1="3.41005068%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000F24" stop-opacity="0.9" offset="0%"></stop>
+            <stop stop-color="#011B3E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.41005068%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#000F24" stop-opacity="0.9" offset="0%"></stop>
+            <stop stop-color="#011B3E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.41005068%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#000F24" stop-opacity="0.9" offset="0%"></stop>
+            <stop stop-color="#011B3E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.12196892%" y1="245.956717%" x2="89.8001189%" y2="245.956717%" id="linearGradient-4">
+            <stop stop-color="#A78C68" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.12196892%" y1="245.956717%" x2="89.8001189%" y2="245.956717%" id="linearGradient-5">
+            <stop stop-color="#A78C68" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="48.4610439%" y1="287.295792%" x2="48.4610439%" y2="204.617642%" id="linearGradient-6">
+            <stop stop-color="#A78C68" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.12196892%" y1="245.956717%" x2="89.8001189%" y2="245.956717%" id="linearGradient-7">
+            <stop stop-color="#A78C68" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.12196892%" y1="245.956717%" x2="89.8001189%" y2="245.956717%" id="linearGradient-8">
+            <stop stop-color="#A78C68" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="game_icon_sequeeze-baccart-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-42-Copy" transform="translate(25.000000, 10.000000)">
+            <g id="Group-51-Copy-2" transform="translate(1.111111, 1.111111)">
+                <path d="M8.88888889,97.7777778 L8.888,87.777 L0,87.7777778 L0,0 L58.8888889,0 L58.888,10 L67.7777778,10 L67.7777778,78.7809398 L63.0832248,83.5301493 L58.3886719,88.2793588 L53.6941189,93.0285683 L53.6941189,93.0285683 L48.999566,97.7777778 L8.88888889,97.7777778 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                <line x1="58.8888889" y1="10" x2="58.8888889" y2="78.7809398" id="Path-12" fill="url(#linearGradient-2)"></line>
+                <line x1="8.88888889" y1="87.7777778" x2="48.999566" y2="87.7777778" id="Path-13" fill="url(#linearGradient-3)"></line>
+            </g>
+            <g id="Group-51-Copy-3" fill-rule="nonzero">
+                <path d="M60.8748,0.236311111 L0.236311111,0.236311111 L0.236311111,89.7636889 L10.8748,89.7636889 L10.8744444,11.9855556 L60.8748,11.9859111 L60.8748,0.236311111 Z M59.1244444,1.98555556 L59.1244444,10.2355556 L9.1252,10.2363111 L9.12444444,88.0133333 L1.98555556,88.0133333 L1.98555556,1.98555556 L59.1244444,1.98555556 Z" id="Combined-Shape" fill="url(#linearGradient-4)"></path>
+                <path d="M69.7611111,10.2388889 L9.12777778,10.2388889 L9.12777778,99.7611111 L50.474924,99.7611111 L69.7611111,80.2503837 L69.7611111,10.2388889 Z M68.0166667,11.9833333 L68.0166667,79.5322222 L49.7455556,98.0166667 L10.8722222,98.0166667 L10.8722222,11.9833333 L68.0166667,11.9833333 Z" id="Combined-Shape" fill="url(#linearGradient-5)"></path>
+                <polygon id="Path-12" fill="url(#linearGradient-6)" points="60.8722222 11.1111111 60.8722222 79.8920509 59.1277778 79.8920509 59.1277778 11.1111111"></polygon>
+                <polygon id="Path-13" fill="url(#linearGradient-7)" points="50.1106771 88.0166667 50.1106771 89.7611111 10 89.7611111 10 88.0166667"></polygon>
+                <polygon id="Path-14" fill="url(#linearGradient-8)" points="68.8888889 79.0198287 68.8888889 80.7642732 50.9822222 80.7633333 50.9828993 98.8888889 49.2384549 98.8888889 49.2384549 79.0198287"></polygon>
+            </g>
+            <g id="Group-Copy-8" transform="translate(23.555556, 32.888889)" fill="#B0936D" fill-rule="nonzero">
+                <path d="M11.2357386,3.55271368e-15 C17.4446123,3.55271368e-15 22.4772955,5.03268326 22.4772955,11.2386478 C22.4772955,13.2011837 21.9744488,15.0462863 21.0905262,16.6520911 L21.1221572,16.6708484 L11.4027104,33.3329106 L9.06471042,33.3329106 L16.0160229,21.4162794 C14.565441,22.0987296 12.9452003,22.4802047 11.2357386,22.4802047 C5.03120023,22.4802047 -4.05009359e-13,17.4460385 -4.05009359e-13,11.2386478 C-4.05009359e-13,5.03367187 5.0316944,3.55271368e-15 11.2357386,3.55271368e-15 Z M11.2357386,2.02023494 C6.14761708,2.02023494 2.02023494,6.14923916 2.02023494,11.2386478 C2.02023494,16.33056 6.14721178,20.4599697 11.2357386,20.4599697 C16.3292728,20.4599697 20.4570606,16.3313712 20.4570606,11.2386478 C20.4570606,6.14842821 16.3288673,2.02023494 11.2357386,2.02023494 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

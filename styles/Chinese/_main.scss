@@ -1,0 +1,259 @@
+body:lang(TC),
+body:lang(SC)
+{
+    .pp-link a,
+    #AboutWE .about-p,
+    .hero-header .hero-intro2, p{
+        font-weight: 100;
+    }
+    #AboutWE .about-h2{
+        font-weight: 500;
+        font-family: $fontNotoSansTC;
+    }
+    #AboutWE .about-brandStory .about-h2{
+        font-size: 36px;
+    }
+    .break_Chi{
+        display: block;
+    }
+    #NewsDetail .detail-content-wrap .Event-Detail-main .lang,
+    .deco-content{
+        font-weight: 100;
+    } 
+    h1,h2,h3, a, 
+    #wrapper .nav_links .nav-link{
+        font-weight: 300;
+    }
+    #AboutWE .hero-header .hero-intro1 h3,
+    .hero-title {
+        font-weight: 400;
+    } 
+    
+    #liveGame .lottery .header-deco {
+        width: 190px;
+    }
+    #liveGame #SqueezeBaccarat .hero-intro1 {
+        margin-top: -3rem;
+    }
+    #NewsDetail .hero-title,
+    #newsFeed .frame-detail .frame-date,
+    .gametab-game-title h4,
+    #intdexWhatsNews .news-slider-link p,
+    .blockchain .hero-header .BC-series, 
+    #newsFeed .frame-detail h2,
+    .deco-header,
+    .expand-deco,
+    .more-deco-h4,
+    #diamondCarousel h2,
+    .our-gamaes .expand-deco .more-deco-h4,
+    .service-title,
+    .game-icon-container h4,
+    .game-icon-wrap h4,
+    #AboutWE .about-h4,
+    #news-carousel .update-content .update-event,
+    #news-carousel .update-content .update-detail-btn h6,
+    #liveGame .hero-header h1,
+    .game-platform .game-platforom-icon h6,
+    .main-footer .footer-bottom .footer-TC span{
+        font-weight: 500;
+    }
+    #liveGame #PK10 .hero-icon {
+        padding-bottom: 94px;
+    }
+    #liveGame #PK10 .hero-icon {
+        padding-top: 7rem;
+    }
+    #liveGame.BCgames .header-deco {
+        width: 220px;
+    }
+    .secondaryBtn,
+    .main-footer .footer-subscribe .btn{
+        font-family: $fontNotoSansTC;
+        font-weight: 300;
+    }
+    #thankyou-popup .secondaryBtn{
+        font-size: 15px;
+    }
+    .sidebar .game-box-h4 h4 {
+        font-size: 12px;
+    }
+    @media (min-width: 768px){
+        #ContactUs .contact-main{
+            padding-top: 2em;
+        }
+        #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text p{
+            font-size: 15px;
+        }
+        #liveGame #PK10 .hero-icon {
+            padding-bottom: 8rem;
+        }
+        #liveGame #PK10 .hero-icon {
+            padding-top: 21rem;
+        }
+    }
+    @media (min-width: 992px){
+        #newsFeed .frame-detail h6 {
+            font-weight: 800;
+        }
+        #newsFeed .frame-detail .frame-date {
+            font-size: 25px;
+        }
+        #News_Games .right-frame .text-gold-btn:after {
+            right: 18%;
+        }
+        #News_Games .right-frame .text-gold-btn:hover::after {
+            right: 0%;
+        }
+        
+    }
+    @media (min-width: 1200px){
+        #news-carousel .update-content .update-detail-btn:after {
+            right: 65%;
+        }
+        #news-carousel .update-content .update-detail-btn:hover:after {
+            right: 60%;
+        }
+    }
+}
+
+body:lang(TC)
+{
+    body,h1,h2,h3,h4, h5, h6, p, span, .secondaryBtn,
+    .feature-flexbox h2,
+    .live-game-main .feature-header,
+    #wrapper .nav_links  .nav-game-link,
+    #AboutWE .about-h2, #AboutWE .about-h4, #AboutWE .about-p,
+    #AboutWE .hero-header .hero-intro1 h3,
+    .service-title,
+    #diamondCarousel h5,
+    #NewsDetail .hero-title,
+    #intdexWhatsNews .news-slider-link p,
+    .main-footer li, .main-footer h6, .main-footer p, .main-footer .subscribe-form input,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h4,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text p,
+    .blockchain .hero-header .BC-series, 
+    #BaccaratType p,
+    #newsFeed .frame-detail h6,
+    #MahjongLuckyWheel .hero-header .GOF-series, #GodofFortuneSicBo .hero-header .GOF-series, #GodofFortuneRoulette .hero-header .GOF-series,
+    .live-game-bottom .game-bottom h4,
+    .game-platform .game-platforom-icon h6,
+    #NewsDetail .detail-content-wrap .Event-Detail-main .lang,
+    #liveStudio .livestudio-hightlight-wrap .large-text h1,
+    #liveStudio .livestudio-hightlight-wrap .large-text h6,
+    .main-footer .footer-bottom .footer-TC .TC,
+    #news-carousel .update-content .update-event,
+    #newsFeed .frame-detail .frame-date,
+    #newsFeed .frame-detail h2,
+    .our-gamaes .expand-deco .more-deco-h4,
+    #wrapper .nav_links .nav-link{
+        font-family: $fontNotoSansTC;
+    }
+    .secondaryBtn,
+    .live-game-bottom .game-bottom h4,
+    .main-footer .footer-subscribe h6,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2
+    #newsFeed .frame-detail h6,
+    .main-footer .footer-bottom .footer-TC span {
+        font-weight: 500;
+    }
+    #liveStudio .hero-header .hero-intro1, .hero-header .hero-intro2,
+    #liveStudio .livestudio-hightlight-wrap .large-text h1,
+    #liveStudio .livestudio-hightlight-wrap .large-text h6{
+        font-weight: 300;
+    }
+    .game-platform .game-platforom-icon h6{
+        font-weight: 100;
+    }
+    
+}
+body:lang(SC)
+{
+    body,h1,h2,h3,h4, h5, h6, p, span, .secondaryBtn,
+    .feature-flexbox h2,
+    .live-game-main .feature-header,
+    #wrapper .nav_links  .nav-game-link,
+    #AboutWE .about-h2, #AboutWE .about-h4, #AboutWE .about-p,
+    #AboutWE .hero-header .hero-intro1 h3,
+    .service-title
+    #diamondCarousel h5,
+    #NewsDetail .hero-title,
+    #intdexWhatsNews .news-slider-link p,
+    .main-footer li, .main-footer h6, .main-footer p, .main-footer .subscribe-form input,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h4,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text p,
+    .blockchain .hero-header .BC-series, 
+    #BaccaratType p,
+    #newsFeed .frame-detail h6,
+    #MahjongLuckyWheel .hero-header .GOF-series, #GodofFortuneSicBo .hero-header .GOF-series, #GodofFortuneRoulette .hero-header .GOF-series,
+    .live-game-bottom .game-bottom h4,
+    .game-platform .game-platforom-icon h6,
+    #NewsDetail .detail-content-wrap .Event-Detail-main .lang,
+    #liveStudio .livestudio-hightlight-wrap .large-text h1,
+    #liveStudio .livestudio-hightlight-wrap .large-text h6,
+    .main-footer .footer-bottom .footer-TC .TC,
+    #news-carousel .update-content .update-event,
+    #newsFeed .frame-detail .frame-date,
+    .our-gamaes .expand-deco .more-deco-h4,
+    #newsFeed .frame-detail h2,
+    #wrapper .nav_links .nav-link{
+        font-family: $fontNotoSansSC;
+    }
+    #newsFeed .frame-detail h6 {
+        font-weight: 500;
+    }
+    .secondaryBtn,
+    .live-game-bottom .game-bottom h4{
+        font-weight: 500;
+    }
+    .main-footer .footer-subscribe h6{
+        font-weight: 600;
+    }
+    #liveStudio .hero-header .hero-intro1, .hero-header .hero-intro2,
+    #liveStudio .livestudio-hightlight-wrap .large-text h1,
+    #liveStudio .livestudio-hightlight-wrap .large-text h6{
+        font-weight: 300;
+    }
+    
+}
+body:lang(EN)
+{
+    #ContactUs  .hyperlink{
+        font-weight: 400;
+    }
+    #AboutWE .about-p, 
+    .main-footer li,
+    .Highlights-container p
+    {
+        font-family: $fontBarlowLight;
+    }
+    #liveGame #SqueezeBaccarat .hero-intro1 {
+        margin-top: -1rem;
+    }
+    #AboutWE .about-h2, #AboutWE .about-h4,
+    .main-footer h6,
+    .game-icon-wrap,
+    #newsFeed .frame-detail h2,
+    .more-deco-h4,
+    .service-title,
+    #wrapper .nav_links .nav-game-link,
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2,
+    #news-carousel .update-content .update-event {
+        font-family: $fontFuturaMedium;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text p,
+    .main-footer p, .main-footer .subscribe-form input{
+        font-family: $fontBarlowRegular; 
+    }
+    #newsFeed .frame-detail .frame-date {
+        font-family: $fontBarlowMedium; 
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h4{
+        font-family: $fontFuturaCondensedMedium;
+        
+    }
+    #diamondCarousel #diaGodofFortuneSicBo .dia-3d-layer{
+        top: 49%;
+    }
+}

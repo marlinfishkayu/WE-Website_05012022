@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129px" height="23px" viewBox="0 0 129 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 28</title>
+    <defs>
+        <linearGradient x1="6.71882629%" y1="40.7984755%" x2="96.3341346%" y2="62.5312695%" id="linearGradient-1">
+            <stop stop-color="#004383" stop-opacity="0.3" offset="0%"></stop>
+            <stop stop-color="#00204C" stop-opacity="0.8" offset="37.7111486%"></stop>
+            <stop stop-color="#00204C" stop-opacity="0.8" offset="75.5651181%"></stop>
+            <stop stop-color="#00204C" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-28" transform="translate(-0.000184, 0.625000)">
+            <polygon id="Path-2" stroke="#B0936D" stroke-width="0.8" fill="url(#linearGradient-1)" points="45.000184 0.401249955 65.500184 20.926875 86.000184 0.401249955 76.9982309 0.401249955 65.2492074 12.1649597 53.500184 0.401249955"></polygon>
+            <polygon id="Path-8" fill="#B0936D" fill-rule="nonzero" points="128.999995 2.63798938e-09 129.000373 0.749999907 77.154184 0.775999955 65.2492074 12.6956213 53.345184 0.775999955 0 0.74999991 0.000367990611 0 53.6557275 0.0263262278 65.249184 11.633 76.8426852 0.0263284248"></polygon>
+        </g>
+    </g>
+</svg>

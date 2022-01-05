@@ -1,0 +1,31 @@
+/* Safari 10.1+ (alternate method) */
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    .about-content-item .expand-wrap .feature-header:before, 
+    .about-content-item .expand-wrap .feature-header:after{
+        top: 19px;
+    }
+    .about-content-item .expand-wrap .feature-header::after{
+        top: -20px;
+    }
+    .about-content-item .expand-wrap #MVV-expand::after{
+        top: -59px;
+    }
+    .about-content-item .expand-wrap #RRC-expand::after{
+        top: -99px;
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 532px) { 
+        .about-content-item .expand-wrap #MVV-expand::after{
+            top: -20px;
+        }
+    }
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .about-content-item .expand-wrap #RRC-expand::after{
+            top: -20px;
+        }
+    }
+
+}}

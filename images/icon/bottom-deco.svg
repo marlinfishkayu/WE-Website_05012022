@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="16px" viewBox="0 0 175 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="129.15335%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#B0936D" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#D8C5A6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="All-Game" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WE_games_Baccart" transform="translate(-632.000000, -4103.000000)">
+            <g id="Group-16" transform="translate(0.000000, 3989.000000)">
+                <g id="Group-10" transform="translate(511.000000, 12.000000)">
+                    <g id="Group-7" transform="translate(121.000000, 102.070302)">
+                        <path d="M94.4354248,1.19003418e-12 L101.940042,7.43469853 L94.4354248,14.8693971 L90.7261918,11.195 L87.0181169,14.8693971 L83.3091918,11.195 L79.6008091,14.8693971 L72.0961918,7.43469853 L79.6008091,1.46549439e-14 L83.3091918,3.674 L87.0181169,7.8548279e-13 L90.7261918,3.674 L94.4354248,1.19003418e-12 Z M79.6009442,1.40604095 L73.5177046,7.43412626 L79.6002371,13.4615045 L82.5981918,10.491 L79.5134996,7.43469853 L82.5981918,4.377 L79.6009442,1.40604095 Z M87.0181918,7.521 L84.0201918,10.491 L87.0180344,13.4619939 L90.0151918,10.49 L87.0181918,7.521 Z M94.4358317,1.4063127 L91.4361918,4.377 L94.5227343,7.43469853 L91.4371918,10.491 L94.4351246,13.4617762 L100.519071,7.43439801 L94.4358317,1.4063127 Z M90.7261918,5.08 L88.3518849,7.43369091 L90.7261918,9.786 L93.101274,7.43390859 L90.7261918,5.08 Z M83.3081918,5.08 L80.9347948,7.43390859 L83.3091918,9.786 L85.6841839,7.43412626 L83.3081918,5.08 Z M87.0180344,1.40582328 L84.0181918,4.377 L87.0171918,7.347 L90.0161918,4.377 L87.0180344,1.40582328 Z" id="Combined-Shape" fill="#B0936D" fill-rule="nonzero"></path>
+                        <rect id="Rectangle-Copy-6" stroke="url(#linearGradient-1)" x="0.5" y="7.42969833" width="65" height="1"></rect>
+                        <rect id="Rectangle-Copy-7" stroke="url(#linearGradient-1)" transform="translate(142.000000, 7.429698) scale(-1, 1) translate(-142.000000, -7.429698) " x="109.5" y="7.42969833" width="65" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

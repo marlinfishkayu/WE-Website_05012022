@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <!-- proloader -->
+        <link rel="preload" href="./styles/fonts/Barlow/Medium.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/Barlow/Regular.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/Barlow/ExtraLight.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/Barlow/Light.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Thin.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Light.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Regular.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Medium.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Light.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Thin.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Regular.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Medium.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Bold.woff" as="font" type="font/woff2" crossorigin>
+        
+        <!-- Outdated Browser v1.1.5 -->
+        <link rel="stylesheet" href="./outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.css" />
+        <!-- Owl CSS -->
+        <link rel="stylesheet" href="OwlCarousel2/owl.carousel.min.css" />
+        <link rel="stylesheet" href="OwlCarousel2/owl.theme.default.min.css" />
+        <!-- Sal CSS -->
+        <link rel="stylesheet" href="./styles/sal.css" />
+        <!-- main CSS -->
+        <link rel="stylesheet" href="./styles/main.css" />
+        <title>World Entertainment</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/svg" href="favicon.ico/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="favicon.ico/site.webmanifest">
+        <link rel="mask-icon" href="favicon.ico/safari-pinned-tab.svg" color="#ab754a">
+        <meta name="msapplication-TileColor" content="#00204c">
+        <meta name="theme-color" content="#060b1a">
+    </head> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4PBGNLYYL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E4PBGNLYYL');
+    </script>
+    <body>
+        <div id="wrapper">
+            <section class="section-header" id="nav">
+                <div class="header-wrapper">
+                    <!-- navigation bar -->
+                    <div class="nav-wrap"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.3s; --sal-delay: 0.8s;">
+                        <div id="nav-area">
+                            <div class="main-nav">
+                                <!-- nav links -->
+                                <div class="menu-wrapper menu-item">
+                                    <div class="menu-btn">
+                                        <div class="menu-btn__burger"></div>
+                                    </div>
+                                </div>
+                                <div class="nav-item logo-wrap" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0.1s;">
+                                    <a class="navbar-brand menu-item menu-logo" href="index.html">
+                                        <div class="nav-logo"><img class="imageset" data-key="WE_logo" src="./images/icon/en/logo.svg" alt=""  /></div>
+                                    </a>
+                                </div>
+                                <ul class="nav_links">
+                                    <li class="nav-item"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0.1s;">
+                                        <a class="nav-link menu-item menu-about lang" key="nav_About" href="AboutWE.html"></a>
+                                    </li>
+                                    <li class="nav-item dropdown" id="gamesHover"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0.2s;">
+                                        <a class="nav-link menu-item menu-games lang" key="nav_LiveGames" href="All_Live_Game.html"></a>
+                                        <div class="game-menu">
+                                            <div class="subnav-arrow"></div>
+                                            <div class="game-menu-wrapper">
+                                                <!-- game menu tab -->
+                                                <ul class="nav justify-content-center" id="gameSubtab" role="tablist">
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.1s;">
+                                                        <a class="nav-game-link fancy-link lang active" key="submenu_LiveGames" id="pills-livegame-tab" data-toggle="pill" href="#pills-livegame" role="tab" aria-controls="pills-livegame" aria-selected="true"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.1s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_BCgames" id="pills-livegame-tab" data-toggle="pill" href="#pills-BCgame" role="tab" aria-controls="pills-BCgame" aria-selected="true"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.2s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_Lottery" id="pills-lottery-tab" data-toggle="pill" href="#pills-lottery" role="tab" aria-controls="pills-lottery" aria-selected="false"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.3s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_Sportsbook" id="pills-sportsbook-tab" data-toggle="pill" href="#pills-sportsbook" role="tab" aria-controls="pills-sportsbook" aria-selected="false"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1; --sal-delay: 0.4s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_Slots" id="pills-slots-tab" data-toggle="pill" href="#pills-slots" role="tab" aria-controls="pills-slots" aria-selected="false"></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="game-tab-content" id="pills-tabContent">
+                                                    <!-- Live game tab -->
+                                                    <div class="tab-pane fade show active" id="pills-livegame" role="tabpanel" aria-labelledby="pills-livegame-tab">
+                                                        <div class="d-flex justify-content-center sub-tab-content">
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Baccarat.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img class="inner-img"
+                                                                                src="./images/all_live_game/live_game_item/game-item_Baccarat_x1.jpg"
+                                                                                srcset="./images/all_live_game/live_game_item/game-item_Baccarat_x1.jpg 500w, ./images/all_live_game/live_game_item/game-item_Baccarat_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="Baccarat"></span></h4>
+                                                                    </div>
+                                                                    
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_GodofFortuneRoulette.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img class="inner-img"
+                                                                                src="./images/all_live_game/live_game_item/game_item_GodofFortuneRoulette_x1.jpg"
+                                                                                srcset="./images/all_live_game/live_game_item/game_item_GodofFortuneRoulette_x1.jpg 500w, ./images/all_live_game/live_game_item/game_item_GodofFortuneRoulette_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title">
+                                                                            <span class="lang" key="GodofFortuneRoulette_1"></span><br/>
+                                                                            <span class="lang" key="GodofFortuneRoulette_2"></span>
+                                                                        </h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_DragonTiger.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img class="inner-img"
+                                                                                src="./images/all_live_game/live_game_item/game_item_DragonTiger_x1.jpg"
+                                                                                srcset="./images/all_live_game/live_game_item/game_item_DragonTiger_x1.jpg 500w, ./images/all_live_game/live_game_item/game_item_DragonTiger_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="DragonTiger"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="all-games" class="allGameBtn">
+                                                            <a href="All_Live_Game.html"><button class="secondaryBtn lang" type="button" key="submenu_AllLiveGame">ALL LIVE GAMES</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Live game tab -->
+                                                    
+                                                    <!-- <div class="tab-pane fade lang" key="ComingSoon" id="pills-lottery" role="tabpanel" aria-labelledby="pills-lottery-tab">LOTTERIES</div> -->
+                                                    
+                                                    <!-- Blockchain game tab start-->
+                                                    <div class="tab-pane fade lang" id="pills-BCgame" role="tabpanel" aria-labelledby="pills-lottery-tab">
+                                                        <div class="d-flex justify-content-center sub-tab-content">
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_Roulette.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_Roulette_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_Roulette_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_Roulette_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="BlockchainRoulette"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_SicBo.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_SicBo_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_SicBo_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_SicBo_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="BlockchainSicBo"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_WinThreeCards.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_WinThreeCards_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_WinThreeCards_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_WinThreeCards_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title">
+                                                                            <span class="lang" key="BC_WinThreeCards_1"></span><br/>
+                                                                            <span class="lang" key="BC_WinThreeCards_2"></span>
+                                                                        </h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_BullBull.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_BullBull_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_BullBull_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_BullBull_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="BlockchainBullBull"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="all-games" class="allGameBtn">
+                                                            <a href="All_Blockchain_Games.html"><button class="secondaryBtn lang" id="bcBtn" type="button" key="submenu_AllBCGame"></button></a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Blockchain game tab end -->
+
+                                                    <!-- Lotteries game tab -->
+                                                    <div class="tab-pane fade lang" id="pills-lottery" role="tabpanel" aria-labelledby="pills-lottery-tab">
+                                                        <div class="d-flex justify-content-center sub-tab-content">
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_Lottery_Lotto5.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_lottery_game/game_item/game_item_Lotto5_x1.jpg"
+                                                                                srcset="./images/all_lottery_game/game_item/game_item_Lotto5_x1.jpg 500w, ./images/all_lottery_game/game_item/game_item_Lotto5_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="Lotto5"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_Lottery_PK10.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                            src="./images/all_lottery_game/game_item/game_item_PK10_x1.jpg"
+                                                                            srcset="./images/all_lottery_game/game_item/game_item_PK10_x1.jpg 500w, ./images/all_lottery_game/game_item/game_item_PK10_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="PK10"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="all-games" class="allGameBtn">
+                                                            <a href="All_Lottery_Game.html"><button class="secondaryBtn lang" type="button" key="submenu_AllLotteryGame">ALL LOTTERIES</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Lotteries game tab -->
+                                                    <div class="tab-pane fade lang" key="ComingSoon" id="pills-sportsbook" role="tabpanel" aria-labelledby="pills-sportsbook-tab">COMING SOON</div>
+                                                    <div class="tab-pane fade lang" key="ComingSoon" id="pills-slots" role="tabpanel" aria-labelledby="pills-slots-tab">COMING SOON</div>
+                                                </div>
+                                                <!-- game menu tab -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.3s;">
+                                        <a class="nav-link menu-item menu-liveStudio lang" key="nav_LiveStudio" href="LiveStudio.html"></a>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.4s;">
+                                        <a class="nav-link menu-item menu-services lang" key="nav_Services" href="Services.html"></a>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.5s;">
+                                        <a class="nav-link menu-item menu-whatsNew lang active-tap" key="nav_WhatsNew" href="WhatsNew.html"></a>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.6s;">
+                                        <a class="nav-link menu-item menu-contactUs lang" key="nav_ContactUs" href="ContactUs.html"></a>
+                                    </li>
+                                </ul>
+                                <div class="nav-item nav-icon" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.7s;">
+                                    <div class="nav-icon-wrapper">
+                                        <div class="search-wrapper menu-item menu-lang">
+                                            <button class="icon-lang">
+                                                <a id="icon-lang">
+                                                    <img loading="lazy"src="images/icon/lang.svg" />
+                                                </a>
+                                                <!-- <h6 class="lang" key="current-lang"></h6> -->
+                                            </button>
+                                            <ul class="lang-dropdown" id="languageDropdown">
+                                                <a id="EN" href="#" class="translate"><li class="language-tap active">English</li></a>
+                                                <a id="TC" href="#" class="translate"><li class="language-tap">繁體中文</li></a>
+                                                <a id="SC" href="#" class="translate"><li class="language-tap">简体中文</li></a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a class="closeBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side menu start  -->
+                    <nav class="sidebar">
+                        <div id="logoMobile">
+                            <a class="navbar-brand menu-item menu-logo" href="index.html" >
+                                <div class="nav-logo"><img loading="lazy"class="imageset" data-key="WE_logo" src="./images/icon/en/logo.svg" alt="" loading="lazy" /></div>
+                            </a>
+                        </div>
+                        
+                        <div class="menu-wrapper menu-item" id="menuMobile">
+                            <div class="menu-btn">
+                                <div class="menu-btn__burger"></div>
+                            </div>
+                        </div>
+                        <ul class="side-wrap">
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a href="AboutWE.html" class="lang stretched-link" key="nav_About">About WE</a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable" style="transform: rotate(0);">
+                                    <a href="#" class="game-btn stretched-link">
+                                        <span class="lang" key="nav_LiveGames">Games</span>
+                                        <span class="fa-arrow">
+                                            <img loading="lazy" src="./images/icon/dropdown.svg" />
+                                        </span>
+                                    </a>
+                                </div>
+                                <ul class="game-show">
+                                    <li class="game-item">
+                                        <div class="tab-menu">
+                                            <div class="labels">
+                                                <div class="inner-container">
+                                                    <span class="" tabindex="0">
+                                                        <label class="tab-label lang show" for="tab-tab1" key="submenu_LiveGames"></label>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <label class="tab-label lang" for="tab-tab2" key="submenu_BCgames"></label>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <label class="tab-label lang" for="tab-tab3" key="submenu_Lottery"></label>
+                                                    </span>
+                                                    <!-- <span tabindex="0">
+                                                        <a href="#"><label class="tab-label lang" key="submenu_Sportsbook"></label></a>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <a href="#"><label class="tab-label lang" key="submenu_Slots"></label></a>
+                                                    </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="tabs" id="tabsDirection">
+                                                <!-- live game tab start-->
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab1" name="tabs-main" checked>
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content" id="tabContent1">
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Live_Game.html">
+                                                                        <img class="imageset" data-key="AllLiveGameBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Baccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Bac_x1.jpg"
+                                                                            srcset="./images/menu/m-Bac_x1.jpg 500w, ./images/menu/m-Bac_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="Baccarat"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_SqueezeBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-SqBac_x1.jpg"
+                                                                            srcset="./images/menu/m-SqBac_x1.jpg 500w, ./images/menu/m-SqBac_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="SqueezeBaccarat"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Roulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Roulette_x1.png"
+                                                                            srcset="./images/menu/m-Roulette_x1.png 500w, ./images/menu/m-Roulette_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="Roulette"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_DragonTiger.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-DragonTiger_x1.jpg"
+                                                                            srcset="./images/menu/m-DragonTiger_x1.jpg 500w, ./images/menu/m-DragonTiger_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="DragonTiger"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_GodofFortuneRoulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-GOF-Roulette_x1.jpg"
+                                                                            srcset="./images/menu/m-GOF-Roulette_x1.jpg 500w, ./images/menu/m-GOF-Roulette_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="GodofFortuneRoulette_1"></h4>
+                                                                            <h4 class="lang" key="GodofFortuneRoulette_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- blockchain tab start-->
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content" id="tabContent2">
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Blockchain_Games.html">
+                                                                        <img class="imageset" data-key="AllBlockchainGameBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_Baccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-Bac_x1.png"
+                                                                            srcset="./images/menu/m-BC-Bac_x1.png 500w, ./images/menu/m-BC-Bac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_SqueezeBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SqBac_x1.png"
+                                                                            srcset="./images/menu/m-BC-SqBac_x1.png 500w, ./images/menu/m-BC-SqBac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainSqueezeBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainSqueezeBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_SpeedBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SpBac_x1.png"
+                                                                            srcset="./images/menu/m-BC-SpBac_x1.png 500w, ./images/menu/m-BC-SpBac_x1.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainSpeedBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainSpeedBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_DragonTiger.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-DraTig_x1.png"
+                                                                            srcset="./images/menu/m-BC-DraTig_x1.png 500w, ./images/menu/m-BC-DraTig_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainDragonTiger_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainDragonTiger_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_Roulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-Roulette_x1.png"
+                                                                            srcset="./images/menu/m-BC-Roulette_x1.png 500w, ./images/menu/m-BC-Roulette_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_Roulette_1"></h4>
+                                                                            <h4 class="lang" key="BC_Roulette_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Blockchain_SicBo.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SicBo_x1.png"
+                                                                            srcset="./images/menu/m-BC-SicBo_x1.png 500w, ./images/menu/m-BC-SicBo_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_SicBo_1"></h4>
+                                                                            <h4 class="lang" key="BC_SicBo_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_MahjongLuckyWheel.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-MahjongLuckyWheel_x1.png"
+                                                                            srcset="./images/menu/m-BC-MahjongLuckyWheel_x1.png 500w, ./images/menu/m-BC-MahjongLuckyWheel_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_MahjongLuckyWheel_1"></h4>
+                                                                            <h4 class="lang" key="BC_MahjongLuckyWheel_2"></h4>
+                                                                            <h4 class="lang" key="BC_MahjongLuckyWheel_3"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_WinThreeCards.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-WinThreeCards_x1.png"
+                                                                            srcset="./images/menu/m-BC-WinThreeCards_x1.png 500w, ./images/menu/m-BC-WinThreeCards_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_WinThreeCards_1"></h4>
+                                                                            <h4 class="lang" key="BC_WinThreeCards_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_BullBull.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-BullBull_x1.png"
+                                                                            srcset="./images/menu/m-BC-BullBull_x1.png 500w, ./images/menu/m-BC-BullBull_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_BullBull_1"></h4>
+                                                                            <h4 class="lang" key="BC_BullBull_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- Lottery tab start -->
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab3" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content" id="tabContent3">
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Lottery_Game.html">
+                                                                        <img class="imageset" data-key="AllLotteriesBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_Lottery_Lotto5.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Lotto5_x1.png"
+                                                                            srcset="./images/menu/m-Lotto5_x1.png 500w, ./images/menu/m-Lotto5_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="Lotto5"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_Lottery_PK10.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-PK10_x1.png"
+                                                                            srcset="./images/menu/m-PK10_x1.png 500w, ./images/menu/m-PK10_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="PK10"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2-1" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <div class="tab-content">
+                                                            <h2>Tab 3</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2-2" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <div class="tab-content">
+                                                            <h2>Tab 4</h2>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a href="LiveStudio.html" class="stretched-link"><span class="lang" key="nav_LiveStudio">Live Studio</span></a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a class="stretched-link" href="Services.html"><span class="lang" key="nav_Services">Services</span></a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a class="stretched-link" href="WhatsNew.html"><span class="lang" key="nav_WhatsNew">What’s New</span></a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a class="stretched-link" href="ContactUs.html"><span class="lang" key="nav_ContactUs">Contact Us</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- side menu end  -->
+                    
+                    <!-- navigation bar end -->
+                </div>
+            </section>
+            <!-- Event Detail Start -->
+            <div id="NewsDetail"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.3s; --sal-delay: 0.5s;">
+                <div class="hero-header text-center">
+                    <div class="hero-header-bkg">
+                        <div class="event-slider-bkg">
+                            <div class="event-slider-bkg-D">
+                                <picture>
+                                    <source media="(max-width: 600px)" srcset="./images/news/Detail_game/BC/BC_blur.png">
+                                    <source media="(max-width: 1023px)" srcset="./images/news/Detail_game/BC/BC_blur.png 800w, ./images/news/Detail_game/BC/BC_blur.png 1000w">
+                                    <img src="./images/news/Detail_game/BC/BC_blur.png">
+                                </picture>
+                            </div>
+                            
+                        </div>
+                        <div class="event-hightlight">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="./images/news/Detail_game/BC/Landscape/BC_L_x1.jpg">
+                                <source media="(max-width: 1023px)" srcset="./images/news/Detail_game/BC/Landscape/BC_L_x1.jpg 500w,  ./images/news/Detail_game/BC/Landscape/BC_L_x2.jpg 1000w">
+                                <img src="./images/news/Detail_game/BC/Landscape/BC_L_x2.jpg">
+                            </picture>
+                        </div>
+                        <div class="frame-hightlight">
+                            <img src="images/news/frame-event-top.svg"/>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <!-- Event Detail Section -->
+                <div class="Event-Detail-main">
+                    <!-- carousel with page indicator -->
+                    <div class="hero-float">
+                        <h1 class="hero-title">
+                            <span class="lang" key="detail_event_1"></span><br/>
+                            <span class="lang" key="detail_event_2"></span>
+                        </h1>
+                        <div class="event-info">
+                            <h5 class="lang" key="Filter_games"></h5>
+                            <h6 class="lang" key="detail_date"></h6>
+                        </div>
+                    </div>
+                    <!-- carousel with page indicator end-->
+                    <div class="detail-content-wrap container">
+                        <p class="lang" key="detail_p"></p>
+                        <div class="hero-icon">
+                            <ul class="d-flex justify-content-start">
+                                <li class="icon-link">
+                                    <a href="https://www.facebook.com/World-Entertainment-103485598040783" target="_blank">
+                                        <img loading="lazy" src="./images/news/icon/icon-fb.svg" />
+                                    </a>
+                                </li>
+                                <li class="icon-link">
+                                    <a href="https://www.instagram.com/worldent.official/?hl=zh-hk" target="_blank">
+                                        <img loading="lazy" src="./images/news/icon/icon-ig.svg" />
+                                    </a>
+                                </li>
+                                <li class="icon-link" id="mw1">
+                                    <a href="https://mewe.com/i/worldentertainment" target="_blank">
+                                        <img loading="lazy" src="./images/news/icon/mw_1.svg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="event-back-btn">
+                            <a href="WhatsNew.html">
+                                <button class="secondaryBtn lang" key="back" type="button"></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Event Detail End -->
+
+            <!-- Age popup start-->
+            <div class="age-restriction">
+                <div class="age-outer">
+                    <div class="age-inner">
+                        <h1 class="lang" key="age_h1"></h1>
+                        <div class="art-deco-wrap">
+                            <img class="age-deco" src="./images/about/about-hero-deco.svg" alt="">
+                        </div>
+                        <p class="lang" key="age_notice"></p>
+                        
+                        <button class="secondaryBtn age-button ageAbove-btn">
+                            <span class="lang" key="age_over"></span>
+                        </button>
+                        <button class="primaryBtn age-button ageUnder-btn">
+                            <span class="lang" key="age_under"></span>
+                        </button>
+                        <div class="d-flex">
+                            <span class="ageWarning lang" key="age_warning"></span>
+                        </div>
+                        <div class="lang-switch d-flex icon-lang">
+                            <img class="age-lang-icon" src="./images/icon/lang.svg" alt="">
+                            <div class="menu-lang lang" key="age_current_lang"></div>
+                                <div class="menu-lang">
+                                    <ul class="lang-dropdown" id="languageDropdown">
+                                        <a id="EN" href="#" class="translate"><li class="language-tap active">English</li></a>
+                                        <a id="TC" href="#" class="translate"><li class="language-tap">繁體中文</li></a>
+                                        <a id="SC" href="#" class="translate"><li class="language-tap">简体中文</li></a>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <!-- Age popup end-->
+            
+            <!-- Cookie popup start-->
+            <div class="cookie-container">
+                <div class="cookie-deco">
+                    <img loading="lazy" src="./images/icon/bottom-deco.svg">
+                </div>
+                <p class="pp-link">
+                    <span class="lang" key="Cookie_p1">WE use cookies to ensure you get the best experience on our website. WE will assume you have agreed to our Privacy Policy by continuing to use our website henceforth.</span>
+                    <a class="lang" key="PrivacyPolicy" href="PrivacyTerms.html">Privacy Policy</a>
+                </p>
+                <div class="accept-btn">
+                    <button class="secondaryBtn cookie-btn"><span class="lang" key="Accept">Accept</span></button>
+                </div>
+            </div>
+            <!-- Cookie popup end-->
+
+            <!-- Footer start -->
+            <footer>
+                <div class="main-footer">   
+                    <div class="footer-subscribe">
+                        <div class="subscribe-wrap">
+                            <h6 class="lang" key="Subscribe">Subscribe</h6>
+                            <br />
+                            <p class="lang" key="Subscribe_p">
+                                Be the first to know about our latest news and <br class="footer-break" />
+                                exclusive offers from WE.
+                            </p>
+                            <div id="EmailSubscribe">
+                                <!-- Begin Mailchimp Signup Form -->
+                                <div id="mc_embed_signup">
+                                    <form action="https://pgpg.us1.list-manage.com/subscribe/post?u=7fd273f17c144f707904f5926&amp;id=068a3ff35c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <div class="mc-field-group" id="mce-error">
+                                                <input type="email" value="" name="EMAIL" class="required email form-control lang" key="Email-S" placeholder="Please enter your email address here" id="mce-EMAIL">
+                                            </div>
+                                            <p id="myerror">請輸入有效的電子郵件地址。</p>
+                                            <div id="mce-responses" class="clear">
+                                                <div class="response" id="mce-error-response"></div>
+                                                <div class="response" id="mce-success-response"></div>
+                                            </div>    
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="display: none;" aria-hidden="true"><input type="text" name="b_7fd273f17c144f707904f5926_068a3ff35c" tabindex="-1" value=""></div>
+                                        </div>
+                                        <div class="enquiry-button">
+                                            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="enquiryBtn btn lang" key="Subscribe_btn" id="signUp"class="button">Subscribe Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                                <!--End mc_embed_signup-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-TC">
+                            ©<script>document.write(new Date().getFullYear())</script> &nbsp;
+                            <span class="lang" key="WorldEnt">WORLD ENTERTAINMENT.</span>
+                            <a href="PrivacyTerms.html" class="lang TC" key="PrivacyPolicy">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <!-- Thank you for subscribe popup start-->
+            <div id="thankyou-popup">
+                <div class="thankyou-bkg">
+                    <div id="thankyou-bkg-m">
+                        <img loading="lazy"
+                            src="./images/thankyou/thankyou_bkg_m_x1.png"
+                            srcset="./images/thankyou/thankyou_bkg_m_x1.png 500w ,  ./images/thankyou/thankyou_bkg_m_x2.png 1000w"
+                            alt=""
+                        />
+                    </div>
+                    <div id="thankyou-bkg-d">
+                        <img loading="lazy"
+                            src="./images/thankyou/thankyou-bkg_x1.png"
+                            srcset="./images/thankyou/thankyou-bkg_x1.png 500w, ./images/thankyou/thankyou-bkg_x2.png 1000w"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="wrap">
+                    <h1 class="lang" key="HelloThere">Hello There!</h1>
+                    <div class="thankyou-deco">
+                        <img src="./images/icon/bottom-deco.svg"  alt="" />
+                    </div>
+                    
+                    <p class="hero-intro lang" key="thankyou_p">You’re on our mailing list now and will be among the first to hear about the latest news, collections and videos from WE.</p>
+                    <div class="back-btn">
+                        <button class="secondaryBtn thanyou-close-btn lang" key="Okay">OKAY</button>
+                    </div>
+                </div>
+                <div class="close-btn thanyou-close-btn">
+                    <div class="closeBtn">
+                        <img src="images/thankyou/close_icon.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- Thank you for subscribe popup end-->
+        </div>
+        <!-- ============= Outdated Browser ============= -->
+        <div id="outdated"></div>
+        <!-- Outdated javascript includes -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.js"></script>
+
+        <!-- Outdated plugin call -->
+        <script>
+            // Plain Javascript
+            //event listener: DOM ready
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != "function") {
+                    window.onload = func;
+                } else {
+                    window.onload = function () {
+                        if (oldonload) {
+                            oldonload();
+                        }
+                        func();
+                    };
+                }
+            }
+            //call plugin function after DOM ready
+            addLoadEvent(function () {
+                outdatedBrowser({
+                    bgColor: "#f25648",
+                    color: "#ffffff",
+                    lowerThan: "transform",
+                    languagePath: "your_path/outdatedbrowser/lang/en.html",
+                });
+            });
+            // Using jQuery (version that supports IE < 9)
+            $(document).ready(function () {
+                outdatedBrowser({
+                    bgColor: "#f25648",
+                    color: "#ffffff",
+                    lowerThan: "transform",
+                    languagePath: "your_path/outdatedbrowser/lang/en.html",
+                });
+            });
+        </script>
+
+        <!-- Sal JS  -->
+        <script src="./js/sal.js"></script>
+        <script>
+            sal({
+                threshold: 0.1,
+                once: true,
+            });
+        </script>
+        <!-- External JS  -->
+        <script src="OwlCarousel2/owl.carousel.min.js"></script>
+        <script src="./outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- Main JS  -->
+        <script src="./js/main.js" type="text/javascript"></script>
+        <script type="text/javascript" src="./js/language_switch.js"></script>
+        <script type="text/javascript" src="./json/multi-language/lang_WhatsNews_BC_game_release.js"></script>
+    </body>
+</html>

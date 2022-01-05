@@ -1,0 +1,111 @@
+#services {
+    min-height: 85vh;
+    .services-main{
+        padding-top: 300px;
+        margin: 0 auto;
+    }
+    .hero-header {
+        height: 400px;
+        &:after{
+            background: rgb(6,11,26);
+            background: linear-gradient(180deg, rgba(6,11,26,0.6) 0%, rgba(7,10,27,1) 100%);
+        }
+    }
+    .hero-header-bkg {
+        height: 400px;
+    }
+}
+
+.services-row{
+    width: 100%;
+    margin: 0 auto ;
+}
+.service-item{
+    text-align: center;
+    width: 100%;
+    max-width: 293px;
+    margin: 0 auto;
+}
+.service-img{
+    width: 132px;
+    height: 132px;
+    margin: 0 auto;
+}
+.service-title{
+    font-family: $fontFuturaMedium;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: $primaryText;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.services-detail{
+    font-family: $fontBarlowLight;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #979797;
+    padding-bottom: 3rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #services .services-main {
+        padding-top: 100px;
+        max-width: 800px;
+    }
+    .services-row{
+        padding-bottom: 2rem;
+    }
+    .services-wrap{
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    .service-img{
+        width: 132px;
+        height: 132px;
+    }
+    .service-item{
+        padding: 2rem 1.6rem;
+        max-width: inherit;
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #services .services-main{
+        max-width: 900px;
+    }
+    .service-title {
+        padding-top: 2.3rem;
+    }
+    
+ }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #services {
+        .services-main{
+            max-width: 1200px;
+        }
+        .hero-header {
+            height: 500px;
+        }
+        .hero-header-bkg {
+            height: 500px;
+        }
+    }
+    .service-item {
+        padding: 5px 5rem;
+    }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 2000px) {
+    #services .services-main{
+        max-width: 1600px;
+    }
+}

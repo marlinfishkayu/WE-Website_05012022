@@ -1,0 +1,426 @@
+#ContactUs {
+    min-height: 85vh;
+    .contact-main{
+        padding-top: 26em;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .hero-header-bkg{
+        height: 399px;
+    }
+    .hero-header {
+        height: 400px;
+    }
+    .privacy-terms{
+        font-weight: 100;
+        line-height: 1.5;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .hero-intro2{
+        padding-bottom: 0;
+    }
+    .line-p{
+        padding-top: 0.3rem;
+    }
+    .hyperlink{
+        color: #A78C68;
+        text-decoration: none;
+        transition: 200ms all ease;
+        font-weight: 100;
+        &:hover{
+            color: #89663D;
+        }
+    }
+    .with-errors .list-unstyled li{
+        color: #EE2E2E;
+        font-family: $fontBarlowRegular;
+        margin-top: 5px;
+        &:before{
+            content: '';
+            width: 100px;
+            height: 100px;
+            padding-left: 30px;
+            padding-bottom: 5px;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjFweCIgaGVpZ2h0PSIyMXB4IiB2aWV3Qm94PSIwIDAgMjEgMjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+R3JvdXAgODwvdGl0bGU+CiAgICA8ZyBpZD0iQ29udGFjdC1VcyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldFX2NvbnRhY3R1cy1Db3B5LTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MjkuMDAwMDAwLCAtNjk2LjAwMDAwMCkiIGZpbGw9IiNFRTJFMkUiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNzAuMDAwMDAwLCA2MzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzU5LjAwMDAwMCwgNTcuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLjg5NiwxMi4zNTIgQzExLjAwMjY2NjcsMTIuMzUyIDExLjA1NiwxMi4yOTg2NjY3IDExLjA1NiwxMi4xOTIgTDExLjA1NiwxMi4xOTIgTDExLjE1Miw0Ljk2IEMxMS4xNTIsNC44NTMzMzMzMyAxMS4wOTg2NjY3LDQuOCAxMC45OTIsNC44IEwxMC45OTIsNC44IEwxMC4xNzYsNC44IEMxMC4wNjkzMzMzLDQuOCAxMC4wMTYsNC44NTMzMzMzMyAxMC4wMTYsNC45NiBMMTAuMDE2LDQuOTYgTDEwLjA5NiwxMi4xOTIgQzEwLjA5NiwxMi4yOTg2NjY3IDEwLjE0OTMzMzMsMTIuMzUyIDEwLjI1NiwxMi4zNTIgTDEwLjI1NiwxMi4zNTIgTDEwLjg5NiwxMi4zNTIgWiBNMTAuNTEyLDE1LjkzNiBDMTAuNzc4NjY2NywxNS45MzYgMTAuOTk0NjY2NywxNS44NTMzMzMzIDExLjE2LDE1LjY4OCBDMTEuMzI1MzMzMywxNS41MjI2NjY3IDExLjQwOCwxNS4zMTIgMTEuNDA4LDE1LjA1NiBDMTEuNDA4LDE0Ljc4OTMzMzMgMTEuMzI1MzMzMywxNC41NzMzMzMzIDExLjE2LDE0LjQwOCBDMTAuOTk0NjY2NywxNC4yNDI2NjY3IDEwLjc3ODY2NjcsMTQuMTYgMTAuNTEyLDE0LjE2IEMxMC4yNTYsMTQuMTYgMTAuMDQ1MzMzMywxNC4yNDI2NjY3IDkuODgsMTQuNDA4IEM5LjcxNDY2NjY3LDE0LjU3MzMzMzMgOS42MzIsMTQuNzg5MzMzMyA5LjYzMiwxNS4wNTYgQzkuNjMyLDE1LjMxMiA5LjcxNDY2NjY3LDE1LjUyMjY2NjcgOS44OCwxNS42ODggQzEwLjA0NTMzMzMsMTUuODUzMzMzMyAxMC4yNTYsMTUuOTM2IDEwLjUxMiwxNS45MzYgWiIgaWQ9IiEiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTAuNSwwIEMxNi4yOTg5ODk5LDAgMjEsNC43MDEwMTAxMyAyMSwxMC41IEMyMSwxNi4yOTg5ODk5IDE2LjI5ODk4OTksMjEgMTAuNSwyMSBDNC43MDEwMTAxMywyMSAwLDE2LjI5ODk4OTkgMCwxMC41IEMwLDQuNzAxMDEwMTMgNC43MDEwMTAxMywwIDEwLjUsMCBaIE0xMC41LDEgQzUuMjUzMjk0ODgsMSAxLDUuMjUzMjk0ODggMSwxMC41IEMxLDE1Ljc0NjcwNTEgNS4yNTMyOTQ4OCwyMCAxMC41LDIwIEMxNS43NDY3MDUxLDIwIDIwLDE1Ljc0NjcwNTEgMjAsMTAuNSBDMjAsNS4yNTMyOTQ4OCAxNS43NDY3MDUxLDEgMTAuNSwxIFoiIGlkPSJPdmFsIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+        }
+    }
+    .bottom-deco{
+        width: 220px;
+    }
+    .form-control:focus{
+        box-shadow: 0 0 0 0.2rem rgba(167,140,104,.15);
+        border: 1px solid #B0936D;
+    }
+    .form-control{
+        background-color: #060B1A;
+        border-radius: 0;
+        color: #494949!important;
+        border: 1px solid #545454;
+    }
+}
+.md-block{
+    display: none;
+}
+#ContactUs #country,
+#ContactUs #selectType{ 
+    color: #fff; 
+} 
+//message popup
+#msgSubmit{
+    display: none;
+}
+#ContactUs .controls textarea,
+#ContactUs .controls input{
+    color: #fff!important;
+}
+
+// checkbox style
+#ContactUs{
+    .checkbox{
+        width: 20px;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 25px;
+    }
+    .form-check-label{
+        margin-left: 45px;
+        color: #494949;
+        font-family: "Barlow Light", sans-serif, Arial, Helvetica;
+        font-weight: 100;
+        color: #979797;
+        line-height: 1.5;
+        font-size: 16px;
+        letter-spacing: 1px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .form-group .check-parent{
+        position: relative;
+    }
+      
+      /* Create a custom checkbox */
+      .form-group .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        border: 1px solid #545454;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .form-group:hover input ~ .checkmark {
+        border: 1px solid #89663D;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .form-group input:checked ~ .checkmark {
+        background-color: transparent;
+        border: 1px solid #545454;
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .form-group .checkmark::after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the checkmark when checked */
+      .form-group input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the checkmark/indicator */
+      .form-group .checkmark::after {
+        left: 7px;
+        top: 2px;
+        width: 10px;
+        height: 15px;
+        border: 1px solid #89663D;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      .footer-subscribe .form{
+        background-color: #060B1A;
+        border-radius: 0;
+        color: #494949 !important;
+        border: 1px solid #545454;
+      }
+}
+#ContactUs .form-check .form-check-label{
+    color: #76787d;
+}
+#EmailSubscribe .form-control{
+    background-color: #000;
+    border-radius: 0;
+    color: #494949 !important;
+    border: 1px solid #545454;
+    margin-top: 1em;
+  }
+#EmailSubscribe .controls input {
+    color: #fff !important;
+}
+select.form-control{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%23555555%22%20%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-261%20145.2%2024%2024%22%20style%3D%22enable-background%3Anew%20-261%20145.2%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M-245.3%2C156.1l-3.6-6.5l-3.7%2C6.5%20M-252.7%2C159l3.7%2C6.5l3.6-6.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    padding-right: 25px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: right center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select.form-control::-ms-expand {
+    display: none;
+  }
+.enquiry-button{
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem 0;
+    .enquiryBtn{
+        width: 100%;
+        height: 46px;
+        background-color: #00204C;
+        color: #fff;
+        letter-spacing: 3px;
+        border-radius: 0;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0c3c7d;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 200ms ease-out;
+          }
+    }
+}
+.enquiry-button .enquiryBtn:hover::after{
+    transform: scaleX(1);
+  }
+.contact-bottom{
+    margin: 0 auto;
+    padding-bottom: 12rem;
+}
+.bottom-deco{
+    text-align: center;
+    margin: auto;
+    width: 230px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    position: relative;
+    &:before , &:after{
+        content: "";
+        position: absolute;
+        top: 18%;
+        width: 60px;
+        height: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTIiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxMTIgMTciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaXZlZ2FtZV9oZWFkZXJfZGVjby1hIiB4MT0iMy4xNzMlIiB4Mj0iOTguOTQ3JSIgeTE9IjQ5Ljk5NSUiIHkyPSI1MC4wMDUlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNDM4MyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMjEuODk2JSIgc3RvcC1jb2xvcj0iIzA2MUMzNiIgc3RvcC1vcGFjaXR5PSIuMyIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ijc0LjA5NSUiIHN0b3AtY29sb3I9IiMwQTFFM0EiIHN0b3Atb3BhY2l0eT0iLjMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAyMDRDIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjQjA5MzZEIj4KICAgIDxsaW5lIHgxPSIxMTEuNSIgeDI9IjEyLjUiIHkxPSI2LjUiIHkyPSI2LjUiIGZpbGw9InVybCgjbGl2ZWdhbWVfaGVhZGVyX2RlY28tYSkiLz4KICAgIDxwb2x5bGluZSBwb2ludHM9IjExMS41IDE2IDQ3LjUgMTYuNSAzOC41IDYuNSIvPgogICAgPHJlY3Qgd2lkdGg9IjgiIGhlaWdodD0iOCIgeD0iMi41IiB5PSIyLjUiIHRyYW5zZm9ybT0icm90YXRlKC00NSA2LjUgNi41KSIvPgogIDwvZz4KPC9zdmc+Cg==");
+    }
+    &:before {
+        left: -22%;
+    }
+    &:after {
+        right: -22%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+}
+.contact-bottom .gold-button{
+    padding-top: 5rem;
+    text-align: center;
+    .secondaryBtn{
+        width: 236px;
+    }
+}
+#ContactUs{
+    select {
+        -webkit-appearance: menulist-button;
+        -webkit-text-fill-color: #fff;
+        color: #fff;
+        background-color: #060B1A;
+        border-radius: 0;
+        border: 1px solid #545454;
+        width: 100%;
+        height: 38px;
+        padding-left: 10px;
+        background:
+        linear-gradient(45deg, transparent 50%, #979797 50%),
+        linear-gradient(135deg, #979797 50%, transparent 50%);
+      background-position:
+        calc(100% - 21px) calc(1em + 2px),
+        calc(100% - 16px) calc(1em + 2px),
+        100% 0;
+      background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+      background-repeat: no-repeat;
+       /* reset */
+    
+      border-radius: 0;
+      margin: 0;      
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+        option {
+            padding-left: 8px;
+        }
+         &:focus{
+            box-shadow: 0 0 0 0.2rem rgba(167,140,104,.15);
+            border: 1px solid #B0936D!important;
+            outline-width: 0;
+            outline: none;
+        }
+        &:visited{
+            box-shadow: 0 0 0 0.2rem rgba(167,140,104,.15);
+            border: 1px solid #B0936D!important;
+        }
+      }
+      select:invalid {
+        color: #76787d;
+        -webkit-text-fill-color: #76787d;
+      }
+}
+.social-container{
+    width: 200px;
+    margin: 0 auto;
+    .social-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .contact-icon{
+            width: 40px;
+            height: 40px;
+            &:hover{
+                filter: grayscale(100%) sepia(100%);
+                transition: 0.25s ease-in;
+            }
+        }
+    }
+}
+#ContactUs .hero-header-bkg {
+    height: 400px;
+    width: 100%;
+}
+#ContactUs .contact-main{
+    padding-top: 12em;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    #ContactUs .contact-main {
+        padding-top: 16em;
+    }
+    .contact-bottom{
+        padding-bottom: 17rem;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #ContactUs .hero-header {
+        height: 580px;
+    }
+    #ContactUs .hero-header::after {
+        height: 130%;
+    }
+    #ContactUs .contact-main {
+        padding-top: 0;
+        margin-top: -7rem;
+    }
+    #ContactUs .hero-header-bkg {
+        height: 615px;
+    }
+    .md-block{
+        display: block;
+    }
+    .contact-bottom{
+        margin-top: 105px;
+        margin-bottom: 3rem;
+    }
+    .bottom-deco{
+        margin-top: 50px;
+    }
+    .bottom-deco{
+        width: 260px;
+        &:before , &:after{
+            width: 103px;
+        }
+    }
+    .enquiry-button{
+        text-align: center;
+    }
+    .enquiry-button .enquiryBtn{
+        width: 200px;
+        margin: 0 auto;
+    }
+    #ContactUs .bottom-deco{
+        width: 320px;
+    }
+    #ContactUs .hero-header::after{
+        top: -84px;
+    }
+    .social-container {
+        width: 230px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #ContactUs .contact-main{
+        padding-top: 130px;
+    }
+    .bottom-deco{
+        width: 320px;
+        font-size: 36px;
+    }
+    #ContactUs .contact-main {
+        margin-top: -15rem;
+    }
+    #ContactUs .hero-header {
+        height: 705px;
+    }
+    #ContactUs .hero-header::after {
+        top: -77px;
+        height: 100%;
+    }
+ }
+// Extra large devices (large desktops, 1200px and up)
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){ 
+    #ContactUs .hero-header {
+        height: 705px;
+    }
+    #ContactUs .hero-header::after {
+        top: -77px;
+        height: 100%;
+    }
+}

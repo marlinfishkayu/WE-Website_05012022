@@ -1,0 +1,658 @@
+#AboutWE{
+    .hero-header{
+        position: relative;
+        height: 400px;
+        .hero-header-bkg {
+            width: 100%;
+            overflow: hidden;
+        }
+        &::after{
+            background: transparent;
+        }
+        .hero-title {
+            font-size: 60px;
+        }
+    }
+    .hero-header-bkg .game-hero-D{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            background: #060b1a;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(6, 11, 26, 0.3)), to(#070a1b));
+            background: linear-gradient(180deg, rgba(7, 11, 25, 0) 1.04%, #070B19 86.46%, #080D1D 100%);
+        }
+    }
+    .about-slogan,
+    .about-brandStory,
+    .about-cert{
+        max-width: 712px;
+        margin: 0 auto;
+        position: relative;
+        
+    }
+    .about-main{
+        padding-bottom: 3rem;
+        padding-top: 19rem;
+    }
+    .hero-intro2{
+        font-size: 20px;
+        text-align: center;
+        max-width: 712px;
+        margin: 0 auto;
+    }
+    .about-top-deco-2{
+        margin: 0 auto;
+        width: 321px;
+        padding-top: 40px;
+        img{
+            width: 100%; 
+            background-position: 50% 10%; 
+            background-size: cover; 
+            height: 100%; 
+            object-fit: cover;
+        }
+    }
+    .about-bkg{
+        position: absolute;
+        top: 20%;
+        left: 0;
+        z-index: -1;
+        max-height: 2500px;
+        overflow: hidden;
+
+        img{
+            width: 100%; 
+            background-position: 50% 10%; 
+            background-size: cover; 
+            height: 100%; 
+            object-fit: cover;
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(1,27,62);
+            background: linear-gradient(180deg, #060B1A 0%, rgba(6, 11, 26, 0.17) 100%);
+            // background: linear-gradient(0deg, rgba(1,27,62,0) 0%, rgba(6,11,26,1) 100%);
+          }
+    }
+    .about-brandStory{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 697px;
+        padding-top: 12rem;
+        padding-bottom: 3rem;
+        padding: 40px 2rem;
+        margin-top:5rem;
+        .line-deco-vertical{
+            position: absolute;
+            bottom: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 80px;
+            pointer-events: none;
+            display: none;
+        }
+    }
+    .about-brandStory,
+    .about-slogan{
+        position: relative;
+        &::after{
+            position: absolute;
+            display: block;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-image: url(/images/icon/gradient-border.svg);
+            width: 100%;
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+    .about-h2{
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #D8D8D8;
+        padding-bottom: 1rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .about-h4{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #D8D8D8;
+        text-align: center;
+    }
+    .about-p{
+        padding-top: 30px;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 1.5;
+        color: #979797;
+        max-width: 712px;
+        margin: 0 auto;
+        letter-spacing: 1px;
+    }
+    .line-deco{
+        width: 80px;
+        margin: 0 auto;
+        padding-top: 0rem;
+        img{
+            width: 100%; 
+            background-position: 50% 10%; 
+            background-size: cover; 
+            height: 100%; 
+            object-fit: cover;
+        }
+    }
+    .about-mission{
+        max-width: 930px;
+        position: relative;
+        padding: 40px 2rem;
+        .upper{
+            position: relative;
+        }
+        .line-deco-vertical{
+            display: none;
+        }
+        #upper-frame{
+            display: none;
+        }
+        .line-deco{
+            margin: 0 auto;
+            padding-bottom: 0.5rem;
+        }
+        .about-p{
+            padding-top: 12px;
+            text-align: center;
+        }
+        .square-deco-m{
+            width: 14px;
+            height: 14px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 2rem;
+        }
+        .lower .line-deco{
+            display: none;
+        }
+    }
+    .about-slogan{
+        text-align: center;
+        padding-top: 5rem;
+        padding: 40px 2rem;
+    }
+    .Dynamic-frame {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        display: none;
+    }
+    .Dynamic-frame-2 {
+        position: absolute;
+        top: -4%;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1.2);
+        z-index: -1;
+        display: none;
+    }
+    #Dynamic-frame-outer{
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 939px;
+        height: 572px;
+        pointer-events: none;
+        display: none;
+    }
+    #Dynamic-frame-2-outer-m{
+        display: none;
+    }
+    .about-section{
+        max-width: 712px;
+        clip-path: polygon(10% 0, 100% 0, 100% 85%, 91% 100%, 0 100%, 0 16%);
+        background:red;
+    }
+    .about-cert{
+        height: 800px;
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 5rem;
+        position: relative;
+        .cert-diamond{
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 262px;
+            height: 467px;
+        }
+        .cert-diamond-stroke-2,
+        .cert-diamond-stroke{
+            position: absolute;
+            z-index: -2;
+            top: 0;
+            left: 35%;
+            transform: translateX(-50%);
+            width: 173px;
+            height: 307px;
+        }
+        .cert-diamond-stroke-2{
+            left: 65%;
+        }
+        .cert-wrap{
+            margin-top: 3rem;
+            width: 100%;
+        }
+        .about-cert-icon{
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+        #iconGLC{
+            margin-top: 40px;
+            width: 178px;
+            height: 64px;
+        }
+        #iconPagcor{
+            width: 94px;
+            height: 94px;
+        }
+        .about-bottom-deco{
+            margin: 0 auto;
+            margin-top: 5rem;
+            width: 321px;
+        }
+    }
+    #about-top-deco-lg,
+    #Dynamic-frame-outer-w,
+    #about-top-deco-w,
+    #about-bottom-deco-w,
+    #Dynamic-frame-w,
+    #Dynamic-frame-m,
+    #Dynamic-frame-outer-m{
+        display: none;
+    }
+    #about-bottom-deco-m,
+    #about-top-deco-m{
+        display: block;
+    }
+}
+#AboutWE .hero-header .hero-intro1 h3{
+    padding-bottom: 10px;
+    font-family: $fontBarlowRegular;
+    font-weight: 100;
+}
+#frame_svg {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    left: 10vw; top: 10vh;
+    width: 80vw; height: 80vh;
+  }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    #AboutWE .about-mission .square-deco-m{
+        display: none;
+    }
+    #AboutWE .about-main {
+        padding-top: 17rem;
+        padding-bottom: 15rem;
+        .about-h2{
+            padding-bottom: 3rem;
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #AboutWE .about-cert .about-bottom-deco,
+    #AboutWE .about-top-deco-2{
+        width: 100%;
+        max-width: 900px;
+    }
+    #AboutWE {
+        #about-top-deco-m,
+        #about-bottom-deco-m,
+        #Dynamic-frame-outer-w,
+        #Dynamic-frame-w{
+            display: none;
+        }
+        #about-top-deco-w,
+        #about-bottom-deco-w,
+        #Dynamic-frame-m,
+        #Dynamic-frame-outer-m{
+            display: block;
+        }
+        .about-h2{
+            font-size: 36px;
+        }
+        .about-p {
+            font-size: 22px;
+        }
+        .Dynamic-frame{
+            width: 735px;
+            height: 764px;
+            display: block;
+        }
+        #Dynamic-frame-outer{
+            width: 735px;
+            height: 764px;
+            display: block;
+        }
+        .about-brandStory{
+            border-bottom: none;
+            .about-p {
+                max-width: 600px;
+                padding: 13px 3rem;
+            }
+            .line-deco-vertical{
+                display: block;
+                bottom: -14%;
+                margin: 0 auto;
+            }
+        }
+        .hero-header-bkg {
+            height: 500px;
+        }
+        .line-deco {
+            padding-top: 1rem;
+            display: none;
+        }
+        .about-cert .about-cert-icon {
+            margin: 20px 30px;
+        }
+        #Dynamic-frame-2-m{
+            display: block;
+        }
+        #Dynamic-frame-2-w{
+            display: none;
+        }
+        .about-mission {
+            .about-h2{
+                margin-bottom: 2rem;
+            }
+            .about-h4{
+                margin-top: 2rem;
+            }
+            .line-deco-vertical{
+                position: absolute;
+                top: -47%;
+                transform: scaleY(-1);
+                left: 50%;
+                display: block;
+            }
+            .lower .line-deco{
+                display: block;
+            }
+        }
+        #Dynamic-frame-2-outer-m{
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            width: 735px;
+            height: 1311px;
+            transform: translateX(-50%) scaleY(1.15);
+            z-index: -1;
+            display: block;
+        }
+        .about-cert {
+            padding-top: 12rem;
+            margin-top: 8rem;
+            .cert-diamond {
+                width: 541px;
+                height: 962px;
+            }
+            .cert-diamond-stroke-2,
+            .cert-diamond-stroke {
+                width: 357px;
+                height: 635px;
+            }
+        }
+        .about-slogan .line-deco{
+            display: block;
+            padding-top: 0;
+        }
+        .about-main .about-h2 {
+            padding-bottom: 2rem;
+        }
+    }
+    #AboutWE .about-brandStory,
+    #AboutWE .about-mission,
+    #AboutWE .about-slogan{
+        border: none;
+        margin-top: 8rem;
+    }
+    .Dynamic-frame-2 {
+        position: absolute;
+        top: -3%;
+        left: 50%;
+        width: 717px;
+        height: 1289px;
+        transform: translateX(-50%);
+        z-index: -1;
+        display: none;
+    }
+    #AboutWE .about-brandStory,
+    #AboutWE .about-slogan{
+        &::after{
+            display: none;
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #AboutWE {
+        .about-main{
+            margin-top: 5rem;
+            padding-bottom: 0rem;
+        }
+        .about-h2{
+            font-size: 36px;
+        }
+        .about-p {
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: 100;
+        }
+        .about-brandStory {
+            padding-top: 5rem;
+            padding-bottom: 15rem;
+            .about-h2{
+                padding-top: 58px;
+                margin-bottom: 0;
+            }
+            .line-deco{
+                margin-bottom: 10px;
+                padding-top: 1rem;
+                display: block;
+            }
+            .about-p{
+                padding: 0;
+                max-width: inherit;
+            }
+            .line-deco-vertical {
+                bottom: 111px;
+            }
+        }
+        .about-mission {
+            padding-top: 13rem;  
+            margin-bottom: 9rem;
+            .line-deco-vertical{
+                top: -68%;
+                left: 50%;
+            }
+            .about-h2 {
+                padding-left: 0rem;
+                line-height: 48px;
+                padding-top: 0;
+            }
+            .about-h4 {
+                margin-top: 7rem;
+            }
+            .lower{
+                padding: 0;
+                margin-top: -36px;
+                .about-p {
+                    padding:0;
+                    font-size: 16px;
+                }
+            }
+            #upper-frame {
+                position: absolute;
+                top: -39%;
+                transform: scaleY(1.15);
+                right: 3%;
+                width: 844px;
+                height: 291px;
+                display: block;
+            }
+            .upper .about-p{
+                padding:0;
+                text-align: left;
+                width: 492px;
+                margin-top: -8px;
+                margin-left: -30px;
+                line-height: 30px;
+            }
+            .line-deco {
+                padding: 10px 0;
+            }
+        }
+        .about-top-deco-2 {
+            display: none;
+        }
+        .about-cert{
+            height: 900px;
+            margin-top: 10rem;
+            padding-top: 14rem;
+            .cert-diamond {
+                width: 542px;
+                height: 962px;
+            }
+            .about-bottom-deco {
+                margin-top: 7rem;
+            }
+            .cert-diamond-stroke-2,
+            .cert-diamond-stroke {
+                width: 351px;
+                height: 635px;
+            }
+        }
+        .about-slogan .line-deco {
+            padding-bottom: 19px;
+        }
+        .Dynamic-frame{
+            width: 911px;
+            height: 531px;
+        }
+        .hero-header-bkg {
+            height: 800px;
+        }
+        #Dynamic-frame-2-outer-m,
+        #Dynamic-frame-2-m{
+            display: none;
+        }
+        #Dynamic-frame-2-w{
+            display: block;
+        }
+        .Dynamic-frame-2 {
+            position: absolute;
+            top: 23%;
+            left: 50%;
+            width: 939px;
+            height: 597px;
+            transform: translateX(-50%) scaleY(1.2);
+            z-index: -1;
+            display: none;
+        }
+        .Dynamic-frame{
+            display: block;
+            top: 19%;
+            width: 943px;
+            height: 553px;
+        }
+        #Dynamic-frame-outer {
+            top: 16%;
+            width: 965px;
+            height: 588px;
+            display: block;
+        }
+        #about-top-deco-lg{
+            display: block;
+            padding-top: 5rem;
+        }
+    }
+    #brandstory-about{
+        padding-top: 2rem;
+    }
+    #AboutWE .about-brandStory,
+    #AboutWE .about-mission, 
+    #AboutWE .about-slogan {
+        margin-top: -5rem;
+    }
+    #AboutWE #Dynamic-frame-outer-m,
+    #AboutWE #Dynamic-frame-m{
+        display: none;
+    }
+    #AboutWE #Dynamic-frame-outer-w,
+    #AboutWE #Dynamic-frame-w{
+        display: block;
+    }
+ }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #AboutWE .hero-header-bkg {
+        height: 1000px;
+    }
+    #AboutWE .hero-header-bkg .game-hero-D::after {
+        background: linear-gradient(180deg, rgba(7, 11, 25, 0) 1.04%, #070B19 86.46%, #080D1D 100%);
+    }
+    #AboutWE .about-brandStory .line-deco-vertical {
+        bottom: 115px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+    #AboutWE {
+        .about-h4 {
+            font-size: 20px;
+            padding: 1rem;
+            line-height: inherit;
+        }
+        .about-mission .lower  {
+            max-width: 293px;
+            margin: 0 auto;
+            .about-p {
+                font-size: 16px;
+                padding-top: 0rem;
+            }
+        }
+    }
+}

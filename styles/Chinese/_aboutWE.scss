@@ -1,0 +1,132 @@
+body:lang(TC),
+body:lang(SC)
+{
+    #AboutWE{
+        p{
+            line-height: 1.5;
+            font-size: 20px;
+        }
+        .about-h2{
+            font-size: 26px;
+            font-weight: 500;
+        }
+        .hero-header .hero-intro1{
+            font-size: 26px;
+            line-height: 40px;
+        }
+
+    }
+    @media (max-width: 767px){
+
+    }
+    @media (min-width: 768px){
+        
+        #AboutWE .about-brandStory .about-p{
+            padding-top: 6.5rem;
+        }
+        #AboutWE .about-brandStory .line-deco-vertical {
+            bottom: -20%;
+        }
+        #AboutWE .about-slogan{
+            margin-top: 15rem;
+        }
+        #AboutWE .about-cert{
+            margin-top: 17rem;
+        }
+        #AboutWE .about-mission .line-deco-vertical {
+            top: -51%;
+        }
+        #AboutWE #Dynamic-frame-2-outer-m{
+            top: -14%;
+            transform: translateX(-50%) scaleY(0.95);
+        }
+        #AboutWE .Dynamic-frame-2{
+            top: -16%;
+            transform: translateX(-50%) scaleY(0.95);
+        }
+        #AboutWE .Dynamic-frame{
+            top: -1%;
+            transform: translateX(-50%) scaleY(0.8);
+        }
+        #AboutWE #Dynamic-frame-outer{
+            top: -3%;
+            transform: translateX(-50%) scaleY(0.8);
+        }
+        #AboutWE .about-main .about-h2{
+            margin-top: 31px;
+        }
+        
+    }
+    @media (min-width: 992px){
+        #AboutWE .about-brandStory .about-p{
+            padding-top: 1rem;
+        }
+        #AboutWE .about-mission .line-deco-vertical {
+            top: -74%;
+        }
+        #AboutWE .about-mission .about-h4 {
+            margin-top: 4rem;
+        }
+        #AboutWE #Dynamic-frame-2-outer-m,
+        #AboutWE .Dynamic-frame-2,
+        #AboutWE .Dynamic-frame,
+        #AboutWE #Dynamic-frame-outer{
+            transform: translateX(-50%) scaleY(1);
+        }
+        
+        #AboutWE .about-brandStory .about-h2 {
+            margin-top: -163px;
+        }
+        #AboutWE .about-brandStory .line-deco {
+            padding-top: 3rem;
+        }
+        #AboutWE .about-mission #upper-frame {
+            top: -26%;
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+        }
+        #AboutWE .Dynamic-frame-2 {
+            top: 23%;
+        }
+        #AboutWE .about-mission .upper .about-p{
+            margin-top: 34px;
+            margin-left: -75px;
+        }
+        #AboutWE .about-mission .line-deco-vertical {
+            top: -51%;
+        }
+        #AboutWE .about-brandStory .line-deco-vertical {
+            bottom: 8%;
+        }
+        #AboutWE .about-slogan {
+            margin-top: 2rem;
+        }
+        #AboutWE .service-item {
+            padding: 5px 2rem;
+        }
+    }
+    @media (min-width: 1200px){
+        #AboutWE .about-brandStory .about-h2 {
+            margin-top: -1.3rem;
+        }
+        #AboutWE .Dynamic-frame{
+            top: 18%;
+        }
+        #AboutWE #Dynamic-frame-outer{
+            top: 15%;
+        }
+        #AboutWE .Dynamic-frame-2 {
+            top: 22%;
+        }
+        #AboutWE .about-brandStory .line-deco-vertical {
+            bottom: 6%;
+        }
+        #AboutWE .about-mission .about-h4 {
+            margin-top: 3rem;
+        }
+        #AboutWE .service-item {
+            padding: 5px 5rem;
+        }
+    }
+    
+}

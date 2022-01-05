@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <!-- proloader -->
+        <link rel="preload" href="./styles/fonts/Barlow/Medium.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/Barlow/Regular.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/Barlow/ExtraLight.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/Barlow/Light.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Thin.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Light.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Regular.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansTC/NotoSansTC-Medium.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Light.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Thin.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Regular.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Medium.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./styles/fonts/NotoSansSC/NotoSansSC-Bold.woff" as="font" type="font/woff2" crossorigin>
+        
+        <!-- Outdated Browser v1.1.5 -->
+        <link rel="stylesheet" href="./outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.css" />
+        <!-- Owl CSS -->
+        <link rel="stylesheet" href="OwlCarousel2/owl.carousel.min.css" />
+        <link rel="stylesheet" href="OwlCarousel2/owl.theme.default.min.css" />
+        <!-- Sal CSS -->
+        <link rel="stylesheet" href="./styles/sal.css" />
+        <!-- main CSS -->
+        <link rel="stylesheet" href="./styles/main.css" />
+        <title>World Entertainment</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/svg" href="favicon.ico/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="favicon.ico/site.webmanifest">
+        <link rel="mask-icon" href="favicon.ico/safari-pinned-tab.svg" color="#ab754a">
+        <meta name="msapplication-TileColor" content="#00204c">
+        <meta name="theme-color" content="#060b1a">
+    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4PBGNLYYL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E4PBGNLYYL');
+    </script>
+    <body>
+        <div id="wrapper">
+            <section class="section-header" id="nav">
+                <div class="header-wrapper">
+                    <!-- navigation bar -->
+                    <div class="nav-wrap"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.3s; --sal-delay: 0.8s;">
+                        <div id="nav-area">
+                            <div class="main-nav">
+                                <!-- nav links -->
+                                <div class="menu-wrapper menu-item">
+                                    <div class="menu-btn">
+                                        <div class="menu-btn__burger"></div>
+                                    </div>
+                                </div>
+                                <div class="nav-item logo-wrap" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0.1s;">
+                                    <a class="navbar-brand menu-item menu-logo" href="index.html">
+                                        <div class="nav-logo"><img class="imageset" data-key="WE_logo" src="./images/icon/en/logo.svg" alt=""  /></div>
+                                    </a>
+                                </div>
+                                <ul class="nav_links">
+                                    <li class="nav-item"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0.1s;">
+                                        <a class="nav-link menu-item menu-about lang" key="nav_About" href="AboutWE.html"></a>
+                                    </li>
+                                    <li class="nav-item dropdown" id="gamesHover"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0.2s;">
+                                        <a class="nav-link menu-item menu-games lang" key="nav_LiveGames" href="All_Live_Game.html"></a>
+                                        <div class="game-menu">
+                                            <div class="subnav-arrow"></div>
+                                            <div class="game-menu-wrapper">
+                                                <!-- game menu tab -->
+                                                <ul class="nav justify-content-center" id="gameSubtab" role="tablist">
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.1s;">
+                                                        <a class="nav-game-link fancy-link lang active" key="submenu_LiveGames" id="pills-livegame-tab" data-toggle="pill" href="#pills-livegame" role="tab" aria-controls="pills-livegame" aria-selected="true"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.1s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_BCgames" id="pills-livegame-tab" data-toggle="pill" href="#pills-BCgame" role="tab" aria-controls="pills-BCgame" aria-selected="true"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.2s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_Lottery" id="pills-lottery-tab" data-toggle="pill" href="#pills-lottery" role="tab" aria-controls="pills-lottery" aria-selected="false"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1s; --sal-delay: 0.3s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_Sportsbook" id="pills-sportsbook-tab" data-toggle="pill" href="#pills-sportsbook" role="tab" aria-controls="pills-sportsbook" aria-selected="false"></a>
+                                                    </li>
+                                                    <li class="nav-game-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 1; --sal-delay: 0.4s;">
+                                                        <a class="nav-game-link fancy-link lang" key="submenu_Slots" id="pills-slots-tab" data-toggle="pill" href="#pills-slots" role="tab" aria-controls="pills-slots" aria-selected="false"></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="game-tab-content" id="pills-tabContent">
+                                                    <!-- Live game tab -->
+                                                    <div class="tab-pane fade show active" id="pills-livegame" role="tabpanel" aria-labelledby="pills-livegame-tab">
+                                                        <div class="d-flex justify-content-center sub-tab-content">
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Baccarat.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img class="inner-img"
+                                                                                src="./images/all_live_game/live_game_item/game-item_Baccarat_x1.jpg"
+                                                                                srcset="./images/all_live_game/live_game_item/game-item_Baccarat_x1.jpg 500w, ./images/all_live_game/live_game_item/game-item_Baccarat_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="Baccarat"></span></h4>
+                                                                    </div>
+                                                                    
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_GodofFortuneRoulette.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img class="inner-img"
+                                                                                src="./images/all_live_game/live_game_item/game_item_GodofFortuneRoulette_x1.jpg"
+                                                                                srcset="./images/all_live_game/live_game_item/game_item_GodofFortuneRoulette_x1.jpg 500w, ./images/all_live_game/live_game_item/game_item_GodofFortuneRoulette_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title">
+                                                                            <span class="lang" key="GodofFortuneRoulette_1"></span><br/>
+                                                                            <span class="lang" key="GodofFortuneRoulette_2"></span>
+                                                                        </h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_DragonTiger.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img class="inner-img"
+                                                                                src="./images/all_live_game/live_game_item/game_item_DragonTiger_x1.jpg"
+                                                                                srcset="./images/all_live_game/live_game_item/game_item_DragonTiger_x1.jpg 500w, ./images/all_live_game/live_game_item/game_item_DragonTiger_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="DragonTiger"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="all-games" class="allGameBtn">
+                                                            <a href="All_Live_Game.html"><button class="secondaryBtn lang" type="button" key="submenu_AllLiveGame">ALL LIVE GAMES</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Live game tab -->
+                                                    
+                                                    <!-- <div class="tab-pane fade lang" key="ComingSoon" id="pills-lottery" role="tabpanel" aria-labelledby="pills-lottery-tab">LOTTERIES</div> -->
+                                                    
+                                                    <!-- Blockchain game tab start-->
+                                                    <div class="tab-pane fade lang" id="pills-BCgame" role="tabpanel" aria-labelledby="pills-lottery-tab">
+                                                        <div class="d-flex justify-content-center sub-tab-content">
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_Roulette.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_Roulette_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_Roulette_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_Roulette_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="BlockchainRoulette"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_SicBo.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_SicBo_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_SicBo_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_SicBo_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="BlockchainSicBo"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_WinThreeCards.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_WinThreeCards_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_WinThreeCards_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_WinThreeCards_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title">
+                                                                            <span class="lang" key="BC_WinThreeCards_1"></span><br/>
+                                                                            <span class="lang" key="BC_WinThreeCards_2"></span>
+                                                                        </h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_LiveGame_Blockchain_BullBull.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_BC_game/game_item/game_item_BullBull_x1.jpg"
+                                                                                srcset="./images/all_BC_game/game_item/game_item_BullBull_x1.jpg 500w, ./images/all_BC_game/game_item/game_item_BullBull_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="BlockchainBullBull"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="all-games" class="allGameBtn">
+                                                            <a href="All_Blockchain_Games.html"><button class="secondaryBtn lang" id="bcBtn" type="button" key="submenu_AllBCGame"></button></a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Blockchain game tab end -->
+
+                                                    <!-- Lotteries game tab -->
+                                                    <div class="tab-pane fade lang" id="pills-lottery" role="tabpanel" aria-labelledby="pills-lottery-tab">
+                                                        <div class="d-flex justify-content-center sub-tab-content">
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_Lottery_Lotto5.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                                src="./images/all_lottery_game/game_item/game_item_Lotto5_x1.jpg"
+                                                                                srcset="./images/all_lottery_game/game_item/game_item_Lotto5_x1.jpg 500w, ./images/all_lottery_game/game_item/game_item_Lotto5_x2.jpg 1000w"
+                                                                                alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="Lotto5"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="game-icon-wrap p-2" data-sal="slide-up" data-sal-easing="easeInQuart" style="--sal-duration: 0.5s; --sal-delay: 0;">
+                                                                <a href="Game_Lottery_PK10.html">
+                                                                    <div class="game-icon-container">
+                                                                        <div class="game-icon-bkg-wrap">
+                                                                            <img loading="lazy" class="inner-img"
+                                                                            src="./images/all_lottery_game/game_item/game_item_PK10_x1.jpg"
+                                                                            srcset="./images/all_lottery_game/game_item/game_item_PK10_x1.jpg 500w, ./images/all_lottery_game/game_item/game_item_PK10_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        </div>
+                                                                        <h4 class="game-icon-sub-title"><span class="lang" key="PK10"></span></h4>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="all-games" class="allGameBtn">
+                                                            <a href="All_Lottery_Game.html"><button class="secondaryBtn lang" type="button" key="submenu_AllLotteryGame">ALL LOTTERIES</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Lotteries game tab -->
+                                                    <div class="tab-pane fade lang" key="ComingSoon" id="pills-sportsbook" role="tabpanel" aria-labelledby="pills-sportsbook-tab">COMING SOON</div>
+                                                    <div class="tab-pane fade lang" key="ComingSoon" id="pills-slots" role="tabpanel" aria-labelledby="pills-slots-tab">COMING SOON</div>
+                                                </div>
+                                                <!-- game menu tab -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.3s;">
+                                        <a class="nav-link menu-item menu-liveStudio lang" key="nav_LiveStudio" href="LiveStudio.html"></a>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.4s;">
+                                        <a class="nav-link menu-item menu-services lang active-tap" key="nav_Services" href="Services.html"></a>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.5s;">
+                                        <a class="nav-link menu-item menu-whatsNew lang" key="nav_WhatsNew" href="WhatsNew.html"></a>
+                                    </li>
+                                    <li class="nav-item" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.6s;">
+                                        <a class="nav-link menu-item menu-contactUs lang" key="nav_ContactUs" href="ContactUs.html"></a>
+                                    </li>
+                                </ul>
+                                <div class="nav-item nav-icon" data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.8s; --sal-delay: 0.7s;">
+                                    <div class="nav-icon-wrapper">
+                                        <div class="search-wrapper menu-item menu-lang">
+                                            <button class="icon-lang">
+                                                <a id="icon-lang">
+                                                    <img loading="lazy"src="images/icon/lang.svg" />
+                                                </a>
+                                                <!-- <h6 class="lang" key="current-lang"></h6> -->
+                                            </button>
+                                            <ul class="lang-dropdown" id="languageDropdown">
+                                                <a id="EN" href="#" class="translate"><li class="language-tap active">English</li></a>
+                                                <a id="TC" href="#" class="translate"><li class="language-tap">繁體中文</li></a>
+                                                <a id="SC" href="#" class="translate"><li class="language-tap">简体中文</li></a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a class="closeBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side menu start  -->
+                    <nav class="sidebar">
+                        <div id="logoMobile">
+                            <a class="navbar-brand menu-item menu-logo" href="index.html" >
+                                <div class="nav-logo"><img loading="lazy"class="imageset" data-key="WE_logo" src="./images/icon/en/logo.svg" alt="" loading="lazy" /></div>
+                            </a>
+                        </div>
+                        
+                        <div class="menu-wrapper menu-item" id="menuMobile">
+                            <div class="menu-btn">
+                                <div class="menu-btn__burger"></div>
+                            </div>
+                        </div>
+                        <ul class="side-wrap">
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a href="AboutWE.html" class="lang stretched-link" key="nav_About">About WE</a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable" style="transform: rotate(0);">
+                                    <a href="#" class="game-btn stretched-link">
+                                        <span class="lang" key="nav_LiveGames">Games</span>
+                                        <span class="fa-arrow">
+                                            <img loading="lazy" src="./images/icon/dropdown.svg" />
+                                        </span>
+                                    </a>
+                                </div>
+                                <ul class="game-show">
+                                    <li class="game-item">
+                                        <div class="tab-menu">
+                                            <div class="labels">
+                                                <div class="inner-container">
+                                                    <span class="" tabindex="0">
+                                                        <label class="tab-label lang show" for="tab-tab1" key="submenu_LiveGames"></label>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <label class="tab-label lang" for="tab-tab2" key="submenu_BCgames"></label>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <label class="tab-label lang" for="tab-tab3" key="submenu_Lottery"></label>
+                                                    </span>
+                                                    <!-- <span tabindex="0">
+                                                        <a href="#"><label class="tab-label lang" key="submenu_Sportsbook"></label></a>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <a href="#"><label class="tab-label lang" key="submenu_Slots"></label></a>
+                                                    </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="tabs" id="tabsDirection">
+                                                <!-- live game tab start-->
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab1" name="tabs-main" checked>
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content" id="tabContent1">
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Live_Game.html">
+                                                                        <img class="imageset" data-key="AllLiveGameBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Baccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Bac_x1.jpg"
+                                                                            srcset="./images/menu/m-Bac_x1.jpg 500w, ./images/menu/m-Bac_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="Baccarat"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_SqueezeBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-SqBac_x1.jpg"
+                                                                            srcset="./images/menu/m-SqBac_x1.jpg 500w, ./images/menu/m-SqBac_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="SqueezeBaccarat"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Roulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Roulette_x1.png"
+                                                                            srcset="./images/menu/m-Roulette_x1.png 500w, ./images/menu/m-Roulette_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="Roulette"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_DragonTiger.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-DragonTiger_x1.jpg"
+                                                                            srcset="./images/menu/m-DragonTiger_x1.jpg 500w, ./images/menu/m-DragonTiger_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="DragonTiger"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_GodofFortuneRoulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-GOF-Roulette_x1.jpg"
+                                                                            srcset="./images/menu/m-GOF-Roulette_x1.jpg 500w, ./images/menu/m-GOF-Roulette_x2.jpg 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="GodofFortuneRoulette_1"></h4>
+                                                                            <h4 class="lang" key="GodofFortuneRoulette_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- blockchain tab start-->
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content" id="tabContent2">
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Blockchain_Games.html">
+                                                                        <img class="imageset" data-key="AllBlockchainGameBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_Baccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-Bac_x1.png"
+                                                                            srcset="./images/menu/m-BC-Bac_x1.png 500w, ./images/menu/m-BC-Bac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_SqueezeBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SqBac_x1.png"
+                                                                            srcset="./images/menu/m-BC-SqBac_x1.png 500w, ./images/menu/m-BC-SqBac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainSqueezeBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainSqueezeBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_SpeedBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SpBac_x1.png"
+                                                                            srcset="./images/menu/m-BC-SpBac_x1.png 500w, ./images/menu/m-BC-SpBac_x1.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainSpeedBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainSpeedBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_DragonTiger.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-DraTig_x1.png"
+                                                                            srcset="./images/menu/m-BC-DraTig_x1.png 500w, ./images/menu/m-BC-DraTig_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainDragonTiger_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainDragonTiger_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_Roulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-Roulette_x1.png"
+                                                                            srcset="./images/menu/m-BC-Roulette_x1.png 500w, ./images/menu/m-BC-Roulette_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_Roulette_1"></h4>
+                                                                            <h4 class="lang" key="BC_Roulette_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Blockchain_SicBo.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SicBo_x1.png"
+                                                                            srcset="./images/menu/m-BC-SicBo_x1.png 500w, ./images/menu/m-BC-SicBo_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_SicBo_1"></h4>
+                                                                            <h4 class="lang" key="BC_SicBo_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_MahjongLuckyWheel.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-MahjongLuckyWheel_x1.png"
+                                                                            srcset="./images/menu/m-BC-MahjongLuckyWheel_x1.png 500w, ./images/menu/m-BC-MahjongLuckyWheel_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_MahjongLuckyWheel_1"></h4>
+                                                                            <h4 class="lang" key="BC_MahjongLuckyWheel_2"></h4>
+                                                                            <h4 class="lang" key="BC_MahjongLuckyWheel_3"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_WinThreeCards.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-WinThreeCards_x1.png"
+                                                                            srcset="./images/menu/m-BC-WinThreeCards_x1.png 500w, ./images/menu/m-BC-WinThreeCards_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_WinThreeCards_1"></h4>
+                                                                            <h4 class="lang" key="BC_WinThreeCards_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_LiveGame_Blockchain_BullBull.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-BullBull_x1.png"
+                                                                            srcset="./images/menu/m-BC-BullBull_x1.png 500w, ./images/menu/m-BC-BullBull_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BC_BullBull_1"></h4>
+                                                                            <h4 class="lang" key="BC_BullBull_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- Lottery tab start -->
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab3" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content" id="tabContent3">
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Lottery_Game.html">
+                                                                        <img class="imageset" data-key="AllLotteriesBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_Lottery_Lotto5.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Lotto5_x1.png"
+                                                                            srcset="./images/menu/m-Lotto5_x1.png 500w, ./images/menu/m-Lotto5_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="Lotto5"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img game-box-gradient">
+                                                                    <a href="Game_Lottery_PK10.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-PK10_x1.png"
+                                                                            srcset="./images/menu/m-PK10_x1.png 500w, ./images/menu/m-PK10_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="PK10"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2-1" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <div class="tab-content">
+                                                            <h2>Tab 3</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2-2" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <div class="tab-content">
+                                                            <h2>Tab 4</h2>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a href="LiveStudio.html" class="stretched-link"><span class="lang" key="nav_LiveStudio">Live Studio</span></a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a class="stretched-link" href="Services.html"><span class="lang" key="nav_Services">Services</span></a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a class="stretched-link" href="WhatsNew.html"><span class="lang" key="nav_WhatsNew">What’s New</span></a>
+                                </div>
+                            </li>
+                            <li class="side-item">
+                                <div class="clickable">
+                                    <a class="stretched-link" href="ContactUs.html"><span class="lang" key="nav_ContactUs">Contact Us</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- side menu end  -->
+                    
+                    <!-- navigation bar end -->
+                </div>
+            </section>
+            <!-- Contact Us Start -->
+            <div id="services"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.3s; --sal-delay: 0.5s;">
+                <div class="hero-header text-center">
+                    <div class="hero-header-bkg">
+                        <img
+                            src="images/services/hero_services_x1.jpg"
+                            srcset="images/services/hero_services_x1.jpg 500w, images/services/hero_services_x2.jpg 1000w"
+                            alt=""
+                        />
+                    </div>
+                    <div class="hero-float">
+                        <h1 class="hero-title lang" key="Services" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0s;"></h1>
+                        <h3 class="hero-intro1 lang" key="Services_Slogan" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.15s;"></h3>
+                        <p class="hero-intro2 lang" key="Services_p1" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.25s;"></p>
+                    </div>
+                </div>
+                <!-- Start Services Section -->
+                <div class="services-main">
+                    <div class="services-wrap">
+                        <div class="services-row d-md-flex">
+                            <div class="service-item" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.15s;">
+                                <div class="service-img">
+                                    <img alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTM0cHgiIGhlaWdodD0iMTM0cHgiIHZpZXdCb3g9IjAgMCAxMzQgMTM0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPlNvbHV0aW9uczwvdGl0bGU+CiAgICA8ZyBpZD0iU2VydmljZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTZXJ2aWNlcy1Db3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjM4LjAwMDAwMCwgLTU3My4wMDAwMDApIiBzdHJva2U9IiNCMDkzNkQiPgogICAgICAgICAgICA8ZyBpZD0iU29sdXRpb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzkuMDAwMDAwLCA1NzQuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0xIiBwb2ludHM9IjE2LjA0MDIxNjEgODEuODc3MzgxIDAuMjI5MTIxMTY4IDY2LjA2NjI4NjEgMTYuMDQwMjE2MSA1MC4yNTUxOTEyIj48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMyIgcG9pbnRzPSI4MS43MTQxNjY0IDExNS45Mjg4NTMgNjUuOTAzMDcxNSAxMzEuNzM5OTQ3IDUwLjA5MTk3NjYgMTE1LjkyODg1MyI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTUiIHBvaW50cz0iMTE1Ljc2NTYzOCA1MC4yNTQ5MDIyIDEzMS41NzY3MzMgNjYuMDY1OTk3MSAxMTUuNzY1NjM4IDgxLjg3NzA5MiI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTciIHBvaW50cz0iNTAuMDkxNjg3NiAxNi4yMDM0MzA3IDY1LjkwMjc4MjUgMC4zOTIzMzU3NjYgODEuNzEzODc3NCAxNi4yMDM0MzA3Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMTAiIHBvaW50cz0iODEuMTY3NDc0NSAxMTEuNzk1OTA0IDY1LjkwMjY4NjEgMTI3LjA2MDY5MiA1MC42Mzc4OTc4IDExMS43OTU5MDQiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0xMSIgcG9pbnRzPSI1MC42MzgzNzk2IDIwLjMzNjM3OTYgNjUuOTAzMTY3OSA1LjA3MTU5MTI0IDgxLjE2Nzk1NjIgMjAuMzM2Mzc5NiI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTIiIHBvaW50cz0iMTAwLjU2NTk4MiA3MS40MjIzMDY2IDkxLjQ3NDM2MiA3MS40MjIzMDY2IDkxLjQ3NDM2MiA3Ni4zNzY2NDIzIDg2LjU4NjUwOCA3OC41NDgzNzk2IDgxLjY5OTYxNzUgNzYuMzc2NjQyMyA4MS42OTk2MTc1IDcxLjQyMjMwNjYgNzEuNDQyMTU3NyA3MS40MjIzMDY2IDcxLjQ0MjE1NzcgODAuNTEzOTI3IDY2LjYwNDQwNTggODAuNTEzOTI3IDY0LjQzMjY2ODYgODUuNDAwODE3NSA2Ni42MDQ0MDU4IDkwLjI4ODY3MTUgNzEuNDQyMTU3NyA5MC4yODg2NzE1IDcxLjQ0MjE1NzcgMTAwLjU0NTE2OCA4MS42OTk2MTc1IDEwMC41NDUxNjggODEuNjk5NjE3NSAxMDUuNTExMDY2IDg2LjU4NjUwOCAxMDcuNjgzNzY2IDkxLjQ3NDM2MiAxMDUuNTExMDY2IDkxLjQ3NDM2MiAxMDAuNTQ1MTY4IDEwMC41NjU5ODIgMTAwLjU0NTE2OCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0xMyIgcG9pbnRzPSI2MC4yOTA3NTkxIDgwLjUxNDAyMzQgNjAuMjkwNzU5MSA3MS40MjI0MDI5IDUwLjUzNTI4NDcgNzEuNDIyNDAyOSA1MC41MzUyODQ3IDY2LjUzMDY5NDkgNDUuNjQ4Mzk0MiA2NC4zNTc5OTQyIDQwLjc2MDU0MDEgNjYuNTMwNjk0OSA0MC43NjA1NDAxIDcxLjQyMjQwMjkgMzEuMTY3ODk3OCA3MS40MjI0MDI5IDMxLjE2Nzg5NzggODAuNTE0MDIzNCAyNi40MjI2NDIzIDgwLjUxNDAyMzQgMjQuMjQ5OTQxNiA4NS40MDA5MTM5IDI2LjQyMjY0MjMgOTAuMjg4NzY3OSAzMS4xNjc4OTc4IDkwLjI4ODc2NzkgMzEuMTY3ODk3OCAxMDAuNTQ1MjY0IDYwLjI5MDc1OTEgMTAwLjU0NTI2NCA2MC4yOTA3NTkxIDkwLjI4ODc2NzkgNTUuNzQzMDIxOSA5MC4yODg3Njc5IDUzLjU3MTI4NDcgODUuNDAwOTEzOSA1NS43NDMwMjE5IDgwLjUxNDAyMzQiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTQiIHBvaW50cz0iMTA1LjM4MzAxOSA0MS44MjYwNzU5IDEwMC41NjU1MDEgNDEuODI2MDc1OSAxMDAuNTY1NTAxIDMxLjQzODU0MzEgNzEuNDQyNjM5NCAzMS40Mzg1NDMxIDcxLjQ0MjYzOTQgNDEuODI2MDc1OSA3NS45NDUwOTIgNDEuODI2MDc1OSA3OC4xMTY4MjkyIDQ2LjcxMzkyOTkgNzUuOTQ1MDkyIDUxLjYwMDgyMDQgNzEuNDQyNjM5NCA1MS42MDA4MjA0IDcxLjQ0MjYzOTQgNjAuNTYxNDA0NCA4MS42OTkxMzU4IDYwLjU2MTQwNDQgODEuNjk5MTM1OCA2NS41MTU3NDAxIDg2LjU4Njk4OTggNjcuNjg4NDQwOSA5MS40NzM4ODAzIDY1LjUxNTc0MDEgOTEuNDczODgwMyA2MC41NjE0MDQ0IDEwMC41NjU1MDEgNjAuNTYxNDA0NCAxMDAuNTY1NTAxIDUxLjYwMDgyMDQgMTA1LjM4MzAxOSA1MS42MDA4MjA0IDEwNy41NTQ3NTYgNDYuNzEzOTI5OSI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0xNSIgcG9pbnRzPSI2NS4wODM4MDQ0IDQxLjgyNjA3NTkgNjAuMjkwMzczNyA0MS44MjYwNzU5IDYwLjI5MDM3MzcgMzEuNDM4NTQzMSA1MC41MzQ4OTkzIDMxLjQzODU0MzEgNTAuNTM0ODk5MyAyNi42MjEwMjQ4IDQ1LjY0ODAwODggMjQuNDQ4MzI0MSA0MC43NjAxNTQ3IDI2LjYyMTAyNDggNDAuNzYwMTU0NyAzMS40Mzg1NDMxIDMxLjE2NzUxMjQgMzEuNDM4NTQzMSAzMS4xNjc1MTI0IDYwLjU2MTQwNDQgNDAuNzYwMTU0NyA2MC41NjE0MDQ0IDQwLjc2MDE1NDcgNTUuNjY5Njk2NCA0NS42NDgwMDg4IDUzLjQ5Nzk1OTEgNTAuNTM0ODk5MyA1NS42Njk2OTY0IDUwLjUzNDg5OTMgNjAuNTYxNDA0NCA2MC4yOTAzNzM3IDYwLjU2MTQwNDQgNjAuMjkwMzczNyA1MS42MDA4MjA0IDY1LjA4MzgwNDQgNTEuNjAwODIwNCA2Ny4yNTU1NDE2IDQ2LjcxMzkyOTkiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTYiIHBvaW50cz0iMzEuMTY3NDE2MSA2MC41NjE2OTM0IDM1LjE2NzQxNjEgNjAuNTYxNjkzNCAzNS4xNjc0MTYxIDMxLjQzODgzMjEgMzEuMTY3NDE2MSAzMS40Mzg4MzIxIj48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU3Ryb2tlLTE3IiBwb2ludHM9Ijk2LjU2NTY5MzQgMTAwLjU0NTE2OCAxMDAuNTY1NjkzIDEwMC41NDUxNjggMTAwLjU2NTY5MyA3MS40MjIzMDY2IDk2LjU2NTY5MzQgNzEuNDIyMzA2NiI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0xOCIgcG9pbnRzPSI3MS40NDI4MzIxIDM1LjQzNzg2ODYgMTAwLjU2NjY1NyAzNS40Mzc4Njg2IDEwMC41NjY2NTcgMzEuNDM3ODY4NiA3MS40NDI4MzIxIDMxLjQzNzg2ODYiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTkiIHBvaW50cz0iMzEuMTY3NDE2MSAxMDAuNTQ1MTY4IDYwLjI5MDI3NzQgMTAwLjU0NTE2OCA2MC4yOTAyNzc0IDk2LjU0NTE2NzkgMzEuMTY3NDE2MSA5Ni41NDUxNjc5Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" />
+                                </div>
+                                <h3 class="service-title text-center"><span class="lang" key="Services_Online_1"></span><br/><span  class="lang" key="Services_Online_2"></span></h3>
+                                <p class="services-detail text-center lang" key="Services_Online_p"></p>
+                            </div>
+                            <div class="service-item" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.25s;">
+                                <div class="service-img">
+                                    <img alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTM0cHgiIGhlaWdodD0iMTM0cHgiIHZpZXdCb3g9IjAgMCAxMzQgMTM0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkFQSTwvdGl0bGU+CiAgICA8ZyBpZD0iU2VydmljZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTZXJ2aWNlcy1Db3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjU0LjAwMDAwMCwgLTU3My4wMDAwMDApIiBzdHJva2U9IiNCMDkzNkQiPgogICAgICAgICAgICA8ZyBpZD0iQVBJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NTUuMDAwMDAwLCA1NzQuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjMuODU0OTQ0LDY5LjkzNjU3NiBDMjIuNjkyMzg0LDU3Ljk0MzI5NiAyNi43MDMyNjQsNDUuNTQyOTc2IDM1Ljg4ODU0NCwzNi4zNTc2OTYgQzUyLjE5NDE0NCwyMC4wNTIwOTYgNzguNjMxNTg0LDIwLjA1MjA5NiA5NC45MzcxODQsMzYuMzU3Njk2IEw4Ny4wMzU0MjQsNDQuMjYwNDE2IiBpZD0iU3Ryb2tlLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTMiIHBvaW50cz0iNjYuNjgzMjMyIDQ5LjkyMjg4IDc1LjgwNTE1MiA0MC44MDA5NiA4Ni45NjYxMTIgNDQuMjgyODggOTAuOTI3MDcyIDU1LjkyMjg4IDgxLjgwNTE1MiA2NS4wNDQ4Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtNSIgcG9pbnRzPSI3OC4xMDQyNTYgNjUuNDE3ODU2IDczLjA2MzI5NiA3MC40NTc4NTYgNjkuODk5MTM2IDcwLjE5ODY1NiA2OS40NjMyOTYgNjYuODU3ODU2IDc0LjUwNDI1NiA2MS44MTc4NTYiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS03IiBwb2ludHM9IjY5LjkxMTA0IDU3LjIyNDU0NCA2NC44NzEwNCA2Mi4yNjU1MDQgNjEuNzA2ODggNjIuMDA1MzQ0IDYxLjI3MDA4IDU4LjY2NDU0NCA2Ni4zMTEwNCA1My42MjQ1NDQiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU3Ryb2tlLTkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSI4NC45NzQzMDQgNjcuNjM3Mzc2IDgyLjgxNDMwNCA2OS43OTczNzYgNjEuOTMwNDY0IDQ4LjkxNDQ5NiA2NC4wOTE0MjQgNDYuNzU0NDk2Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOTIuNzI0MDk2LDM4LjU3MTE2OCBDODUuODI2NDk2LDMxLjQyMDEyOCA3Ni4xNDY4MTYsMjYuOTcyNDQ4IDY1LjQyNzQ1NiwyNi45NzI0NDggQzQ1Ljc5MzUzNiwyNi45NzI0NDggMjkuNjQ0NDE2LDQxLjg5MzcyOCAyNy43MDMyOTYsNjEuMDE1OTY4IEwyMy42NTg4MTYsNjEuMDE1OTY4IiBpZD0iU3Ryb2tlLTExIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTA3LjQ3MTA0LDYxLjI1MTY0OCBDMTA4LjYzNDU2LDczLjI0NDkyOCAxMDQuNjIzNjgsODUuNjQ1MjQ4IDk1LjQzNzQ0LDk0LjgzMDUyOCBDNzkuMTMxODQsMTExLjEzNjEyOCA1Mi42OTQ0LDExMS4xMzYxMjggMzYuMzg4OCw5NC44MzA1MjggTDQ0LjI5MTUyLDg2LjkyODc2OCIgaWQ9IlN0cm9rZS0xMyI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMTUiIHBvaW50cz0iNjQuNjQzMjMyIDgxLjI2NTM0NCA1NS41MjEzMTIgOTAuMzg3MjY0IDQ0LjM2MDM1MiA4Ni45MDUzNDQgNDAuMzk5MzkyIDc1LjI2NTM0NCA0OS41MjEzMTIgNjYuMTQzNDI0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0xNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBwb2ludHM9IjQ2LjM1MjA2NCA2My41NTA4NDggNDguNTEyMDY0IDYxLjM5MDg0OCA2OS4zOTU5MDQgODIuMjczNzI4IDY3LjIzNDk0NCA4NC40MzM3MjgiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zOC42MDIyNzIsOTIuNjE3MDU2IEM0NS40OTg5MTIsOTkuNzY4MDk2IDU1LjE3OTU1MiwxMDQuMjE1Nzc2IDY1Ljg5ODkxMiwxMDQuMjE1Nzc2IEM4NS41MzI4MzIsMTA0LjIxNTc3NiAxMDEuNjgxOTUyLDg5LjI5NDQ5NiAxMDMuNjIzMDcyLDcwLjE3MzIxNiBMMTA3LjY2NzU1Miw3MC4xNzMyMTYiIGlkPSJTdHJva2UtMTkiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC02IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjIyODE5MiwgMC4yMjgwMDApIj4KICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0yMSIgcG9pbnRzPSIxNS43NTM2IDgxLjE4ODczNiAtNi45OTE3NDA1MmUtMTQgNjUuNDM1MTM2IDE1Ljc1MzYgNDkuNjgxNTM2Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTIzIiBwb2ludHM9IjgxLjE4ODczNiAxMTUuMTE2Mzg0IDY1LjQzNTEzNiAxMzAuODY5OTg0IDQ5LjY4MTUzNiAxMTUuMTE2Mzg0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTI1IiBwb2ludHM9IjExNS4xMTYzODQgNDkuNjgxMjQ4IDEzMC44Njk5ODQgNjUuNDM0ODQ4IDExNS4xMTYzODQgODEuMTg4NDQ4Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTI3IiBwb2ludHM9IjQ5LjY4MTI0OCAxNS43NTM2IDY1LjQzNDg0OCAzLjQxMDYwNTEzZS0xNCA4MS4xODg0NDggMTUuNzUzNiI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0yOSIgcG9pbnRzPSI4MC42NDQwMzIgMTEwLjk5ODQ2NCA2NS40MzQ3NTIgMTI2LjIwNzc0NCA1MC4yMjU0NzIgMTEwLjk5ODQ2NCI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0zMSIgcG9pbnRzPSI1MC4yMjU5NTIgMTkuODcxMTM2IDY1LjQzNTIzMiA0LjY2MTg1NiA4MC42NDQ1MTIgMTkuODcxMTM2Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" />
+                                </div>
+                                <h3 class="service-title text-center"><span class="lang" key="Services_API_1"> </span><br/><span class="lang" key="Services_API_2"></span></h3>
+                                <p class="services-detail text-center lang" key="Services_API_p"></p>
+                            </div>
+                            <div class="service-item" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.35s;">
+                                <div class="service-img">
+                                    <img alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTMzcHgiIGhlaWdodD0iMTMzcHgiIHZpZXdCb3g9IjAgMCAxMzMgMTMzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkdyb3VwPC90aXRsZT4KICAgIDxnIGlkPSJTZXJ2aWNlcyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlNlcnZpY2VzLUNvcHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDY5LjAwMDAwMCwgLTU3Mi4wMDAwMDApIiBzdHJva2U9IiNCMDkzNkQiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNzAuMDAwMDAwLCA1NzMuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0id2FsbGV0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOC4wMDAwMDAsIDI4LjgwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtNyIgc3Ryb2tlLXdpZHRoPSIxLjQiIHBvaW50cz0iNi4yNDU5MTI1IDIzLjEzMTY2ODcgNTUuNDY3Nzg3NSAyMy4xMzE2Njg3IDQ0LjkwNDk3NSAwLjI5MTI5Mzc1Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS05IiBwb2ludHM9IjYuMjQ1OTEyNSAyMy4xMzE2Njg3IDU1LjQ2Nzc4NzUgMjMuMTMxNjY4NyA0NC45MDQ5NzUgMC4yOTEyOTM3NSI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTEiIHBvaW50cz0iNjUuODcxMzU2MiAxOC41MjIwMzEyIDY4LjAxODM1NjIgMjMuMTMxOTA2MiA1NS40Njc2Njg4IDIzLjEzMTkwNjIgNi4yNDU3OTM3NSAyMy4xMzE5MDYyIDE0LjA0ODg1NjIgMTguNTIyMDMxMiAwLjIzODIzMTI1IDE4LjUyMjAzMTIgMC4yMzgyMzEyNSAyMy4xNjg3MTg3IDcxLjAxNzk4MTMgMjMuMTY4NzE4NyA3MS4wMTc5ODEzIDE4LjUyMjAzMTIiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU3Ryb2tlLTEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgcG9pbnRzPSI1NS4wNjU5Mzc1IDU1LjgwOTQxMjUgNzQuOTYxMzEyNSA1NS44MDk0MTI1IDc0Ljk2MTMxMjUgNDAuMjMyOTc1IDU1LjA2NTkzNzUgNDAuMjMyOTc1Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0zIiBwb2ludHM9IjAuMjM5MDYyNSA3My4zNDQwMzc1IDc0Ljk2MTMxMjUgNzMuMzQ0MDM3NSA3NC45NjEzMTI1IDIzLjIyNzk3NSAwLjIzOTA2MjUgMjMuMjI3OTc1Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS01IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHBvaW50cz0iNjQuMTQ4MTc1IDUyLjAyMTc4NzUgNjAuMTQ4MTc1IDQ4LjAyMTI5MTggNjQuMTQ4MTc1IDQ0LjAyMTc4NzUgNjguMTQ4MTc1IDQ4LjAyMTI5MTgiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU3Ryb2tlLTYiIHBvaW50cz0iNTkuMzg5NTA2MiA0LjYwMDEzNzUgNDkuMDc0ODgxMiA5LjMwODU3NSA1NS40NjcxOTM3IDIzLjEzMTA3NSA2OC4wMTc4ODEzIDIzLjEzMTA3NSI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTYiPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTIxIiBwb2ludHM9IjE1Ljc1MzYgODEuMTg4NzM2IC02Ljk5MTc0MDUyZS0xNCA2NS40MzUxMzYgMTUuNzUzNiA0OS42ODE1MzYiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMjMiIHBvaW50cz0iODEuMTg4NzM2IDExNS4xMTYzODQgNjUuNDM1MTM2IDEzMC44Njk5ODQgNDkuNjgxNTM2IDExNS4xMTYzODQiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMjUiIHBvaW50cz0iMTE1LjExNjM4NCA0OS42ODEyNDggMTMwLjg2OTk4NCA2NS40MzQ4NDggMTE1LjExNjM4NCA4MS4xODg0NDgiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMjciIHBvaW50cz0iNDkuNjgxMjQ4IDE1Ljc1MzYgNjUuNDM0ODQ4IDMuNDEwNjA1MTNlLTE0IDgxLjE4ODQ0OCAxNS43NTM2Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTI5IiBwb2ludHM9IjgwLjY0NDAzMiAxMTAuOTk4NDY0IDY1LjQzNDc1MiAxMjYuMjA3NzQ0IDUwLjIyNTQ3MiAxMTAuOTk4NDY0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTMxIiBwb2ludHM9IjUwLjIyNTk1MiAxOS44NzExMzYgNjUuNDM1MjMyIDQuNjYxODU2IDgwLjY0NDUxMiAxOS44NzExMzYiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" />
+                                </div>
+                                <h3 class="service-title text-center"><span class="lang" key="Services_Wallet_1"></span><br/><span class="lang" key="Services_Wallet_2"></span></h3>
+                                <p class="services-detail text-center lang" key="Services_Wallet_p"></p>
+                            </div>
+                        </div>
+                        <div class="services-row d-md-flex">
+                            <div class="service-item" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.45s;">
+                                <div class="service-img">
+                                    <img loading="lazy" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTMzcHgiIGhlaWdodD0iMTMzcHgiIHZpZXdCb3g9IjAgMCAxMzMgMTMzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkdyb3VwIDQ8L3RpdGxlPgogICAgPGcgaWQ9IlNlcnZpY2VzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iU2VydmljZXMtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIzNy4wMDAwMDAsIC05NTEuMDAwMDAwKSIgc3Ryb2tlPSIjQjA5MzZEIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIzOC4wMDAwMDAsIDk1Mi4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC05Ij4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtNiI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTIxIiBwb2ludHM9IjE1Ljc1MzYgODEuMTg4NzM2IC02Ljk5MTc0MDUyZS0xNCA2NS40MzUxMzYgMTUuNzUzNiA0OS42ODE1MzYiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTIzIiBwb2ludHM9IjgxLjE4ODczNiAxMTUuMTE2Mzg0IDY1LjQzNTEzNiAxMzAuODY5OTg0IDQ5LjY4MTUzNiAxMTUuMTE2Mzg0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0yNSIgcG9pbnRzPSIxMTUuMTE2Mzg0IDQ5LjY4MTI0OCAxMzAuODY5OTg0IDY1LjQzNDg0OCAxMTUuMTE2Mzg0IDgxLjE4ODQ0OCI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMjciIHBvaW50cz0iNDkuNjgxMjQ4IDE1Ljc1MzYgNjUuNDM0ODQ4IDMuNDEwNjA1MTNlLTE0IDgxLjE4ODQ0OCAxNS43NTM2Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0yOSIgcG9pbnRzPSI4MC42NDQwMzIgMTEwLjk5ODQ2NCA2NS40MzQ3NTIgMTI2LjIwNzc0NCA1MC4yMjU0NzIgMTEwLjk5ODQ2NCI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMzEiIHBvaW50cz0iNTAuMjI1OTUyIDE5Ljg3MTEzNiA2NS40MzUyMzIgNC42NjE4NTYgODAuNjQ0NTEyIDE5Ljg3MTEzNiI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTEzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNC4wMDAwMDAsIDI0LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMC4xNzUxMDM3NTEsNDEuNjI1OTU3OCBDMC4xNzUxMDM3NTEsMTguNzM0NjQ2MyAxOC43MzQ4NTEyLDAuMTc2OTQ3ODQxIDQxLjYyNDExMzcsMC4xNzY5NDc4NDEgQzY0LjUxNzQ3NDEsMC4xNzY5NDc4NDEgODMuMDc1MTcyNiwxOC43MzQ2NDYzIDgzLjA3NTE3MjYsNDEuNjI1OTU3OCBDODMuMDc1MTcyNiw2NC41MTcyNjkyIDY0LjUxNzQ3NDEsODMuMDc0OTY3NyA0MS42MjQxMTM3LDgzLjA3NDk2NzcgQzE4LjczNDg1MTIsODMuMDc0OTY3NyAwLjE3NTEwMzc1MSw2NC41MTcyNjkyIDAuMTc1MTAzNzUxLDQxLjYyNTk1NzggWiIgaWQ9IlN0cm9rZS0xIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik02NS41NTg3NzA2LDQxLjYyNTk1NzggQzY1LjU1ODc3MDYsMTguNzM0NjQ2MyA1NC44NDQ2MDQyLDAuMTc2OTQ3ODQxIDQxLjYyNDUyMzUsMC4xNzY5NDc4NDEgQzI4LjQwNjQ5MTgsMC4xNzY5NDc4NDEgMTcuNjkyMzI1NCwxOC43MzQ2NDYzIDE3LjY5MjMyNTQsNDEuNjI1OTU3OCBDMTcuNjkyMzI1NCw2NC41MTcyNjkyIDI4LjQwNjQ5MTgsODMuMDc0OTY3NyA0MS42MjQ1MjM1LDgzLjA3NDk2NzcgQzU0Ljg0NDYwNDIsODMuMDc0OTY3NyA2NS41NTg3NzA2LDY0LjUxNzI2OTIgNjUuNTU4NzcwNiw0MS42MjU5NTc4IFoiIGlkPSJTdHJva2UtNyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTMuNDAxNTM2MywxMS4yODAyMTc0IEMyMC44MDI0ODY2LDE1LjI1NzMwNjIgMzAuNzE5NTk2MSwxNy42OTE1MDU4IDQxLjYyNDMxODYsMTcuNjkxNTA1OCBDNTIuNTMzMTM5LDE3LjY5MTUwNTggNjIuNDQ4MTk5NiwxNS4yNTczMDYyIDY5Ljg0OTE0OTksMTEuMjgwMjE3NCBDNjIuNDQ4MTk5Niw0LjM5NTYxMjQ2IDUyLjUzMzEzOSwwLjE3Njc0Mjk0MiA0MS42MjQzMTg2LDAuMTc2NzQyOTQyIEMzMC43MTk1OTYxLDAuMTc2NzQyOTQyIDIwLjgwMjQ4NjYsNC4zOTU2MTI0NiAxMy40MDE1MzYzLDExLjI4MDIxNzQgWiIgaWQ9IlN0cm9rZS05Ij48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik02OS44NDg5NDUsNzEuOTcwNDY4OCBDNjIuNDQ3OTk0Nyw2Ny45OTU0MjkgNTIuNTMyOTM0Miw2NS41NTkxODA0IDQxLjYyNjE2MjcsNjUuNTU5MTgwNCBDMzAuNzE5MzkxMiw2NS41NTkxODA0IDIwLjgwMjI4MTcsNjcuOTk1NDI5IDEzLjQwMTMzMTQsNzEuOTcwNDY4OCBDMjAuODAyMjgxNyw3OC44NTcxMjI3IDMwLjcxOTM5MTIsODMuMDczOTQzMiA0MS42MjYxNjI3LDgzLjA3Mzk0MzIgQzUyLjUzMjkzNDIsODMuMDczOTQzMiA2Mi40NDc5OTQ3LDc4Ljg1NzEyMjcgNjkuODQ4OTQ1LDcxLjk3MDQ2ODggWiIgaWQ9IlN0cm9rZS0xMSI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8bGluZSB4MT0iMC4xNzUxMDM3NTEiIHkxPSI0MS42MjU5NTc4IiB4Mj0iODMuMDc1MTcyNiIgeTI9IjQxLjYyNTk1NzgiIGlkPSJTdHJva2UtMyI+PC9saW5lPgogICAgICAgICAgICAgICAgICAgICAgICA8bGluZSB4MT0iNDEuNjI1MTM4MiIgeTE9IjAuMTc1OTIzMzQ3IiB4Mj0iNDEuNjI1MTM4MiIgeTI9IjgzLjA3Mzk0MzIiIGlkPSJTdHJva2UtNSI+PC9saW5lPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMC44MDAwMDAsIDIxLjYwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtQ29weS05IiBmaWxsPSIjMDYwQjFBIiB4PSIwLjIxODg2NzkyNSIgeT0iMC4yMTg4Njc5MjUiIHdpZHRoPSIyMC44IiBoZWlnaHQ9IjIwLjgiIHJ4PSIxMC40Ij48L3JlY3Q+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMSIgcG9pbnRzPSIxNS4wMDYxOTA5IDE1LjE3NTM1MyAxMC42NDYwNDIxIDUuNjEyODMwMTkgNi40MzQ3MTY5OCAxNS4xNzUzNTMiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgPGxpbmUgeDE9IjcuNjMwMTg4NjgiIHkxPSIxMi44NjAzNzc0IiB4Mj0iMTMuOTgxMTMyMSIgeTI9IjEyLjg2MDM3NzQiIGlkPSJTdHJva2UtMyI+PC9saW5lPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkyLjAwMDAwMCwgODYuNDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZS1Db3B5LTkiIGZpbGw9IiMwNjBCMUEiIHg9IjAiIHk9IjIuMTMxNjI4MjFlLTE0IiB3aWR0aD0iMjAuOCIgaGVpZ2h0PSIyMC44IiByeD0iMTAuNCI+PC9yZWN0PgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjgwMDAwMCwgMy4yMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpbmUgeDE9IjguOCIgeTE9IjEzLjYiIHgyPSIyLjgiIHkyPSIzLjYiIGlkPSJTdHJva2UtNyI+PC9saW5lPgogICAgICAgICAgICAgICAgICAgICAgICA8bGluZSB4MT0iMi40IiB5MT0iMTMuNiIgeDI9IjguNCIgeTI9IjMuNiIgaWQ9IlN0cm9rZS05Ij48L2xpbmU+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaW5lIHgxPSI1LjYiIHkxPSIwIiB4Mj0iNS42IiB5Mj0iNCIgaWQ9IlN0cm9rZS0xIj48L2xpbmU+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaW5lIHgxPSIwIiB5MT0iMy42IiB4Mj0iMTEuMiIgeTI9IjMuNiIgaWQ9IlN0cm9rZS00Ij48L2xpbmU+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" />
+                                </div>
+                                <h3 class="service-title text-center lang"><span class="lang" key="Services_Multilingual_1"></span><br/><span class="lang" key="Services_Multilingual_2"></span></h3>
+                                <p class="services-detail text-center lang" key="Services_Multilingual_p"></p>
+                            </div>
+                            <div class="service-item" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.55s;">
+                                <div class="service-img">
+                                    <img loading="lazy" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTMzcHgiIGhlaWdodD0iMTMzcHgiIHZpZXdCb3g9IjAgMCAxMzMgMTMzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkdyb3VwIDEwPC90aXRsZT4KICAgIDxnIGlkPSJTZXJ2aWNlcyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlNlcnZpY2VzLUNvcHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02NTQuMDAwMDAwLCAtOTUxLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY1NS4wMDAwMDAsIDk1Mi4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC02IiBzdHJva2U9IiNCMDkzNkQiPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTIxIiBwb2ludHM9IjE1Ljc1MzYgODEuMTg4NzM2IC02Ljk5MTc0MDUyZS0xNCA2NS40MzUxMzYgMTUuNzUzNiA0OS42ODE1MzYiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMjMiIHBvaW50cz0iODEuMTg4NzM2IDExNS4xMTYzODQgNjUuNDM1MTM2IDEzMC44Njk5ODQgNDkuNjgxNTM2IDExNS4xMTYzODQiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMjUiIHBvaW50cz0iMTE1LjExNjM4NCA0OS42ODEyNDggMTMwLjg2OTk4NCA2NS40MzQ4NDggMTE1LjExNjM4NCA4MS4xODg0NDgiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtMjciIHBvaW50cz0iNDkuNjgxMjQ4IDE1Ljc1MzYgNjUuNDM0ODQ4IDMuNDEwNjA1MTNlLTE0IDgxLjE4ODQ0OCAxNS43NTM2Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTI5IiBwb2ludHM9IjgwLjY0NDAzMiAxMTAuOTk4NDY0IDY1LjQzNDc1MiAxMjYuMjA3NzQ0IDUwLjIyNTQ3MiAxMTAuOTk4NDY0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTMxIiBwb2ludHM9IjUwLjIyNTk1MiAxOS44NzExMzYgNjUuNDM1MjMyIDQuNjYxODU2IDgwLjY0NDUxMiAxOS44NzExMzYiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8ZyBpZD0iY3NfaWNvbiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMuMjAwMDAwLCAyMy4yMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNDIsMCBDMTguODA0MzU2MSwwIDAsMTguODA0MzU2MSAwLDQyIEMwLDY1LjE5NzEwNTIgMTguODA0MzU2MSw4NCA0Miw4NCBDNjUuMTk1NjQzOSw4NCA4NCw2NS4xOTcxMDUyIDg0LDQyIEM4NCwxOC44MDQzNTYxIDY1LjE5NTY0MzksMCA0MiwwIFoiIGlkPSJGaWxsLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNODQsNDIgQzg0LDE4LjgwNDM1NjEgNjUuMTk1NjQzOSwwIDQyLDAgQzE4LjgwNDM1NjEsMCAwLDE4LjgwNDM1NjEgMCw0MiBDMCw2NS4xOTcxMDUyIDE4LjgwNDM1NjEsODQgNDIsODQgQzY1LjE5NTY0MzksODQgODQsNjUuMTk3MTA1MiA4NCw0MiBaIiBpZD0iU3Ryb2tlLTMiIHN0cm9rZT0iI0IwOTM2RCI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik00NS42LDQyLjggQzQ1LjYsNDEuMjU0NDM2NiA0NC4zNDU1NjM0LDQwIDQyLjgsNDAgQzQxLjI1MjkxMjQsNDAgNDAsNDEuMjU0NDM2NiA0MCw0Mi44IEM0MCw0NC4zNDcwODc2IDQxLjI1MjkxMjQsNDUuNiA0Mi44LDQ1LjYgQzQ0LjM0NTU2MzQsNDUuNiA0NS42LDQ0LjM0NzA4NzYgNDUuNiw0Mi44IFoiIGlkPSJTdHJva2UtNSIgc3Ryb2tlPSIjQjA5MzZEIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPGxpbmUgeDE9IjQyLjQiIHkxPSIzOS4yIiB4Mj0iNDIuNCIgeTI9IjEyIiBpZD0iU3Ryb2tlLTciIHN0cm9rZT0iI0IwOTM2RCI+PC9saW5lPgogICAgICAgICAgICAgICAgICAgIDxsaW5lIHgxPSI0MCIgeTE9IjQ0IiB4Mj0iMTYuOCIgeTI9IjY3LjIiIGlkPSJTdHJva2UtOSIgc3Ryb2tlPSIjQjA5MzZEIj48L2xpbmU+CiAgICAgICAgICAgICAgICAgICAgPGxpbmUgeDE9IjQyLjQiIHkxPSIwIiB4Mj0iNDIuNCIgeTI9IjQiIGlkPSJTdHJva2UtMTEiIHN0cm9rZT0iI0IwOTM2RCI+PC9saW5lPgogICAgICAgICAgICAgICAgICAgIDxsaW5lIHgxPSI4NC44IiB5MT0iNDIuNCIgeDI9IjgwLjgiIHkyPSI0Mi40IiBpZD0iU3Ryb2tlLTEzIiBzdHJva2U9IiNCMDkzNkQiPjwvbGluZT4KICAgICAgICAgICAgICAgICAgICA8bGluZSB4MT0iNDIuNCIgeTE9IjgzLjgiIHgyPSI0Mi40IiB5Mj0iNzkuOCIgaWQ9IlN0cm9rZS0xNSIgc3Ryb2tlPSIjQjA5MzZEIj48L2xpbmU+CiAgICAgICAgICAgICAgICAgICAgPGxpbmUgeDE9IjAiIHkxPSI0Mi40IiB4Mj0iNCIgeTI9IjQyLjQiIGlkPSJTdHJva2UtMTciIHN0cm9rZT0iI0IwOTM2RCI+PC9saW5lPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg4LDMxLjc5ODQyODcgQzg4LDM1LjIxMTIyMzMgODkuNjg3MzQ2OSwzOC4zMDM0NzkyIDkyLjQxNTc1NTEsNDAuNTY5MjQ4IEw5MC44MzY2NTMxLDQ3LjIgTDk5LjIyMjQ0OSw0My44OTA5MDkxIEMxMDAuNjEzNzE0LDQ0LjIxNzczMjkgMTAyLjA3ODIwNCw0NC40IDEwMy42LDQ0LjQgQzExMi4yMTUwMiw0NC40IDExOS4yLDM4Ljc1OTE0NyAxMTkuMiwzMS44MDE1NzEzIEMxMTkuMiwyNC44NDM5OTU1IDExMi4yMTUwMiwxOS4yIDEwMy42LDE5LjIgQzk0Ljk4NDk3OTYsMTkuMiA4OCwyNC44NDA4NTMgODgsMzEuNzk4NDI4NyBaIiBpZD0iU3Ryb2tlLTEiIHN0cm9rZT0iI0IwOTM2RCIgc3Ryb2tlLXdpZHRoPSIwLjgiIGZpbGw9IiMwNjBCMUEiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiNCMDkzNkQiIGN4PSI5NS4yIiBjeT0iMzIiIHI9IjIuNCI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLUNvcHkiIGZpbGw9IiNCMDkzNkQiIGN4PSIxMDQiIGN5PSIzMiIgcj0iMi40Ij48L2NpcmNsZT4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtQ29weS0yIiBmaWxsPSIjQjA5MzZEIiBjeD0iMTEyLjgiIGN5PSIzMiIgcj0iMi40Ij48L2NpcmNsZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" />
+                                </div>
+                                <h3 class="service-title text-center"><span class="lang" key="Services_24/7_1"></span><br/><span class="lang" key="Services_24/7_2"></span></h3>
+                                <p class="services-detail text-center lang" key="Services_24/7_p"></p>
+                            </div>
+                            <div class="service-item" data-sal="slide-up" data-sal-easing="easeInOutQuad" style="--sal-duration: 1s; --sal-delay: 0.65s;">
+                                <div class="service-img">
+                                    <img loading="lazy" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTM0cHgiIGhlaWdodD0iMTM0cHgiIHZpZXdCb3g9IjAgMCAxMzQgMTM0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPk9mZmljZSBTdXBwb3J0PC90aXRsZT4KICAgIDxnIGlkPSJTZXJ2aWNlcyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlNlcnZpY2VzLUNvcHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDcyLjAwMDAwMCwgLTk1MS4wMDAwMDApIiBzdHJva2U9IiNCMDkzNkQiPgogICAgICAgICAgICA8ZyBpZD0iT2ZmaWNlLVN1cHBvcnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNzMuMDAwMDAwLCA5NTIuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0xIiBwb2ludHM9IjE2LjA0MDIxNjEgODEuODc3NTczNyAwLjIyOTEyMTE2OCA2Ni4wNjU1MTUzIDE2LjA0MDIxNjEgNTAuMjU0NDIwNCI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTMiIHBvaW50cz0iODEuNzE0MTY2NCAxMTUuOTI4NjYgNjUuOTAzMDcxNSAxMzEuNzQwNzE4IDUwLjA5MTAxMzEgMTE1LjkyODY2Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtNSIgcG9pbnRzPSIxMTUuNzY1MjUzIDUwLjI1NDYxMzEgMTMxLjU3NzMxMSA2Ni4wNjU3MDggMTE1Ljc2NTI1MyA4MS44Nzc3NjY0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtNyIgcG9pbnRzPSI1MC4wOTEyMDU4IDE2LjIwMzYyMzQgNjUuOTAzMjY0MiAwLjM5MTU2NDk2NCA4MS43MTQzNTkxIDE2LjIwMzYyMzQiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS0xMCIgcG9pbnRzPSI4MS4xNjc1NzA4IDExMS43OTYwOTYgNjUuOTAyNzgyNSAxMjcuMDYwODg1IDUwLjYzNzk5NDIgMTExLjc5NjA5NiI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTExIiBwb2ludHM9IjUwLjYzNzg5NzggMjAuMzM2MTg2OSA2NS45MDI2ODYxIDUuMDcxMzk4NTQgODEuMTY3NDc0NSAyMC4zMzYxODY5Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0xMiIgcG9pbnRzPSIyOC40MDIxNjA2IDgzLjM1NzIyNjMgMTAzLjQwMzIxMiA4My4zNTcyMjYzIDEwMy40MDMyMTIgMzQuNjY0NjQyMyAyOC40MDIxNjA2IDM0LjY2NDY0MjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSIyMS4zOTU1NjIgOTcuNDY3NzM3MiAxMTAuNDEwNzc0IDk3LjQ2NzczNzIgMTEwLjQxMDc3NCA5NC4zNDg4NzU5IDIxLjM5NTU2MiA5NC4zNDg4NzU5Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU3Ryb2tlLTE1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHBvaW50cz0iMTEwLjQxMDQ4NSA5NC4zNDg1ODY5IDIxLjM5NTI3MyA5NC4zNDg1ODY5IDI4LjQwMTg3MTUgODMuMzU2OTM3MiAxMDMuNDAzODg2IDgzLjM1NjkzNzIiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSI4MC40MTUyNjcyIDk0LjM0ODU4NjkgNTEuMzg5NzE5NyA5NC4zNDg1ODY5IDUzLjk1NTUyOTkgODcuMTQ4NTg2OSA3Ny44NDk0NTY5IDg3LjE0ODU4NjkiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTE3IiBwb2ludHM9IjM3LjU0MDMxODIgNDcuMTMyMTg2OSAzNy41NDAzMTgyIDczLjI3MTA3NzQgNjcuOTcxNjE3NSA3My4yNzEwNzc0Ij48L3BvbHlsaW5lPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlN0cm9rZS0xOCIgcG9pbnRzPSI0Mi4yMTg4MDI5IDczLjI3MTI3MDEgNDYuNzg1ODEwMiA3My4yNzEyNzAxIDQ2Ljc4NTgxMDIgNjIuMzc3ODk3OCA0Mi4yMTg4MDI5IDYyLjM3Nzg5NzgiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtMTkiIHBvaW50cz0iNTAuNDUyOTA1MSA3My4yNzEyNzAxIDU1LjAxOTkxMjQgNzMuMjcxMjcwMSA1NS4wMTk5MTI0IDU2LjcyMTE2NzkgNTAuNDUyOTA1MSA1Ni43MjExNjc5Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU3Ryb2tlLTIwIiBwb2ludHM9IjU4LjY4NzAwNzMgNzMuMjcxMjcwMSA2My4yNTQwMTQ2IDczLjI3MTI3MDEgNjMuMjU0MDE0NiA1MC43NjI4NjEzIDU4LjY4NzAwNzMgNTAuNzYyODYxMyI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPGxpbmUgeDE9IjcyLjA0MzM4MzkiIHkxPSI1NC44NDg2OTQ5IiB4Mj0iOTQuNzA0OTg5OCIgeTI9IjU0Ljg0ODY5NDkiIGlkPSJTdHJva2UtMjEiPjwvbGluZT4KICAgICAgICAgICAgICAgIDxsaW5lIHgxPSI3Mi4wNDMzODM5IiB5MT0iNjAuNjAwNjk0OSIgeDI9Ijk0LjcwNDk4OTgiIHkyPSI2MC42MDA2OTQ5IiBpZD0iU3Ryb2tlLTIyIj48L2xpbmU+CiAgICAgICAgICAgICAgICA8bGluZSB4MT0iNzIuMDQzMzgzOSIgeTE9IjY2LjM1MjY5NDkiIHgyPSI5NC43MDQ5ODk4IiB5Mj0iNjYuMzUyNjk0OSIgaWQ9IlN0cm9rZS0yMyI+PC9saW5lPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" />
+                                </div>
+                                <h3 class="service-title text-center"><span class="lang" key="Services_BackOffice_1"></span><br/><span class="lang" key="Services_BackOffice_2"></span></h3>
+                                <p class="services-detail text-center lang" key="Services_BackOffice_p"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Services Section  -->
+            </div>
+            <!-- Contact Us End -->
+
+            <!-- Age popup start-->
+            <div class="age-restriction">
+                <div class="age-outer">
+                    <div class="age-inner">
+                        <h1 class="lang" key="age_h1"></h1>
+                        <div class="art-deco-wrap">
+                            <img class="age-deco" src="./images/about/about-hero-deco.svg" alt="">
+                        </div>
+                        <p class="lang" key="age_notice"></p>
+                        
+                        <button class="secondaryBtn age-button ageAbove-btn">
+                            <span class="lang" key="age_over"></span>
+                        </button>
+                        <button class="primaryBtn age-button ageUnder-btn">
+                            <span class="lang" key="age_under"></span>
+                        </button>
+                        <div class="d-flex">
+                            <span class="ageWarning lang" key="age_warning"></span>
+                        </div>
+                        <div class="lang-switch d-flex icon-lang">
+                            <img class="age-lang-icon" src="./images/icon/lang.svg" alt="">
+                            <div class="menu-lang lang" key="age_current_lang"></div>
+                                <div class="menu-lang">
+                                    <ul class="lang-dropdown" id="languageDropdown">
+                                        <a id="EN" href="#" class="translate"><li class="language-tap active">English</li></a>
+                                        <a id="TC" href="#" class="translate"><li class="language-tap">繁體中文</li></a>
+                                        <a id="SC" href="#" class="translate"><li class="language-tap">简体中文</li></a>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <!-- Age popup end-->
+            
+            <!-- Cookie popup start-->
+            <div class="cookie-container">
+                <div class="cookie-deco">
+                    <img loading="lazy" src="./images/icon/bottom-deco.svg">
+                </div>
+                <p class="pp-link">
+                    <span class="lang" key="Cookie_p1">WE use cookies to ensure you get the best experience on our website. WE will assume you have agreed to our Privacy Policy by continuing to use our website henceforth.</span>
+                    <a class="lang" key="PrivacyPolicy" href="PrivacyTerms.html">Privacy Policy</a>
+                </p>
+                <div class="accept-btn">
+                    <button class="secondaryBtn cookie-btn"><span class="lang" key="Accept">Accept</span></button>
+                </div>
+            </div>
+            <!-- Cookie popup end-->
+
+            <!-- Footer start -->
+            <footer>
+                <div class="main-footer">   
+                    <div class="footer-subscribe">
+                        <div class="subscribe-wrap">
+                            <h6 class="lang" key="Subscribe">Subscribe</h6>
+                            <br />
+                            <p class="lang" key="Subscribe_p">
+                                Be the first to know about our latest news and <br class="footer-break" />
+                                exclusive offers from WE.
+                            </p>
+                            <div id="EmailSubscribe">
+                                <!-- Begin Mailchimp Signup Form -->
+                                <div id="mc_embed_signup">
+                                    <form action="https://pgpg.us1.list-manage.com/subscribe/post?u=7fd273f17c144f707904f5926&amp;id=068a3ff35c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <div class="mc-field-group" id="mce-error">
+                                                <input type="email" value="" name="EMAIL" class="required email form-control lang" key="Email-S" placeholder="Please enter your email address here" id="mce-EMAIL">
+                                            </div>
+                                            <p id="myerror">請輸入有效的電子郵件地址。</p>
+                                            <div id="mce-responses" class="clear">
+                                                <div class="response" id="mce-error-response"></div>
+                                                <div class="response" id="mce-success-response"></div>
+                                            </div>    
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="display: none;" aria-hidden="true"><input type="text" name="b_7fd273f17c144f707904f5926_068a3ff35c" tabindex="-1" value=""></div>
+                                        </div>
+                                        <div class="enquiry-button">
+                                            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="enquiryBtn btn lang" key="Subscribe_btn" id="signUp"class="button">Subscribe Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                                <!--End mc_embed_signup-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-TC">
+                            ©<script>document.write(new Date().getFullYear())</script> &nbsp;
+                            <span class="lang" key="WorldEnt">WORLD ENTERTAINMENT.</span>
+                            <a href="PrivacyTerms.html" class="lang TC" key="PrivacyPolicy">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer end -->
+            
+            <!-- Thank you for subscribe popup start-->
+            <div id="thankyou-popup">
+                <div class="thankyou-bkg">
+                    <div id="thankyou-bkg-m">
+                        <img loading="lazy"
+                            src="./images/thankyou/thankyou_bkg_m_x1.png"
+                            srcset="./images/thankyou/thankyou_bkg_m_x1.png 500w ,./images/thankyou/thankyou_bkg_m_x2.png 1000w"
+                            alt=""
+                        />
+                    </div>
+                    <div id="thankyou-bkg-d">
+                        <img loading="lazy"
+                            src="./images/thankyou/thankyou-bkg_x1.png"
+                            srcset="./images/thankyou/thankyou-bkg_x1.png 500w, ./images/thankyou/thankyou-bkg_x2.png 1000w"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="wrap">
+                    <h1 class="lang" key="HelloThere">Hello There!</h1>
+                    <div class="thankyou-deco">
+                        <img loading="lazy" src="./images/icon/bottom-deco.svg"  alt="" />
+                    </div>
+                    
+                    <p class="hero-intro lang" key="thankyou_p">You’re on our mailing list now and will be among the first to hear about the latest news, collections and videos from WE.</p>
+                    <div class="back-btn">
+                        <button class="secondaryBtn thanyou-close-btn lang" key="Okay">OKAY</button>
+                    </div>
+                </div>
+                <div class="close-btn thanyou-close-btn">
+                    <div class="closeBtn">
+                        <img loading="lazy" src="images/thankyou/close_icon.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- Thank you for subscribe popup end-->
+        </div>
+        <!-- ============= Outdated Browser ============= -->
+        <div id="outdated"></div>
+        <!-- Outdated javascript includes -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.js"></script>
+
+        <!-- Outdated plugin call -->
+        <script>
+            // Plain Javascript
+            //event listener: DOM ready
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != "function") {
+                    window.onload = func;
+                } else {
+                    window.onload = function () {
+                        if (oldonload) {
+                            oldonload();
+                        }
+                        func();
+                    };
+                }
+            }
+            //call plugin function after DOM ready
+            addLoadEvent(function () {
+                outdatedBrowser({
+                    bgColor: "#f25648",
+                    color: "#ffffff",
+                    lowerThan: "transform",
+                    languagePath: "your_path/outdatedbrowser/lang/en.html",
+                });
+            });
+            // Using jQuery (version that supports IE < 9)
+            $(document).ready(function () {
+                outdatedBrowser({
+                    bgColor: "#f25648",
+                    color: "#ffffff",
+                    lowerThan: "transform",
+                    languagePath: "your_path/outdatedbrowser/lang/en.html",
+                });
+            });
+        </script>
+
+        <!-- Sal JS  -->
+        <script src="./js/sal.js"></script>
+        <script>
+            sal({
+                threshold: 0.1,
+                once: true,
+            });
+        </script>
+        <!-- External JS  -->
+        <script src="OwlCarousel2/owl.carousel.min.js"></script>
+        <script src="./outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- Main JS  -->
+        <script src="./js/tilt.jquery.js" type="text/javascript"></script>
+        <script src="./js/main.js" type="text/javascript"></script>
+        <script type="text/javascript" src="./js/language_switch.js"></script>
+        <script type="text/javascript" src="./json/multi-language/lang_Services.js"></script>
+    </body>
+</html>

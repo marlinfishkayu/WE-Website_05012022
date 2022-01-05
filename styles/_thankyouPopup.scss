@@ -1,0 +1,125 @@
+#thankyou-popup{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all 800ms;
+    transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
+    z-index: 10;
+    width: 90vw;
+    height: auto;
+    text-align: center;
+    h1{
+        font-family: $fontFuturaMedium;
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+    .wrap{
+        padding: 2rem 3rem;
+    }
+    .thankyou-deco{
+        width: 165px;
+        height: 16px;
+        
+        margin: 0 auto;
+    }
+    p{
+        font-family: $fontBarlowRegular;
+        color: #A1A1A1;
+        padding-top: 20px;
+        margin: 0 auto;
+        max-width: 300px;
+        margin-top: 1rem;
+        font-weight: 100;
+    }
+    .back-btn{
+        padding: 2rem 0;
+        text-transform: uppercase;
+    }
+    #thankyou-bkg-d,
+    #thankyou-bkg-m{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 400px;
+        z-index: -1;
+    }
+    #thankyou-bkg-d{
+        display: none;
+    }
+    #thankyou-bkg-m{
+        display: block;
+    }
+    .close-btn{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        padding: 20px;
+        z-index: 1;
+        cursor: pointer;
+        .closeBtn{
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE3IDE3Ij4KICA8ZyBmaWxsPSIjQjA5MzZEIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDMzKSI+CiAgICA8cGF0aCBkPSJNMC4xNDY4NjcwOTQsMC4xNDYwMjY2MjkgQzAuMzIwNjM5NjI0LC0wLjAyNzMzMzMwMDIgMC41OTAwODY3NTcsLTAuMDQ2Mjk4MTk5NCAwLjc4NDc5NDMwNCwwLjA4ODkyOTM3NjYgTDAuODUzOTczMzc2LDAuMTQ2ODY3MDk0IEwxNi4yNjcwMzczLDE1LjU5NjYxNDYgQzE2LjQ2MjA2NzMsMTUuNzkyMTA4NyAxNi40NjE2OTEsMTYuMTA4NjkwOSAxNi4yNjYxOTY5LDE2LjMwMzcyMDggQzE2LjA5MjQyNDMsMTYuNDc3MDgwOCAxNS44MjI5NzcyLDE2LjQ5NjA0NTcgMTUuNjI4MjY5NywxNi4zNjA4MTgxIEwxNS41NTkwOTA2LDE2LjMwMjg4MDQgTDAuMTQ2MDI2NjI5LDAuODUzMTMyOTEgQy0wLjA0OTAwMzI5MTIsMC42NTc2Mzg4MTQgLTAuMDQ4NjI3MDAxOSwwLjM0MTA1NjU0OCAwLjE0Njg2NzA5NCwwLjE0NjAyNjYyOSBaIiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAxNi40MTMgMCkiLz4KICAgIDxwYXRoIGQ9Ik0wLjE0Njg2NzA5NCwwLjE0NjAyNjYyOSBDMC4zMjA2Mzk2MjQsLTAuMDI3MzMzMzAwMiAwLjU5MDA4Njc1NywtMC4wNDYyOTgxOTk0IDAuNzg0Nzk0MzA0LDAuMDg4OTI5Mzc2NiBMMC44NTM5NzMzNzYsMC4xNDY4NjcwOTQgTDE2LjI2NzAzNzMsMTUuNTk2NjE0NiBDMTYuNDYyMDY3MywxNS43OTIxMDg3IDE2LjQ2MTY5MSwxNi4xMDg2OTA5IDE2LjI2NjE5NjksMTYuMzAzNzIwOCBDMTYuMDkyNDI0MywxNi40NzcwODA4IDE1LjgyMjk3NzIsMTYuNDk2MDQ1NyAxNS42MjgyNjk3LDE2LjM2MDgxODEgTDE1LjU1OTA5MDYsMTYuMzAyODgwNCBMMC4xNDYwMjY2MjksMC44NTMxMzI5MSBDLTAuMDQ5MDAzMjkxMiwwLjY1NzYzODgxNCAtMC4wNDg2MjcwMDE5LDAuMzQxMDU2NTQ4IDAuMTQ2ODY3MDk0LDAuMTQ2MDI2NjI5IFoiLz4KICA8L2c+Cjwvc3ZnPgo=");
+        }
+    }
+}
+#thankyou-popup.show{
+    visibility: visible;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #thankyou-popup{
+        width: 729px;
+        height: 425px;
+        h1{
+            font-size: 36px;
+        }
+        .thankyou-deco{
+            width: 165px;
+            height: 16px;
+            margin-top: 1rem;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 100;
+            max-width: 500px;
+        }
+        .wrap{
+            padding: 2rem 3rem;
+        }
+        .back-btn{
+            padding: 1.5rem 0;
+        }
+        #thankyou-bkg-d{
+            display: block;
+            width: 729px;
+            height: 425px;
+        }
+        #thankyou-bkg-m{
+            display: none;
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #thankyou-popup.show{
+        top: 50%;
+    }
+ }

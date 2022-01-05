@@ -1,0 +1,60 @@
+body:lang(TC),
+body:lang(SC)
+{
+    .deco-content{
+        font-weight: 100;
+    }
+    #diamondCarousel h3{
+        padding-top: 5px;
+    }
+    .age-restriction .ageWarning {
+        font-size: 12px;
+    }
+    #diamondCarousel #diaLotto5 .dia-3d-layer {
+        top: 50%;
+    }
+    #diamondCarousel #diaGodofFortuneRoulette .dia-3d-layer {
+        top: 50%;
+    }
+    @media (min-width: 768px){
+    }
+    @media (min-width: 992px){
+        .subnav-arrow {
+            left: 185px;
+        }
+    }
+    @media (min-width: 1200px){
+        .subnav-arrow {
+            left: 250px;
+        }
+    }
+}
+
+body:lang(TC)
+{
+    .deco-content{
+        font-family: $fontNotoSansTC;
+    }
+    #diamondCarousel .dia-cat h5,
+    #intdexWhatsNews .text-gold-btn,
+    #intdexWhatsNews .news-item-text .text-gold,
+    .coming .disable-text h4,
+    #intdexWhatsNews .news-item-header{
+        font-family: $fontNotoSansTC;
+        font-weight: 500;
+    }
+}
+body:lang(SC)
+{
+    .deco-content{
+        font-family: $fontNotoSansSC;
+    }
+    #intdexWhatsNews .text-gold-btn,
+    #intdexWhatsNews .news-item-text .text-gold,
+    .coming .disable-text h4,
+    #intdexWhatsNews .news-item-header{
+        font-family: $fontNotoSansSC;
+        font-weight: 500;
+    }
+    
+}

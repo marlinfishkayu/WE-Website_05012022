@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="902px" height="34px" viewBox="0 0 902 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 14</title>
+    <defs>
+        <linearGradient x1="9.03037792%" y1="245.956717%" x2="89.8001189%" y2="245.956717%" id="linearGradient-1">
+            <stop stop-color="#A78C68" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About-WE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-14" transform="translate(0.625000, 0.000000)" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(451.375000, 17.000000) rotate(-450.000000) translate(-451.375000, -17.000000) translate(434.375000, -6.000000)" fill="#B0936D">
+                <path d="M5,5 L28.9022222,5.09777778 L29,29 L5.09777778,28.9022222 L5,5 Z M5.501,5.501 L5.595,28.404 L28.498,28.498 L28.404,5.595 L5.501,5.501 Z" id="Rectangle" transform="translate(17.000000, 17.000000) rotate(-315.000000) translate(-17.000000, -17.000000) "></path>
+                <path d="M5,17 L28.9022222,17.0977778 L29,41 L5.09777778,40.9022222 L5,17 Z M5.501,17.501 L5.595,40.404 L28.498,40.498 L28.404,17.595 L5.501,17.501 Z" id="Rectangle-Copy-9" transform="translate(17.000000, 29.000000) rotate(-315.000000) translate(-17.000000, -29.000000) "></path>
+            </g>
+            <polygon id="Line-3" fill="url(#linearGradient-1)" transform="translate(450.375000, 17.625000) rotate(-180.000000) translate(-450.375000, -17.625000) " points="900.75 17.125 900.75 17.875 0 17.875 0 17.125"></polygon>
+            <polygon id="Path-5-Copy" fill="#B0936D" transform="translate(492.948223, 17.000000) scale(-1, 1) translate(-492.948223, -17.000000) " points="520.875 8.25 520.875 8.75 473.978 8.75 465.728 17 473.979 25.25 520.875 25.25 520.875 25.75 473.875 25.75 473.698223 25.6767767 465.021447 17 473.698223 8.3232233 473.875 8.25"></polygon>
+            <polygon id="Path-5-Copy-2" fill="#B0936D" points="437.875 8.25 437.875 8.75 390.978 8.75 382.728 17 390.979 25.25 437.875 25.25 437.875 25.75 390.875 25.75 390.698223 25.6767767 382.021447 17 390.698223 8.3232233 390.875 8.25"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="941px" height="567px" viewBox="0 0 941 567" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 15</title>
+    <g id="About-WE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-15" transform="translate(1.000000, 1.749138)">
+            <polyline id="Combined-Shape" stroke="#B0936D" stroke-width="0.75" points="634 16.2508618 939 16.2508618 938.892 462.630862 938.863952 462.604607 825.306477 564.250862 0 564.250862 0.108 117.871862 0.136086957 117.897116 24.8463504 95.778751 90.9268426 36.6295446 92.3845005 35.3247827 113.693562 16.2508618 304 16.2508618"></polyline>
+            <g id="Group-3" transform="translate(230.721265, 0.000000)" fill="#B0936D" fill-rule="nonzero">
+                <path d="M79.6537353,0.875861774 L72.9037353,0.875861774 L72.9037353,32.6258618 L79.6537353,32.6258618 L79.6537353,0.875861774 Z M78.9037353,1.62586177 L78.9037353,31.8758618 L73.6537353,31.8758618 L73.6537353,1.62586177 L78.9037353,1.62586177 Z" id="Rectangle"></path>
+                <polygon id="Line-3-Copy" points="0.55747061 -5.68434189e-14 9.4437353 9.87486177 73.2758057 9.37587322 73.2816649 10.1258503 9.11290073 10.6271688 5.68434189e-13 0.501723549"></polygon>
+                <polygon id="Line-3-Copy-2" transform="translate(36.640832, 28.313584) scale(1, -1) translate(-36.640832, -28.313584) " points="0.55747061 23 9.4437353 32.8748618 73.2758057 32.3758732 73.2816649 33.1258503 9.11290073 33.6271688 5.68434189e-13 23.5017235"></polygon>
+            </g>
+            <g id="Group-4" transform="translate(628.000000, 0.250862)" stroke="#B0936D" stroke-width="0.75">
+                <rect id="Rectangle" transform="translate(3.000000, 16.500000) scale(-1, 1) translate(-3.000000, -16.500000) " x="0" y="1" width="6" height="31"></rect>
+                <polyline id="Line-3-Copy" transform="translate(42.500000, 5.000000) scale(-1, 1) translate(-42.500000, -5.000000) " points="79 9.5 15 10 6 0"></polyline>
+                <polyline id="Line-3-Copy-2" transform="translate(42.500000, 28.000000) scale(-1, -1) translate(-42.500000, -28.000000) " points="79 32.5 15 33 6 23"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

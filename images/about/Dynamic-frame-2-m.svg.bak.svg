@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="717px" height="1289px" viewBox="0 0 717 1289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape Copy 6</title>
+    <defs>
+        <linearGradient x1="70.3357066%" y1="114.86803%" x2="42.4556667%" y2="27.9079068%" id="linearGradient-1">
+            <stop stop-color="#060B1A" offset="0%"></stop>
+            <stop stop-color="#052749" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About-WE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+        <g id="WE_aboutus-Copy-4" transform="translate(-26.000000, -1498.000000)" fill="url(#linearGradient-1)">
+            <path d="M743,1498 L742.707,2741.571 L742.522027,2741.49143 L690.057025,2787 L690.058,2787 L26,2787 L26.29,1552.9 L84.1362097,1498 L743,1498 Z" id="Combined-Shape-Copy-6"></path>
+        </g>
+    </g>
+</svg>

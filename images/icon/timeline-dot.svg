@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 20</title>
+    <defs>
+        <linearGradient x1="3.1734406%" y1="3.62506735%" x2="98.9467076%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#004383" stop-opacity="0.640160621" offset="0%"></stop>
+            <stop stop-color="#061C36" stop-opacity="0.750409747" offset="21.8961149%"></stop>
+            <stop stop-color="#0A1E3A" stop-opacity="0.682555726" offset="74.0947002%"></stop>
+            <stop stop-color="#00204C" stop-opacity="0.78201486" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.12196892%" y1="245.956717%" x2="89.8001189%" y2="245.956717%" id="linearGradient-2">
+            <stop stop-color="#A78C68" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="What's-New" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-20" transform="translate(0.213203, 0.213203)" fill="url(#linearGradient-1)" stroke="url(#linearGradient-2)">
+            <rect id="Rectangle-Copy-9" transform="translate(22.000000, 22.000000) rotate(-45.000000) translate(-22.000000, -22.000000) " x="7" y="7" width="30" height="30"></rect>
+            <rect id="Rectangle-Copy-13" transform="translate(21.792893, 22.000000) rotate(-45.000000) translate(-21.792893, -22.000000) " x="14.7928932" y="15" width="14" height="14"></rect>
+        </g>
+    </g>
+</svg>

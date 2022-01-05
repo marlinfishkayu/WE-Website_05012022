@@ -1,0 +1,428 @@
+#intdexOurGames{
+    height: inherit;
+    .deco-cat{
+        width: 180px;
+    }
+}
+#intdexHotPick{
+    height: 1000px;
+    .section-container{
+        margin: auto;
+    }
+}
+.section-container{
+    padding: 3rem 0;
+}
+.our-gamaes{
+    margin-top: 3rem;
+    max-width: 1400px;
+    .ourgames-img{
+        width: 100%;
+        max-width: 315px;
+        height: auto;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 0rem;
+        transition: all 300ms;
+        transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
+        filter: opacity(100%);
+        img{
+            width: 100%; 
+            height: 100%; 
+            background-position: 50% 10%; 
+            object-fit: contain;
+            background-size: contain; 
+        }
+    }
+    .expand-deco{
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-53%, 27%);
+        transition: all 800ms;
+        transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
+        .expand-icon{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            transform: scale(0.8);
+            padding-right: 2px;
+            transition: all 400ms;
+            transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
+        }
+        .more-deco-h4{
+            margin-top: 20px;
+            font-family: $fontFuturaMedium;
+            font-size: 12px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            transition: all 300ms;
+            transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
+            &:hover{
+                color: #B0936D;
+            }
+        }
+        .hover-for-more{
+            opacity: 0;
+            transition: all 400ms;
+            transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
+        }
+        .more-deco-wrap{
+            width: 200px;
+            height: 21px;
+            margin: 0 auto;
+            position: relative;
+            transition: all 200ms ease-out;
+            .more-deco{
+                width: 100%; 
+                height: 100%; 
+                background-position: 50% 10%; 
+                object-fit: contain;
+                background-size: contain; 
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTI5cHgiIGhlaWdodD0iMjNweCIgdmlld0JveD0iMCAwIDEyOSAyMyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT5Hcm91cCAyODwvdGl0bGU+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjYuNzE4ODI2MjklIiB5MT0iNDAuNzk4NDc1NSUiIHgyPSI5Ni4zMzQxMzQ2JSIgeTI9IjYyLjUzMTI2OTUlIiBpZD0ibGluZWFyR3JhZGllbnQtMSI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDQzODMiIHN0b3Atb3BhY2l0eT0iMC4zIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDIwNEMiIHN0b3Atb3BhY2l0eT0iMC44IiBvZmZzZXQ9IjM3LjcxMTE0ODYlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDIwNEMiIHN0b3Atb3BhY2l0eT0iMC44IiBvZmZzZXQ9Ijc1LjU2NTExODElIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDIwNEMiIHN0b3Atb3BhY2l0eT0iMC4zIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9IkhvbWUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJHcm91cC0yOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDAwMTg0LCAwLjYyNTAwMCkiPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yIiBzdHJva2U9IiNCMDkzNkQiIHN0cm9rZS13aWR0aD0iMC44IiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTEpIiBwb2ludHM9IjQ1LjAwMDE4NCAwLjQwMTI0OTk1NSA2NS41MDAxODQgMjAuOTI2ODc1IDg2LjAwMDE4NCAwLjQwMTI0OTk1NSA3Ni45OTgyMzA5IDAuNDAxMjQ5OTU1IDY1LjI0OTIwNzQgMTIuMTY0OTU5NyA1My41MDAxODQgMC40MDEyNDk5NTUiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgtOCIgZmlsbD0iI0IwOTM2RCIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjEyOC45OTk5OTUgMi42Mzc5ODkzOGUtMDkgMTI5LjAwMDM3MyAwLjc0OTk5OTkwNyA3Ny4xNTQxODQgMC43NzU5OTk5NTUgNjUuMjQ5MjA3NCAxMi42OTU2MjEzIDUzLjM0NTE4NCAwLjc3NTk5OTk1NSAwIDAuNzQ5OTk5OTEgMC4wMDAzNjc5OTA2MTEgMCA1My42NTU3Mjc1IDAuMDI2MzI2MjI3OCA2NS4yNDkxODQgMTEuNjMzIDc2Ljg0MjY4NTIgMC4wMjYzMjg0MjQ4Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
+            }
+        }
+    }
+    #col2LiveGames {
+        bottom: -1%;
+        left: 50.5%;
+    }
+    a.expand-deco:hover {
+        text-decoration: none;
+    }
+    .more-button{
+        transform: translateX(-40%);
+    }
+}
+.coming{
+    position: relative;
+    .disable-img{
+        -webkit-filter: opacity(30%);
+        -o-filter: opacity(30%);
+        -moz-filter: opacity(30%);
+        -ms-filter: opacity(30%);
+        filter: opacity(30%);
+        filter: gray; /* IE 6-9 */
+    }
+    .disable-text{
+        h4{
+            font-family: $fontFuturaMedium;
+            font-size: 18px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 100;
+            white-space: nowrap;
+        }
+        position: absolute;
+        top:48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.our-games .active .expand-deco{
+    transform: translate(-57%, -18%);
+}
+.active .expand-deco {
+    transform: translate(-54%, -18%);
+    .expand-icon{
+        transform: scale(1);
+    }
+    .hover-for-more{
+        opacity: 1;
+    }
+}
+.our-gamaes {
+    .active .ourgames-img{
+        filter: opacity(30%);
+    }
+    .expand-deco:hover .more-deco-wrap{
+        position: relative;
+    }
+}
+#intdexHotPick, #intdexWhatsNews{
+    position: relative;
+}
+.deco-cat{
+    font-family: $fontBarlowThin;
+    font-size: 18px;
+    font-weight: 100;
+    color: #E1E1E1;
+    text-align: center;
+    padding-top: 1.8rem;
+    padding-bottom: 0.8rem;
+    width: 215px;
+    margin: 0 auto;
+    position: relative;
+    &:before , &:after{
+        content: "";
+        position: absolute;
+        top: 48%;
+        width: 90px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTgiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAxMTggMzEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJkZWNvLWNhdC1hIiB4MT0iMy4xNzMlIiB4Mj0iOTguOTQ3JSIgeTE9IjQ5Ljk5NSUiIHkyPSI1MC4wMDUlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNDM4MyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMjEuODk2JSIgc3RvcC1jb2xvcj0iIzA2MUMzNiIgc3RvcC1vcGFjaXR5PSIuMyIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ijc0LjA5NSUiIHN0b3AtY29sb3I9IiMwQTFFM0EiIHN0b3Atb3BhY2l0eT0iLjMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAyMDRDIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImRlY28tY2F0LWIiIHgxPSIzLjE3MyUiIHgyPSI5OC45NDclIiB5MT0iMy42MjUlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDQzODMiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjIxLjg5NiUiIHN0b3AtY29sb3I9IiMwNjFDMzYiIHN0b3Atb3BhY2l0eT0iLjMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI3NC4wOTUlIiBzdG9wLWNvbG9yPSIjMEExRTNBIiBzdG9wLW9wYWNpdHk9Ii4zIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMjA0QyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJkZWNvLWNhdC1jIiB4MT0iNDguMTI3JSIgeDI9IjUxLjk1OCUiIHkxPSIzLjYyNSUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNDM4MyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMjEuODk2JSIgc3RvcC1jb2xvcj0iIzA2MUMzNiIgc3RvcC1vcGFjaXR5PSIuMyIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ijc0LjA5NSUiIHN0b3AtY29sb3I9IiMwQTFFM0EiIHN0b3Atb3BhY2l0eT0iLjMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAyMDRDIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjQjA5MzZEIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxKSI+CiAgICA8bGluZSB4MT0iMTExLjUiIHgyPSIxMi41IiB5MT0iMTUuNSIgeTI9IjE1LjUiIGZpbGw9InVybCgjZGVjby1jYXQtYSkiLz4KICAgIDxwb2x5bGluZSBwb2ludHM9IjExMiA5LjUgNDggMTAgMzkgMCIvPgogICAgPHBvbHlsaW5lIHBvaW50cz0iMTEyIDMwLjUgNDggMzEgMzkgMjEiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgNTIpIi8+CiAgICA8cmVjdCB3aWR0aD0iOSIgaGVpZ2h0PSI5IiB4PSIyIiB5PSIxMSIgZmlsbD0idXJsKCNkZWNvLWNhdC1iKSIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDYuNSAxNS41KSIvPgogICAgPHJlY3Qgd2lkdGg9IjQiIGhlaWdodD0iMjAiIHg9IjExMiIgeT0iNiIgZmlsbD0idXJsKCNkZWNvLWNhdC1jKSIvPgogIDwvZz4KPC9zdmc+Cg==");
+    }
+    &:before {
+        left: -17%;
+    }
+    &:after {
+        right: -17%;
+        transform: rotate(180deg);
+    }
+}
+.deco-header{
+    font-family: $fontFutura;
+    font-size: 22px;
+    color: #DDDDDD;
+    padding-bottom: 0.25rem;
+    line-height: 1.3;
+}
+.deco-content{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #A1A1A1;
+    max-width: 300px;
+    margin: auto;
+}
+#intdexWhatsNews {
+    .deco-cat{
+        width: 222px;
+    }
+    .deco-content{
+        padding-bottom: 1rem;
+    }
+    .intdexWhatsNews-bkg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        img{
+            object-fit: cover;
+        }
+    }
+}
+.more-button{
+    margin: 0 auto;
+    width: 200px;
+    padding: 2rem 0;
+    .moreBtn{
+        width: 100%;
+        height: 46px;
+        background-color: #906C4D;
+        border-radius: 0;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+}
+#slider-area{
+    .main-button a > span {
+        display: block;
+        height: 130%;
+        margin-top: -5px;
+    }
+    .main-button a:before { 
+        top: 10%;
+    }
+}
+.WE-diamond-bkg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: 90px 80px;
+    background-image: url("../images/index/we_diamond_pattern_x2.jpg");
+    &:after{
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0,0,0);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(6,11,26,1) 100%);
+    }
+}
+#introCarousel {
+    .news-column{
+        width: 300px;
+        height: 300px;
+        box-shadow: #A1A1A1;
+        position: relative;
+        img{
+            -webkit-box-shadow: 10px 10px 38px -10px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 38px -10px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 38px -10px rgba(0,0,0,0.75);
+            width: auto;
+            height: 100%;
+        }
+    }
+    .news-outer{
+        position: absolute;
+        top: 50%;
+        left: 56%;
+        transform: translate(-50%,-50%);
+        width: 295px;
+        height: 295px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/icon/frame.svg);
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 376px) { 
+    #introCarousel .news-outer{
+        left: 56%;
+    }
+    
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 377px) { 
+    #introCarousel .news-outer{
+        left: 50%;
+    }
+    
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .deco-cat{
+        padding-top: 2.8rem;
+        padding-bottom: 1.8rem;
+    }
+    .our-gamaes #col2LiveGames {
+        bottom: 28%;
+    }
+    #slider-area .main-button a > span {
+        display: block;
+        height: 103%;
+        margin-top: 0;
+    }
+    #intdexHotPick{
+        height: 1135px;
+    }
+    #introCarousel {
+        .news-outer{
+            left: 56%;
+            width: 300px;
+            height: 300px;
+        }
+        .news-column{
+            width: 328px;
+            height: 328px;
+        }
+    }
+    .our-gamaes {
+        .ourgames-img{
+            margin-bottom: 10rem;
+        }
+        .expand-deco {
+            display: block;
+            position: absolute;
+            bottom: 28%;
+        }
+    }
+    .coming .disable-text {
+        top: 38%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #intdexHotPick{
+        height: 1300px;
+    }
+    .deco-header{
+        font-size: 44px;
+        padding-bottom: 1.25rem;
+    }
+    .deco-content{
+        font-size: 24px;
+        max-width: 590px;
+    }
+    .our-gamaes {
+        .expand-deco{
+            display: block;
+            .more-deco-wrap{
+                width: 231px;
+            }
+        }
+        .more-button{
+            display: none;
+        }
+        .expand-icon {
+            transform: scale(0.6);
+            margin-right: 0;
+        }
+    } 
+    .main-button a:after {
+        content: '';
+        height: 48px;
+    }
+    #intdexWhatsNews .news-item-text {
+        padding-top: inherit;
+        .text-gold {
+            margin-top: 6rem;
+        }
+    }
+    #introCarousel {
+        .news-column{
+            width: 358px;
+            height: 358px;
+        }
+        .news-outer{
+            left: 55%;
+            width: 382px;
+            height: 382px;
+        }
+    }
+ }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .our-gamaes .expand-deco .expand-icon {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    .our-gamaes .active .expand-deco .expand-icon {
+        transform: scale(1);
+    }
+    .our-gamaes{
+        margin-top: 7rem;
+    }
+    #introCarousel .news-outer {
+        left: 55%;
+        width: 108%;
+        height: 108%;
+        background-size: contain;
+    }
+    #intdexHotPick .section-container{
+        max-width: 1280px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    #intdexHotPick .section-container{
+        max-width: 1315px;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+    #allLiveGame  .bottom-deco{
+        margin-top: 5rem;
+    }
+    #allLiveGame .allLiveGame-main {
+        padding-top: 80px;
+    }
+}

@@ -1,0 +1,201 @@
+#error{
+    height: 100vh;
+    width: 100%;
+    overflow: inherit;
+    .error-main-bkg{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: -1;
+        img{
+            background-position: 50% 10%; 
+            background-size: cover; 
+            height: 100%; 
+            object-fit: cover;
+            width: 100vw;
+        }
+    }
+    .WE-diamond-bkg{
+        background-image: url(../images/bkg/error-bkg_x2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .error-wrap{
+        text-align: center;
+        color: rgb(161,161,161);
+        padding: 8rem 0; 
+        height: 100%;
+    }
+    .error-header{
+        max-width: 500px;
+        margin: 0 auto;
+        .err-header{
+            font-size: 64px;
+            line-height: 100px;
+            color: #8A6C52;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 0;
+            margin-bottom: -0.25em;
+            font-family: $fontFuturaMedium;
+        }
+        .gradient-text{
+            /* Create the gradient. */
+            background: rgb(230,177,131);
+            background: -moz-linear-gradient(90deg, rgba(230,177,131,1) 0%, rgba(153,118,87,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(230,177,131,1) 0%, rgba(153,118,87,1) 100%);
+            background: linear-gradient(90deg, rgba(230,177,131,1) 0%, rgba(153,118,87,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6b183",endColorstr="#997657",GradientType=1);
+            /* Set the background size and repeat properties. */
+            background-size: 100%;
+            background-repeat: repeat;
+            /* Use the text as a mask for the background. */
+            /* This will show the gradient as a text color rather than element bg. */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+        .line-deco {
+            width: 80px;
+            margin: 0 auto;
+            padding-top: 1.5rem;
+        }
+        .deco-cat{
+            padding-top: 20px;
+            width: 450px;
+        }
+        h3{
+            color: #B0936D;
+            font-size: 24px;
+            font-family: $fontFuturaMedium;
+            font-weight: normal;
+        }
+        p{
+            font-family: $fontBarlowLight;
+            padding-top: 30px;
+            font-size: 16px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+    .error-content{
+        font-size: 16px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        padding-top: 60px;
+
+        h4{
+            font-size: 13px;
+            font-weight: 100;
+            font-family: $fontFuturaMedium;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        p{
+            font-size: 16px;
+            font-family: $fontBarlowLight;
+        }
+        .error-col{
+            padding-bottom: 30px;
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+     .error-header .deco-cat:after,
+     .error-header .deco-cat:before{
+        display: none;
+    }
+    .main-button a:before {
+        top: 10%;
+    }
+    
+    #errorAccRes {
+        .error-header .err-header{
+            font-size: 40px;
+        }
+        .error-header {
+            max-width: inherit;
+        }
+        .error-header p{
+            max-width: 300px;
+        }
+        .error-header .deco-cat{
+            width: 450px;
+        }
+    }
+    #error502 {
+        .error-header .deco-cat{
+            width: 430px;
+        }
+    }
+    
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #error  .error-main-bkg{
+        display: block;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .error-pl{
+        padding-left: 90px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #error .error-content {
+        max-width: 600px;
+    }
+    #error .error-content .error-col {
+        text-align: center;
+    }
+    #error .error-header .err-header {
+        font-size: 130px;
+        padding-bottom: 30px;
+    }
+    #error .error-header .deco-cat {
+        padding-top: 42px;
+    }
+    #error .error-header .line-deco{
+        display: none;
+    }
+    #error .error-header p {
+        padding-top: 5px;
+        max-width: inherit;
+    }
+    #error .error-content {
+        padding-bottom: 6rem;
+    }
+    #error .error-header .deco-cat:after,
+    #error .error-header .deco-cat:before{
+        display: block;
+    }
+    #error .error-main-bkg img {
+        height: 200vh;
+    }
+    #error .error-wrap {
+        padding-top: 20vh;
+    }
+    #error #errorAccRes .error-header .err-header {
+        font-size: 80px;
+    }
+    #error #errorAccRes .error-header p {
+        max-width: 500px;
+    }
+    #error .main-button a:after {
+        height: 47px;
+    }
+ }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #error .error-main-bkg img {
+        height: 150vh;
+    }
+    
+}

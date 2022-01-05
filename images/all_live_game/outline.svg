@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="392px" viewBox="0 0 284 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape Copy 2</title>
+    <defs>
+        <linearGradient x1="23.6206857%" y1="0%" x2="76.3793143%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A78C68" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="52.4440456%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Live-Game" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WE_Live-Game" transform="translate(-250.000000, -887.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-4-Copy-2" transform="translate(250.000000, 866.000000)">
+                <path d="M283.8,21.56 L283.757,371.183 L283.750741,371.176501 L242.635,412.28 L0,412.28 L0.042,62.656 L0.0492735488,62.6634986 L41.1654829,21.56 L283.8,21.56 Z M283.05,22.309 L41.475,22.309 L0.791,62.981 L0.749,411.53 L242.323,411.53 L283.007,370.859 L283.05,22.309 Z" id="Combined-Shape-Copy-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

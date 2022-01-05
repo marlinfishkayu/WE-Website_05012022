@@ -1,0 +1,63 @@
+#searchResult {
+    .result-header{
+        margin: 0 auto;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        height: auto;
+        text-align: center;
+        background-color: #052749;
+        h2{
+            font-family: $fontFuturaMedium;
+            font-size: 26px;
+            color: #D8D8D8;
+            text-transform: uppercase;
+            font-weight: 100;
+            padding-bottom: 1.5rem;
+        }
+        h4{
+            font-family: $fontBarlowRegular;
+            color: #979797;
+            font-weight: 100;
+            font-size: 24px;
+        }
+        .result-num{
+            color: #D8D8D8;
+        }
+    }
+    .reasult-wrap{
+        background-color: #fff;
+        padding: 0 3rem;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
+    .result-item {
+        max-width: 712px;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #D8D8D8;
+        
+        h4{
+            color: #052749;
+            font-family: $fontBarlow;
+        }
+        .date{
+            text-align: right;
+        }
+        p{
+            color: #979797;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            .key-word{
+                color: #00274C;
+                font-weight: 500;
+            }
+        }
+        a{
+            color: #979797;
+            
+        }
+    }
+    
+}
+

@@ -1,0 +1,93 @@
+.cookie-container {
+    position: fixed;
+    color: #979797;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgb(1,27,62);
+    background: linear-gradient(310deg, rgba(1,27,62,1) 0%, rgba(0,15,36,1) 100%);
+    color: #979797;
+    padding: 2rem 2rem;
+    width: 100%;
+    text-align: center;
+    transition: 400ms;
+    margin: 0 auto;
+    .cookie-deco{
+      width: 165px;
+      height: 16px;
+      margin: 0 auto;
+      
+    }
+    p{
+      font-family: $fontBarlowLight;
+      font-size: 16px;
+      font-weight: 100;
+      letter-spacing: 0.5px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  .cookie-container.active {
+    bottom: 0;
+  }
+  .cookie-container a {
+    color: #fff;
+  }
+  .cookie-btn {
+    box-shadow: 1px 1000px 1px  #B0935B inset;
+    font-family: $fontFuturaMedium;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    }
+    .cookie-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #89663D;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 200ms ease-out;
+    }
+    .cookie-btn:hover::after{
+    transform: scaleX(1);
+
+  }
+  .pp-link a{
+    color: rgb(176,147,109);
+    text-decoration: none;
+    font-weight: 100;
+  }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cookie-container p{
+    width: 713px;
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cookie-container .accept-btn{
+    position: absolute;
+    left: 80%;
+    right: -10%;
+    top: 40%;
+    width: 50px;
+  }
+  .cookie-container {
+    height: 160px;
+    padding: 30px 20px;
+  }
+  .cookie-container .cookie-btn{
+      margin: 0;
+  }
+}

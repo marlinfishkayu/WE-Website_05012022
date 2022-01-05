@@ -1,0 +1,47 @@
+body:lang(TC),
+body:lang(SC)
+{
+    #liveStudio .livestudio-hightlight-wrap .bottom-deco {
+        width: 148px;
+    }
+    #liveStudio .livestudio-hightlight-wrap #liceCert {
+        width: 205px;
+    }
+    #liveStudio .livestudio-sec3 .bottom-deco {
+        width: 233px;
+    }
+    #liveStudio .livestudio-sec3 .bottom-deco:before, #liveStudio .livestudio-sec3 .bottom-deco:after {
+        top: 37%;
+    }
+    #liveStudio .livestudio-hightlight-wrap .large-text h1 {
+        padding-top: 3.7rem;
+    }
+    @media (min-width: 768px){
+        #liveStudio .livestudio-hightlight-wrap .bottom-deco {
+            width: 200px;
+        }
+        #liveStudio .livestudio-hightlight-wrap #liceCert {
+            width: 260px;
+        }
+        #liveStudio .livestudio-sec3 .bottom-deco {
+            width: 294px;
+        }
+    }
+    @media (min-width: 992px){
+        #liveStudio .livestudio-hightlight-wrap .bottom-deco {
+            width: 220px;
+        }
+        #liveStudio .livestudio-hightlight-wrap #liceCert {
+            width: 292px;
+            line-height: 42px;
+        }
+        #liveStudio .livestudio-sec3 .bottom-deco {
+            width: 342px;
+        }
+    }
+    @media (min-width: 1200px){
+
+    }
+    
+}
+

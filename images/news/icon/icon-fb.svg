@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="24px" viewBox="0 0 12 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="What's-New" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="details_event" transform="translate(-370.000000, -421.000000)" fill="#545454">
+            <g id="Group-14" transform="translate(368.000000, 166.000000)">
+                <g id="Group" transform="translate(2.000000, 255.000000)">
+                    <path d="M2.54144389,24 L2.54144389,11.9984852 L1.49213975e-13,11.9984852 L1.49213975e-13,7.86316587 L2.54144389,7.86316587 L2.54144389,5.38045948 C2.54144389,2.00706892 3.97571642,0 8.05321491,0 L11.4469865,0 L11.4469865,4.13683413 L9.32587926,4.13683413 C7.73854515,4.13683413 7.63365523,4.71471851 7.63365523,5.79323403 L7.62666257,7.86316587 L11.4702954,7.86316587 L11.0204342,11.9984852 L7.62666257,11.9984852 L7.62666257,24 L2.54144389,24 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

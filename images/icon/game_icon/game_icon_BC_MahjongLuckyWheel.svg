@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>game_icon_lucky</title>
+    <defs>
+        <linearGradient x1="-17.240767%" y1="-56.3587536%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000F24" stop-opacity="0.9" offset="0%"></stop>
+            <stop stop-color="#011B3E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-50.0854492%" y1="-49.005127%" x2="36.8041992%" y2="42.7886963%" id="linearGradient-2">
+            <stop stop-color="#000F24" stop-opacity="0.9" offset="0%"></stop>
+            <stop stop-color="#011B3E" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="45.98" cy="45.98" r="45.98"></circle>
+        <linearGradient x1="39.6243687%" y1="0%" x2="176.664605%" y2="178.388672%" id="linearGradient-5">
+            <stop stop-color="#C8AA82" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="79.6659393%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.41005068%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#000F24" stop-opacity="0.9" offset="0%"></stop>
+            <stop stop-color="#011B3E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="24.1327751%" y1="0%" x2="349.232604%" y2="179.944345%" id="linearGradient-7">
+            <stop stop-color="#C8AA82" offset="0%"></stop>
+            <stop stop-color="#7C6341" offset="91.3405231%"></stop>
+            <stop stop-color="#AFA286" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="game_icon_lucky" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(14.000000, 5.000000)">
+            <g id="icon" transform="translate(0.000000, 8.360000)">
+                <circle id="Oval" stroke="#B0936D" stroke-width="1.82875" fill="url(#linearGradient-1)" cx="45.98" cy="45.98" r="45.98"></circle>
+                <line x1="13.4672302" y1="13.4672302" x2="78.4927698" y2="78.4927698" id="Path-4" stroke="#B0936D" stroke-width="1.82875"></line>
+                <line x1="78.4927698" y1="13.4672302" x2="13.4672302" y2="78.4927698" id="Path-4" stroke="#B0936D" stroke-width="1.82875"></line>
+                <line x1="91.96" y1="48.1033355" x2="1.89898763e-12" y2="48.1033355" id="Path-5" stroke="#B0936D" stroke-width="1.82875"></line>
+                <line x1="45.98" y1="91.96" x2="45.98" y2="0" id="Path-5" stroke="#B0936D" stroke-width="1.82875"></line>
+                <circle id="Oval" stroke="#B0936D" stroke-width="1.82875" fill="url(#linearGradient-2)" cx="45.98" cy="45.98" r="33.44"></circle>
+                <circle id="Oval" stroke="#B0936D" stroke-width="1.82875" cx="45.98" cy="45.98" r="21.945"></circle>
+                <circle id="Oval" stroke="#B0936D" stroke-width="1.82875" cx="45.98" cy="45.98" r="4.18"></circle>
+                <path d="" id="Path-7" stroke="#979797" stroke-width="1.045"></path>
+                <g id="mark" transform="translate(0.000000, 0.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                </g>
+                <circle id="Oval" stroke="#B0936D" stroke-width="1.82875" cx="45.98" cy="45.98" r="45.98"></circle>
+            </g>
+            <polygon id="Path-8" stroke="url(#linearGradient-5)" stroke-width="1.82875" fill="#001127" points="46.5025 31.35 56.43 8.87219925 46.5025 -4.37787827e-15 36.575 8.87219925"></polygon>
+            <rect id="Rectangle" stroke="url(#linearGradient-7)" stroke-width="1.82875" fill="url(#linearGradient-6)" transform="translate(45.980000, 54.340000) rotate(-315.000000) translate(-45.980000, -54.340000) " x="41.8" y="50.16" width="8.36" height="8.36"></rect>
+            <polygon id="Path-8" stroke="#B0936D" stroke-width="1.82875" fill="#001127" points="46.5025 20.9 50.16 9.52798792 46.5025 6.27 42.845 9.52798792"></polygon>
+        </g>
+    </g>
+</svg>

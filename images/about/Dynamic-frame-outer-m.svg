@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="737px" height="712px" viewBox="0 0 737 712" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 13</title>
+    <g id="About-WE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WE_aboutus-Copy-4" transform="translate(-16.000000, -498.000000)" stroke="#B0936D" stroke-width="0.75">
+            <g id="Group-20" transform="translate(17.000000, 493.000000)">
+                <g id="Group-13" transform="translate(0.000000, 6.000000)">
+                    <g id="Group" transform="translate(0.000000, 16.000000)">
+                        <polyline id="Combined-Shape" points="531 0 735 0 734.892 592.88 621.306477 694.5 0 694.5 0.108 101.621 113.693562 0 201 0"></polyline>
+                    </g>
+                    <g id="Group-4" transform="translate(128.000000, 0.000000)">
+                        <rect id="Rectangle" x="73" y="1" width="6" height="31"></rect>
+                        <g id="Group-3">
+                            <polyline id="Line-3-Copy" points="73 9.5 9 10 0 0"></polyline>
+                            <polyline id="Line-3-Copy-2" transform="translate(36.500000, 28.000000) scale(1, -1) translate(-36.500000, -28.000000) " points="73 32.5 9 33 0 23"></polyline>
+                        </g>
+                    </g>
+                    <g id="Group-4-Copy" transform="translate(564.500000, 16.500000) scale(-1, 1) translate(-564.500000, -16.500000) translate(525.000000, 0.000000)">
+                        <rect id="Rectangle" x="73" y="1" width="6" height="31"></rect>
+                        <g id="Group-3">
+                            <polyline id="Line-3-Copy" points="73 9.5 9 10 0 0"></polyline>
+                            <polyline id="Line-3-Copy-2" transform="translate(36.500000, 28.000000) scale(1, -1) translate(-36.500000, -28.000000) " points="73 32.5 9 33 0 23"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

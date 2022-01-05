@@ -1,0 +1,134 @@
+#privacyPolicy{
+    position: relative;
+    scroll-behavior: smooth;
+    button{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+    .close-btn{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin: 20px;
+    }
+    .privacy-wrap{
+        margin: 0 auto;
+        width: 100%;
+        padding: 3rem 2rem;
+        .privacy-h1{
+            text-align: center;
+            color: #B0936D;
+            font-family: $fontFuturaMedium;
+            font-size: 30px;
+            font-weight: 100;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+        }
+        .terms{
+            padding-bottom: 4rem;
+        }
+        .privacy-h2{
+            color: #FFFFFF;
+            font-family: $fontFuturaMedium;
+            font-size: 16px;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .privacy-p{
+            padding-top: 1rem;
+        }
+        p,
+        ul li{
+            color: #979797;
+            font-family: $fontBarlowLight;
+            font-weight: 100;
+            font-size: 16px;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+    }
+    #myBtn {
+        display: none;
+        margin: 0 auto;
+        z-index: 99;
+        width: 72px;
+        height: 72px;
+        border: none;
+        outline: none;
+        opacity: 0.5;
+        color: white;
+        cursor: pointer;
+        padding-bottom: 0rem;
+        transform: scaleY(-1);
+        transition: 200ms all ease;
+    }
+    #myBtn:hover {
+        opacity: 1;
+    }
+    .deco-frame{
+        display: none;
+    }
+    #mailto{
+        color: $secondaryColor;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #privacyPolicy .close-btn{
+        width: 72px;
+        height: 72px;
+    }
+    #privacyPolicy .privacy-wrap .privacy-h1{
+        font-size: 44px;
+        padding-bottom: 5rem;
+    }
+    #privacyPolicy .privacy-wrap{
+        max-width: 700px;
+        padding-top: 5rem;
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+ }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #privacyPolicy .close-btn{
+        margin: 0;
+    }
+    #privacyPolicy .privacy-wrap {
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        position: relative;
+    }
+    
+    #privacyPolicy .close-btn{
+        position: absolute;
+        left: -5%;
+        top: 0%;
+    }
+    
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1500px) {
+    #privacyPolicy .deco-frame{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 1329px;
+        height: 3300px;
+        transform: translate(-50%,0);
+    }
+    #privacyPolicy .close-btn{
+        position: absolute;
+        left: -45%;
+        top: 0%;
+    }
+    #privacyPolicy #myBtn{
+        margin-top: 9rem;
+    }
+}
