@@ -5,6 +5,12 @@ body:lang(SC)
     #liveGame.BCgames .header-deco:before{
         width: 105px;
     }
+    @media (max-width: 575px){
+        #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2 {
+            font-size: 15px;
+        }
+    }
+
     @media (min-width: 768px) {
         #allLiveGame.AllLottery .bottom-deco {
             width: 250px;
