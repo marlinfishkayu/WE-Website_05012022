@@ -757,6 +757,7 @@
 		z-index: 1;
 		position: absolute;
 		border-radius: 3px;
+		pointer-events: none;
 	}
 	.game-box-title {
 		font-style: normal;

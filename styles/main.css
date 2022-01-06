@@ -1711,6 +1711,7 @@ button:focus {
   z-index: 1;
   position: absolute;
   border-radius: 3px;
+  pointer-events: none;
 }
 
 .sidebar .game-box-title {
