@@ -10,13 +10,22 @@ body:lang(SC)
     .age-restriction .ageWarning {
         font-size: 12px;
     }
-    #diamondCarousel #diaLotto5 .dia-3d-layer {
-        top: 50%;
-    }
-    #diamondCarousel #diaGodofFortuneRoulette .dia-3d-layer {
-        top: 50%;
+    
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: 376px) { 
+        #diamondCarousel .diamond-item::before {
+            bottom: 20%;
+        }
+        
     }
     @media (min-width: 768px){
+        #diamondCarousel #diaGodofFortuneRoulette .dia-3d-layer {
+            top: 50%;
+        }
+        #diamondCarousel #diaLotto5 .dia-3d-layer {
+            top: 50%;
+        }
     }
     @media (min-width: 992px){
         .subnav-arrow {

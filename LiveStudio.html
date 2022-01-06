@@ -717,11 +717,13 @@
                                 <svg class="gal-frame" viewBox="0 0 1255 718" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 69.9749L69.9772 1H1254V647.506L1184.5 717H1V69.9749Z" stroke="#A78C68"></path></svg>
                                 <div id="sync1" class="owl-carousel owl-theme">
                                     <div class="item">
-                                        <img class="gal-img" loading="lazy"
-                                            src="./images/livestudio/studio/studio-photo-1_x1.jpg"
-                                            srcset="./images/livestudio/studio/studio-photo-1_x1.jpg 500w , ./images/livestudio/studio/studio-photo-1_x2.jpg 1000w"
-                                            alt=""
-                                        />
+                                        <picture  class="first">
+                                            <img class="gal-img" loading="lazy"
+                                                src="./images/livestudio/studio/studio-photo-1_x1.jpg"
+                                                srcset="./images/livestudio/studio/studio-photo-1_x1.jpg 500w , ./images/livestudio/studio/studio-photo-1_x2.jpg 1000w"
+                                                alt=""
+                                            />
+                                        </picture>
                                     </div>
                                     <div class="item">
                                         <img class="gal-img" loading="lazy"
@@ -1328,7 +1330,8 @@
                 items: 1,
                 slideSpeed: 2000,
                 nav: true,
-                autoplay: true, 
+                autoplay: false, 
+                // autoplay: true, 
                 autoplayTimeout: 4000,
                 dots: false,
                 loop: true,

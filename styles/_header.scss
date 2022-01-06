@@ -12,16 +12,6 @@
 	z-index: 0;
 	background-color: linear-gradient(180deg ,rgba(6, 11, 26, 0.3) 0%, #070a1b 100%);
 }
-// #nav-area::after{
-// 	content: "";
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100px;
-// 	background: linear-gradient(0deg, rgba(6, 11, 26, 0) 0%, #070a1b 100%);
-// 	z-index: -1;
-// }
 #wrapper{
 	position: relative;
 }
@@ -126,13 +116,13 @@
 	position: relative;
 	z-index: 0;
 }
-.game-icon-bkg-wrap::after {
+.game-icon-bkg-wrap::before {
 	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 200px;
+	height: 150px;
 	background: linear-gradient(0deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
 	z-index: 1;
 }
@@ -766,7 +756,6 @@
 		left: 0;
 		z-index: 1;
 		position: absolute;
-		pointer-events: none;
 		border-radius: 3px;
 	}
 	.game-box-title {

@@ -218,7 +218,7 @@
                     position: absolute;
                     left: -4px;
                     width: 280px;
-                    height: 380px;
+                    height: 230px;
                     pointer-events: none;
                     bottom: 0;
                     opacity: 1;
@@ -332,6 +332,7 @@
 }
 
 
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     #allLiveGame  .bottom-deco{
@@ -374,6 +375,10 @@
     }
     #allLiveGame.AllLottery .bottom-deco {
         width: 320px;
+    }
+    #allLiveGame #game-wrap-row-1 {
+        margin-left: 80px;
+        margin-right: -167px;
     }
 }
 // Large devices (desktops, 992px and up)
