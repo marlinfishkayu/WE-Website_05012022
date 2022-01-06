@@ -2574,7 +2574,7 @@ footer {
 
 #intdexWhatsNews .news-item-text {
   width: 270px;
-  height: 327px;
+  height: 270px;
   overflow: hidden;
   margin: auto;
   text-transform: uppercase;
@@ -3302,7 +3302,7 @@ footer {
     margin: 2em;
   }
   #slider-area .owl-dots {
-    bottom: -15%;
+    bottom: -4%;
   }
   #slider-area .owl-nav .owl-prev, #slider-area .owl-nav .owl-next {
     width: 72px;
