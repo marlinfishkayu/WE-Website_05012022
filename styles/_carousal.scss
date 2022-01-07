@@ -672,6 +672,7 @@
 }
 
 
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     #diamondCarousel .active-img {
@@ -915,7 +916,22 @@
     }
     
 }
-
+@media (orientation: portrait) {
+    #slider-area .mobile-portrait{
+        display: block;
+    }
+    #slider-area .mobile-landscape{
+        display: none;
+    }
+}
+@media (orientation: landscape) {
+    #slider-area .mobile-portrait{
+        display: none;
+    }
+    #slider-area .mobile-landscape{
+        display: block;
+    }
+}
 @media (orientation: landscape) and (max-width: 575px) {
     #slider-area .slide {
       height: 100vh;
@@ -979,5 +995,14 @@
     }
     #slider-area .mobile-landscape{
         display: block;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 642px) {
+    #slider-area .owl-dots {
+        bottom: -20%;
+    }
+    #slider-area .slide {
+        height: 100vh;
     }
 }

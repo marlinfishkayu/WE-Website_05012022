@@ -1323,7 +1323,7 @@
 
             var sync1 = $("#sync1");
             var sync2 = $("#sync2");
-            var slidesPerPage = 6; //globaly define number of elements per page
+            var slidesPerPage = 4; //globaly define number of elements per page
             var syncedSecondary = true;
 
             sync1.owlCarousel({
@@ -1345,11 +1345,11 @@
                 .owlCarousel({
                     responsive:{
                         0:{
-                            items: 6,
+                            items: 4,
                             mouseDrag: false,
                         },
                         480:{
-                            items: 6,
+                            items: 4,
                         },
                         768:{
                             items: 6,
@@ -1371,7 +1371,7 @@
 
             function syncPosition(el) {
                 //if you set loop to false, you have to restore this next line
-                //var current = el.item.index;
+                var current = el.item.index;
 
                 //if you disable loop you have to comment this block
                 var count = el.item.count - 1;

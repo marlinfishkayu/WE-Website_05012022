@@ -1067,6 +1067,13 @@ ul.tab-content {
 }
 
 
+@media (orientation: landscape) {
+	.sidebar {
+		position: absolute;
+    	height: 100%;
+	}
+  }
+
 //game menu fixed
 // #nav-area {
 // 	height: 700px;

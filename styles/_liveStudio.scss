@@ -378,7 +378,7 @@
         left: 50%;
         padding: 10px;
         z-index: 10;
-        width: 100%;
+        width: 92%;
         height: 100%;
         transform: translate(-50%, -50%);
         pointer-events: none;
@@ -673,6 +673,9 @@ svg.gal-frame {
     .thumb-wrap {
         margin: 20px;
     }
+    .gal-carousel .gal-frame {
+        width: 95%;
+    }
 }   
 
 // Large devices (desktops, 992px and up)
@@ -733,6 +736,9 @@ svg.gal-frame {
     #sync1.owl-theme .owl-prev {
         height: 60px!important;
         width: 60px!important;
+    }
+    .gal-carousel .gal-frame {
+        width: 100%;
     }
  }
  // Extra large devices (large desktops, 1200px and up)

@@ -107,6 +107,11 @@
     }
     .hero-header-bkg{
         width: 100%;
+        overflow: hidden;
+        img {
+            background-position: top;
+            height: auto; 
+        }
     }
     .main-button{
         padding-bottom: 10px;

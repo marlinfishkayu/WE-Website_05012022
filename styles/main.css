@@ -2033,6 +2033,13 @@ ul.tab-content {
   }
 }
 
+@media (orientation: landscape) {
+  .sidebar {
+    position: absolute;
+    height: 100%;
+  }
+}
+
 footer {
   background-color: #000000;
   position: relative;
@@ -3346,6 +3353,24 @@ footer {
   }
 }
 
+@media (orientation: portrait) {
+  #slider-area .mobile-portrait {
+    display: block;
+  }
+  #slider-area .mobile-landscape {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  #slider-area .mobile-portrait {
+    display: none;
+  }
+  #slider-area .mobile-landscape {
+    display: block;
+  }
+}
+
 @media (orientation: landscape) and (max-width: 575px) {
   #slider-area .slide {
     height: 100vh;
@@ -3409,6 +3434,15 @@ footer {
   }
   #slider-area .mobile-landscape {
     display: block;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 642px) {
+  #slider-area .owl-dots {
+    bottom: -20%;
+  }
+  #slider-area .slide {
+    height: 100vh;
   }
 }
 
@@ -4020,6 +4054,12 @@ footer {
 
 #liveGame .hero-header-bkg {
   width: 100%;
+  overflow: hidden;
+}
+
+#liveGame .hero-header-bkg img {
+  background-position: top;
+  height: auto;
 }
 
 #liveGame .main-button {
@@ -7202,7 +7242,7 @@ select.form-control::-ms-expand {
   left: 50%;
   padding: 10px;
   z-index: 10;
-  width: 100%;
+  width: 92%;
   height: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -7507,6 +7547,9 @@ svg.gal-frame {
   .thumb-wrap {
     margin: 20px;
   }
+  .gal-carousel .gal-frame {
+    width: 95%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -7566,6 +7609,9 @@ svg.gal-frame {
   #sync1.owl-theme .owl-prev {
     height: 60px !important;
     width: 60px !important;
+  }
+  .gal-carousel .gal-frame {
+    width: 100%;
   }
 }
 
@@ -8034,10 +8080,6 @@ svg.gal-frame {
   #allLiveGame.AllLottery .bottom-deco {
     width: 320px;
   }
-  #allLiveGame #game-wrap-row-1 {
-    margin-left: 80px;
-    margin-right: -167px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -8048,6 +8090,10 @@ svg.gal-frame {
     margin-top: 0rem;
     line-height: 40px;
     width: 350px;
+  }
+  #allLiveGame #game-wrap-row-1 {
+    margin-left: 80px;
+    margin-right: -167px;
   }
 }
 

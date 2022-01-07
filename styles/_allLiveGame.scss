@@ -376,10 +376,7 @@
     #allLiveGame.AllLottery .bottom-deco {
         width: 320px;
     }
-    #allLiveGame #game-wrap-row-1 {
-        margin-left: 80px;
-        margin-right: -167px;
-    }
+    
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -391,7 +388,10 @@
         line-height: 40px;
         width: 350px;
     }
-    
+    #allLiveGame #game-wrap-row-1 {
+        margin-left: 80px;
+        margin-right: -167px;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
