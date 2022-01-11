@@ -107,10 +107,10 @@ var arrLang = {
     'Filter_All' : 'All',
     //What's New  detail
     'detail_date' : '18 Dec 2020',
-    'detail_event_1' : 'Link up the world, ',
-    'detail_event_2' : ' play safe!',
+    'detail_event_1' : 'Blockchain games launched! ',
+    'detail_event_2' : '',
     'detail_detail' : 'A Grand Debut at P.A.G.E. the largest Asia’s gaming show! Let’s meet up!',
-    'detail_p' : 'No one can tamper with the data of the blockchain, WE have developed a series of Blockchain Games by this top-notch technique, which allows players to enjoy the game in a safe and secure environment. Catch up and play now!',
+    'detail_p' : 'Link up the world, play safe! No one can tamper with the data of the blockchain, WE have developed a series of Blockchain Games by this top-notch technique, which allows players to enjoy the game in a safe and secure environment. Catch up and play now!',
     //button
     'back' : 'back',
   },
@@ -224,10 +224,10 @@ var arrLang = {
     'Filter_All' : '全部',
     //What's New  detail
     'detail_date' : '2020年12月18日',
-    'detail_event_1' : '鏈接世界，玩得更嗨！',
+    'detail_event_1' : '區塊鏈遊戲正式上線！',
     'detail_event_2' : '',
     'detail_detail' : 'WE 在亞洲最大博奕娛樂展（P.A.G.E.）隆重登場！我們見面吧！',
-    'detail_p' : '區塊鏈乃高端及極具創造力的嶄新技術，以安全可靠的方式傳遞資訊。由於可以保證數據不受任何干擾及篡改，所以我們通過這種加密技術開發了區塊鏈遊戲系列，讓玩家在公平公正的環境下享受遊戲的樂趣。抓緊機會，立即試玩！',
+    'detail_p' : '鏈接世界，玩得更嗨!區塊鏈乃高端及極具創造力的嶄新技術，以安全可靠的方式傳遞資訊。由於可以保證數據不受任何干擾及篡改，所以我們通過這種加密技術開發了區塊鏈遊戲系列，讓玩家在公平公正的環境下享受遊戲的樂趣。抓緊機會，立即試玩！',
     //button
     'back' : '返回',
   },
@@ -341,10 +341,10 @@ var arrLang = {
     'Filter_All' : '全部',
     //What's New  detail
     'detail_date' : '2020年12月18日',
-    'detail_event_1' : '链接世界，玩得更嗨！',
+    'detail_event_1' : '区块链游戏正式上线！',
     'detail_event_2' : '',
     'detail_detail' : 'WE 在亚洲最大博奕娱乐展（P.A.G.E.）隆重登场！我们见面吧！',
-    'detail_p' : '区块链乃高端及极具创造力的崭新技术，以安全可靠的方式传递资讯。由于可以保证数据不受任何干扰及篡改，所以我们通过这种加密技术开发了区块链游戏系列，让玩家在公平公正的环境下享受游戏的乐趣。抓紧机会，立即试玩！',
+    'detail_p' : '链接世界，玩得更嗨!区块链乃高端及极具创造力的崭新技术，以安全可靠的方式传递资讯。由于可以保证数据不受任何干扰及篡改，所以我们通过这种加密技术开发了区块链游戏系列，让玩家在公平公正的环境下享受游戏的乐趣。抓紧机会，立即试玩！',
     //button
     'back' : '返回',
     
