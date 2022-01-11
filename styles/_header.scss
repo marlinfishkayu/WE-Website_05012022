@@ -872,13 +872,19 @@ ul.tab-content {
 		left: 0;
 	}
 }
+@media (orientation: landscape) and (max-width: 991px) { 
+	.sidebar.open {
+		overflow: scroll;
+		position: fixed;
+	}
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
 	#nav-area .search-form input{
 		width: 500px;
 	}
-
+	
 }
 
 // Medium devices (tablets, 768px and up)
