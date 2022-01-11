@@ -523,11 +523,21 @@
     }
 }
 
-@media (orientation: landscape) and (max-width: 767px) {
+@media (orientation: landscape) and (max-width: 991px) {
+    
+    
+    .AllLottery .col-sm-12,
+    .AllBCgames .col-sm-12,
     .allLiveGame-main .col-sm-12 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .AllBCgames .col-12,
+    .allLiveGame-main .col-12 {
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     #allLiveGame .allLiveGame-main .game-item {
         width: 143px;
@@ -622,5 +632,8 @@
     }
     #allLiveGame .allLiveGame-main .game-item-wrap #lotto5Icon{
         margin-top: 1.3rem;
+    }
+    .hero-header::after {
+        bottom: 40%;
     }
 }
