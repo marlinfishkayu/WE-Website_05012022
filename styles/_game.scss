@@ -110,7 +110,6 @@
         overflow: hidden;
         img {
             background-position: top;
-            // height: auto; 
         }
     }
     .main-button{
@@ -432,10 +431,6 @@
     top: inherit;
 }
 
-// #GodofFortuneSicBo .hero-header::after,
-// #GodofFortuneRoulette .hero-header::after {
-//     bottom: 115px;
-// }
 #GOFfooter{
     margin-top: -6rem;
 }
@@ -489,10 +484,6 @@
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-    // #GodofFortuneSicBo .hero-header::after,
-    // #GodofFortuneRoulette .hero-header::after {
-    //     top: -97px;
-    // }
     .hero-header,
     .live-game-main{
         padding-bottom: 5rem;
@@ -502,6 +493,15 @@
 @media (min-width: 576px) and (max-width: 767px){
     .bottom-container{
         margin-bottom: -3rem;
+    }
+    #GodofFortuneSicBo .hero-header, #GodofFortuneRoulette .hero-header {
+        height: 514px;
+    }
+    #liveGame .header-deco:before {
+        left: -37%;
+    }
+    #liveGame .header-deco:after {
+        right: -37%;
     }
 }
 // Medium devices (tablets, 768px and up)
@@ -563,10 +563,6 @@
     .bottom-container{
         margin-bottom: 0rem;
     }
-    // #GodofFortuneSicBo .hero-header::after,
-    // #GodofFortuneRoulette .hero-header::after {
-    //     top: 1px;
-    // }
     .blockchain .hero-header .BC-series,
     #MahjongLuckyWheel .hero-header .GOF-series , 
     #GodofFortuneSicBo .hero-header .GOF-series , 
@@ -807,3 +803,53 @@
     }
 }
 
+// Medium devices (tablets, 768px and up)
+@media (orientation: landscape)  and (max-width: 992px) {
+    .game-hero-M{
+        display: none
+    }
+    .game-hero-D{
+        display: block;
+        
+    }
+    .hero-header-bkg img {
+        background-size: contain;
+        object-fit: contain;
+        height: auto;
+    }
+    
+    #SqueezeBaccarat .hero-header, 
+    .hero-header {
+        height: 300px;
+    }
+    #GodofFortuneSicBo .hero-header, .hero-header,
+    #MahjongLuckyWheel .hero-header, .hero-header {
+        height: 355px;
+    }
+    #Lotto5 .hero-header{
+        height: 282px;
+    }
+    #liveGame #GodofFortuneSicBo .hero-icon, #liveGame #liveGame #GodofFortuneRoulette .hero-icon,
+    #liveGame .hero-icon {
+        padding-top: 0;
+        height: 30px;
+    }
+    #liveGame .hero-header h1 {
+        margin-top: 0;
+    }
+    .live-game-main {
+        margin-top: 10rem !important;
+    }
+    #liveGame .header-deco,
+    #Lotto5 .header-deco{
+        margin-top: 14rem;
+    }
+    #Lotto5 .hero-header::after {
+        height: 42%;
+    }
+    #GodofFortuneSicBo .hero-header, 
+    #GodofFortuneRoulette .hero-header, 
+    #liveGame .blockchain .hero-header {
+        height: 360px;
+    }
+}

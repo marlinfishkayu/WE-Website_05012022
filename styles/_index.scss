@@ -46,7 +46,7 @@
             width: 100%;
             height: auto;
             margin: 0 auto;
-            transform: scale(0.8);
+            transform: scale(0.9);
             padding-right: 2px;
             transition: all 400ms;
             transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
@@ -89,7 +89,7 @@
         }
     }
     #col2LiveGames {
-        bottom: -1%;
+        bottom: -2%;
         left: 50.5%;
     }
     a.expand-deco:hover {
@@ -278,7 +278,10 @@
         background-image: url(../images/icon/frame.svg);
     }
 }
-
+#col2Lottery {
+    margin-left: -1px;
+    margin-top: 7px;
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 376px) { 
@@ -335,6 +338,11 @@
     .coming .disable-text {
         top: 38%;
     }
+    #col2Lottery {
+        margin-left: inherit;
+        margin-top: inherit;
+    }
+    
 }
 
 // Large devices (desktops, 992px and up)
