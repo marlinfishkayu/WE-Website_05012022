@@ -8425,6 +8425,9 @@ svg.gal-frame {
   .hero-header::after {
     bottom: 40%;
   }
+  #liveGame .hero-header::after {
+    bottom: 0%;
+  }
 }
 
 #AboutWE .hero-header {
@@ -10480,9 +10483,6 @@ body:lang(SC) #allLiveGame .main-button span {
   body:lang(TC) #liveGame #PK10 .hero-icon,
   body:lang(SC) #liveGame #PK10 .hero-icon {
     padding-bottom: 8rem;
-  }
-  body:lang(TC) #liveGame #PK10 .hero-icon,
-  body:lang(SC) #liveGame #PK10 .hero-icon {
     padding-top: 21rem;
   }
 }
@@ -10514,6 +10514,13 @@ body:lang(SC) #allLiveGame .main-button span {
   body:lang(TC) #news-carousel .update-content .update-detail-btn:hover:after,
   body:lang(SC) #news-carousel .update-content .update-detail-btn:hover:after {
     right: 60%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 991px) {
+  body:lang(TC) #liveGame #PK10 .hero-icon,
+  body:lang(SC) #liveGame #PK10 .hero-icon {
+    padding: 0;
   }
 }
 

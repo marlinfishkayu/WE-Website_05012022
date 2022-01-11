@@ -89,8 +89,6 @@ body:lang(SC)
         }
         #liveGame #PK10 .hero-icon {
             padding-bottom: 8rem;
-        }
-        #liveGame #PK10 .hero-icon {
             padding-top: 21rem;
         }
     }
@@ -115,6 +113,11 @@ body:lang(SC)
         }
         #news-carousel .update-content .update-detail-btn:hover:after {
             right: 60%;
+        }
+    }
+    @media (orientation: landscape) and (max-width: 991px) {
+        #liveGame #PK10 .hero-icon {
+            padding: 0;
         }
     }
 }

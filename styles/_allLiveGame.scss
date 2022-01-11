@@ -636,4 +636,8 @@
     .hero-header::after {
         bottom: 40%;
     }
+    #liveGame .hero-header::after {
+        bottom: 0%;
+    }
+
 }
