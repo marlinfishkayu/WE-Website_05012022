@@ -450,7 +450,15 @@ button:focus {
     display: none;
   }
 }
-
+@media (orientation: landscape) and (max-width: 991px) { 
+	#liveGame .hero-header-bkg,
+  .hero-header-bkg, .live-game-main-bkg {
+		width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+	}
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .hero-intro1{
