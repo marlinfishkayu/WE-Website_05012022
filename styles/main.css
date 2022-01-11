@@ -8311,6 +8311,110 @@ svg.gal-frame {
   }
 }
 
+@media (orientation: landscape) and (max-width: 767px) {
+  .allLiveGame-main .col-sm-12 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  #allLiveGame .allLiveGame-main .game-item {
+    width: 143px;
+    height: 196px;
+  }
+  #allLiveGame .allLiveGame-main .game-item:before, #allLiveGame .allLiveGame-main .game-item:after {
+    width: 10px;
+    height: 10px;
+  }
+  #allLiveGame .allLiveGame-main .game-item:after {
+    top: -20px;
+    left: 51%;
+  }
+  #allLiveGame .allLiveGame-main .game-item:before {
+    bottom: -17px;
+    left: 50.5%;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap {
+    margin-bottom: 5rem;
+    width: 147px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap:before, #allLiveGame .allLiveGame-main .game-item-wrap:after {
+    height: 25px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap:before {
+    bottom: -6px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap:after {
+    top: -6px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap picture:after {
+    width: 150px;
+    height: 310px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap picture:before {
+    width: 150px;
+    height: 200px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .mid-line {
+    opacity: 0;
+    margin-bottom: 0;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .inner-stroke {
+    width: 150px;
+    height: 200.5px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .outline-stroke {
+    width: 151.5px;
+    height: 198px;
+    top: 0px;
+    left: -4px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .game-item-logo {
+    width: 65px;
+    height: 65px;
+    transition: transform 300ms, opacity 300ms, -webkit-transform 300ms;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    bottom: 0%;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2 {
+    font-size: 11px;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text p {
+    font-size: 10px;
+    display: none;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h4 {
+    font-size: 12px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap #pk10-logo {
+    width: 100px;
+    height: 100px;
+  }
+  #allLiveGame .allLiveGame-main .hovering .game-item-text {
+    -webkit-transform: translate(-50%, 5%);
+            transform: translate(-50%, 5%);
+  }
+  #allLiveGame .allLiveGame-main .hovering .game-item-text p,
+  #allLiveGame .allLiveGame-main .hovering .game-item-text .main-button {
+    opacity: 0;
+  }
+  .no-pointer {
+    bottom: 0%;
+    height: 81px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .inner-stroke {
+    outline: 1px solid #7d6443;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap #lotto5Icon {
+    margin-top: 1.3rem;
+  }
+}
+
 #AboutWE .hero-header {
   position: relative;
   height: 400px;
