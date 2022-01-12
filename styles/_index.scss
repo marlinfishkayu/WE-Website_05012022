@@ -434,3 +434,9 @@
         padding-top: 80px;
     }
 }
+// Medium devices (tablets, 768px and up)
+@media (orientation: landscape)  and (max-width: 992px) {
+    #diamondCarousel .diamond-item::before {
+        bottom: 8%;
+    }
+}

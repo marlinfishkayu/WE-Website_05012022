@@ -817,7 +817,6 @@
         object-fit: contain;
         height: auto;
     }
-    
     #SqueezeBaccarat .hero-header, 
     .hero-header {
         height: 300px;
@@ -838,7 +837,7 @@
         margin-top: 0;
     }
     .live-game-main {
-        margin-top: 10rem !important;
+        margin-top: 7rem !important;
     }
     #liveGame .header-deco,
     #Lotto5 .header-deco{
@@ -851,5 +850,13 @@
     #GodofFortuneRoulette .hero-header, 
     #liveGame .blockchain .hero-header {
         height: 360px;
+    }
+    #liveGame #Lotto5 .live-game-main,
+    #GodofFortuneRoulette .live-game-main {
+        margin-top: 10rem !important;
+    }
+    .BCgames .live-game-main,
+    #SqueezeBaccarat .live-game-main {
+        margin-top: 12rem !important;
     }
 }

@@ -24,4 +24,13 @@ body:lang(SC)
             width: 270px;
         }
     }
+    // Medium devices (tablets, 768px and up)
+    @media (orientation: landscape)  and (max-width: 992px) {
+        #SqueezeBaccarat .live-game-main {
+            margin-top: 10rem !important;
+        }
+        .BCgames .live-game-main {
+            margin-top: 11rem !important;
+        }
+    }
 }

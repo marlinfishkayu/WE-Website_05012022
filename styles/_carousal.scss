@@ -972,9 +972,7 @@
 }
 @media (orientation: landscape) and (min-width: 1200px) {
     #slider-area .slide {
-        // max-width: 1920px;
         margin: 0 auto;
-        // max-height: 1080px;
     }
     #slider-area .mobile-portrait{
         display: none;
@@ -1007,5 +1005,12 @@
     }
     #slider-area .slide {
         height: 100vh;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (orientation: portrait) and (min-width: 360px) and (max-width: 400px) {
+    #intdexWhatsNews .news-item {
+        padding: 3rem 0 0 0;
     }
 }

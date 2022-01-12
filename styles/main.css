@@ -3468,6 +3468,12 @@ footer {
   }
 }
 
+@media (orientation: portrait) and (min-width: 360px) and (max-width: 400px) {
+  #intdexWhatsNews .news-item {
+    padding: 3rem 0 0 0;
+  }
+}
+
 #intdexOurGames {
   height: inherit;
 }
@@ -3957,6 +3963,12 @@ footer {
   }
   #allLiveGame .allLiveGame-main {
     padding-top: 80px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+  #diamondCarousel .diamond-item::before {
+    bottom: 8%;
   }
 }
 
@@ -4838,7 +4850,7 @@ footer {
     margin-top: 0;
   }
   .live-game-main {
-    margin-top: 10rem !important;
+    margin-top: 7rem !important;
   }
   #liveGame .header-deco,
   #Lotto5 .header-deco {
@@ -4851,6 +4863,14 @@ footer {
   #GodofFortuneRoulette .hero-header,
   #liveGame .blockchain .hero-header {
     height: 360px;
+  }
+  #liveGame #Lotto5 .live-game-main,
+  #GodofFortuneRoulette .live-game-main {
+    margin-top: 10rem !important;
+  }
+  .BCgames .live-game-main,
+  #SqueezeBaccarat .live-game-main {
+    margin-top: 12rem !important;
   }
 }
 
@@ -8428,6 +8448,9 @@ svg.gal-frame {
   #liveGame .hero-header::after {
     bottom: 0%;
   }
+  .lottery .live-game-main {
+    margin-top: 7rem !important;
+  }
 }
 
 #AboutWE .hero-header {
@@ -10935,6 +10958,17 @@ body:lang(SC) #liveGame.BCgames .header-deco:before {
   body:lang(TC) #allLiveGame.AllLottery .bottom-deco,
   body:lang(SC) #allLiveGame.AllLottery .bottom-deco {
     width: 270px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+  body:lang(TC) #SqueezeBaccarat .live-game-main,
+  body:lang(SC) #SqueezeBaccarat .live-game-main {
+    margin-top: 10rem !important;
+  }
+  body:lang(TC) .BCgames .live-game-main,
+  body:lang(SC) .BCgames .live-game-main {
+    margin-top: 11rem !important;
   }
 }
 
