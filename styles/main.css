@@ -3995,6 +3995,10 @@ footer {
   #diamondCarousel .owl-dots {
     bottom: 5%;
   }
+  .our-gamaes .expand-deco .expand-icon {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
 .hero-header {
