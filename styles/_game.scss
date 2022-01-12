@@ -14,7 +14,7 @@
 .hero-header::after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     z-index: -1;
     width: 100%;
@@ -810,7 +810,6 @@
     }
     .game-hero-D{
         display: block;
-        
     }
     .hero-header-bkg img {
         background-size: contain;
@@ -843,8 +842,15 @@
     #Lotto5 .header-deco{
         margin-top: 14rem;
     }
+    #liveGame #PK10 .hero-header::after {
+        bottom: 16%;
+    }
+    #liveGame #Lotto5 .hero-header::after {
+        bottom: -1%;
+    }
     #Lotto5 .hero-header::after {
-        height: 42%;
+        height: 30%;
+        
     }
     #GodofFortuneSicBo .hero-header, 
     #GodofFortuneRoulette .hero-header, 

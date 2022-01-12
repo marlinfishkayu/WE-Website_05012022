@@ -3466,9 +3466,6 @@ footer {
 }
 
 @media (orientation: landscape) and (min-width: 642px) {
-  #slider-area .owl-dots {
-    bottom: -20%;
-  }
   #slider-area .slide {
     height: 100vh;
   }
@@ -3986,6 +3983,12 @@ footer {
   #diamondCarousel .diamond-item::before {
     bottom: 8%;
   }
+  #slider-area .owl-dots {
+    bottom: -10%;
+  }
+  #diamondCarousel .owl-dots {
+    bottom: 5%;
+  }
 }
 
 .hero-header {
@@ -4007,7 +4010,7 @@ footer {
 .hero-header::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   z-index: -1;
   width: 100%;
@@ -4872,8 +4875,14 @@ footer {
   #Lotto5 .header-deco {
     margin-top: 14rem;
   }
+  #liveGame #PK10 .hero-header::after {
+    bottom: 16%;
+  }
+  #liveGame #Lotto5 .hero-header::after {
+    bottom: -1%;
+  }
   #Lotto5 .hero-header::after {
-    height: 42%;
+    height: 30%;
   }
   #GodofFortuneSicBo .hero-header,
   #GodofFortuneRoulette .hero-header,
@@ -8464,8 +8473,14 @@ svg.gal-frame {
   #liveGame .hero-header::after {
     bottom: 0%;
   }
+  #allLiveGame .hero-header::after {
+    bottom: 49%;
+  }
   .lottery .live-game-main {
     margin-top: 7rem !important;
+  }
+  #allLiveGame.AllBCgames .bottom-deco {
+    width: 357px;
   }
 }
 

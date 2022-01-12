@@ -940,6 +940,7 @@
     #slider-area .mobile-landscape{
         display: block;
     }
+    
 }
 @media (orientation: landscape) and (max-width: 575px) {
     #slider-area .slide {
@@ -1007,9 +1008,7 @@
 }
 
 @media (orientation: landscape) and (min-width: 642px) {
-    #slider-area .owl-dots {
-        bottom: -20%;
-    }
+    
     #slider-area .slide {
         height: 100vh;
     }
