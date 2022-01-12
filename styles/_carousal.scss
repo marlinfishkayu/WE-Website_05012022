@@ -1015,10 +1015,14 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (orientation: portrait) and (min-width: 360px) and (max-width: 400px) {
+@media (orientation: portrait) and (max-width: 375px) {
+    #intdexWhatsNews .news-item {
+        padding: 3rem;
+    }
+}
+@media (orientation: portrait) and (min-width: 376px) and (max-width: 400px) {
     #intdexWhatsNews .news-item {
         padding: 3rem 0 0 0;
     }
-    
 }
 
