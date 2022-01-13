@@ -4009,6 +4009,12 @@ footer {
   }
 }
 
+@media (orientation: landscape) and (min-width: 667px) and (max-width: 700px) {
+  #diamondCarousel .diamond-item {
+    margin-left: 20px;
+  }
+}
+
 .hero-header {
   height: 500px;
 }
@@ -8280,7 +8286,7 @@ svg.gal-frame {
   }
   #allLiveGame .allLiveGame-main .game-item-wrap picture:after {
     width: 150px;
-    height: 310px;
+    height: 200px;
   }
   #allLiveGame .allLiveGame-main .game-item-wrap picture:before {
     width: 150px;
@@ -8492,7 +8498,7 @@ svg.gal-frame {
     bottom: 0%;
   }
   #allLiveGame .hero-header::after {
-    bottom: 49%;
+    bottom: 47%;
   }
   .lottery .live-game-main {
     margin-top: 7rem !important;

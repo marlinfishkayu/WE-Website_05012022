@@ -466,4 +466,11 @@
         margin-left: 1px;
         margin-top: 37px;
     }
+
+}
+// Medium devices (tablets, 992px and up)
+@media (orientation: landscape) and  (min-width: 667px) and (max-width: 700px) {
+    #diamondCarousel .diamond-item {
+        margin-left: 20px;
+    }
 }
