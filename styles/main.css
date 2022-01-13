@@ -3973,6 +3973,9 @@ footer {
   #allLiveGame .allLiveGame-main {
     padding-top: 80px;
   }
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
   #our-gamaes-column-2 {
     margin-left: 4px;
     margin-top: 26px;
@@ -3998,6 +4001,11 @@ footer {
   .our-gamaes .expand-deco .expand-icon {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
+  }
+  #col2LiveGames,
+  #col2Lottery {
+    margin-left: 1px;
+    margin-top: 37px;
   }
 }
 

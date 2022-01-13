@@ -432,6 +432,10 @@
     #allLiveGame .allLiveGame-main {
         padding-top: 80px;
     }
+    
+}
+// Medium devices (tablets, 768px and up)
+@media (orientation: landscape)  and (max-width: 767px) {
     #our-gamaes-column-2 {
         margin-left: 4px;
         margin-top: 26px;
@@ -443,7 +447,7 @@
         margin-left: 2px;
     }
 }
-// Medium devices (tablets, 768px and up)
+// Medium devices (tablets, 992px and up)
 @media (orientation: landscape)  and (max-width: 992px) {
     #diamondCarousel .diamond-item::before {
         bottom: 8%;
@@ -456,5 +460,10 @@
     }
     .our-gamaes .expand-deco .expand-icon {
         transform: scale(0.7);
+    }
+    #col2LiveGames,
+    #col2Lottery {
+        margin-left: 1px;
+        margin-top: 37px;
     }
 }
