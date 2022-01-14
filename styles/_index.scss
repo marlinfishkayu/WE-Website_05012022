@@ -287,10 +287,10 @@
     margin-top: 26px;
 }
 #our-gamaes-column-3 {
-    margin-left: 6px;
+    margin-left: -3px;
 }
 #our-gamaes-column-4 {
-    margin-left: 2px;
+    margin-left: -4px;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -356,6 +356,7 @@
     #our-gamaes-column-3,
     #our-gamaes-column-4 {
         margin-left: 0px;
+        margin-top: 0;
     }
 }
 
@@ -408,12 +409,16 @@
             height: 382px;
         }
     }
+    .our-gamaes .expand-deco .expand-icon {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+    }
  }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .our-gamaes .expand-deco .expand-icon {
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
+        -webkit-transform: scale(0.85);
+        transform: scale(0.85);
     }
     .our-gamaes .active .expand-deco .expand-icon {
         transform: scale(1);
@@ -464,12 +469,15 @@
         bottom: 20%;
     }
     .our-gamaes .expand-deco .expand-icon {
-        transform: scale(0.7);
+        transform: scale(0.8);
     }
     #col2LiveGames,
     #col2Lottery {
         margin-left: 1px;
         margin-top: 37px;
+    }
+    .our-gamaes #col2LiveGames {
+        bottom: 26%;
     }
 
 }
