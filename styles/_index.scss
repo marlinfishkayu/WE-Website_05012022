@@ -282,6 +282,16 @@
     margin-left: -1px;
     margin-top: 7px;
 }
+#our-gamaes-column-2 {
+    margin-left: 4px;
+    margin-top: 26px;
+}
+#our-gamaes-column-3 {
+    margin-left: 6px;
+}
+#our-gamaes-column-4 {
+    margin-left: 2px;
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 376px) { 
@@ -342,7 +352,11 @@
         margin-left: inherit;
         margin-top: inherit;
     }
-    
+    #our-gamaes-column-2,
+    #our-gamaes-column-3,
+    #our-gamaes-column-4 {
+        margin-left: 0px;
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -436,16 +450,7 @@
 }
 // Medium devices (tablets, 768px and up)
 @media (orientation: landscape)  and (max-width: 767px) {
-    #our-gamaes-column-2 {
-        margin-left: 4px;
-        margin-top: 26px;
-    }
-    #our-gamaes-column-3 {
-        margin-left: 6px;
-    }
-    #our-gamaes-column-4 {
-        margin-left: 2px;
-    }
+    
 }
 // Medium devices (tablets, 992px and up)
 @media (orientation: landscape)  and (max-width: 992px) {
@@ -456,7 +461,7 @@
         bottom: -10%;
     }
     #diamondCarousel .owl-dots {
-        bottom: 5%;
+        bottom: 20%;
     }
     .our-gamaes .expand-deco .expand-icon {
         transform: scale(0.7);
@@ -473,4 +478,5 @@
     #diamondCarousel .diamond-item {
         margin-left: 20px;
     }
+    
 }

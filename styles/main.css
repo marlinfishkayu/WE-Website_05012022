@@ -3836,6 +3836,19 @@ footer {
   margin-top: 7px;
 }
 
+#our-gamaes-column-2 {
+  margin-left: 4px;
+  margin-top: 26px;
+}
+
+#our-gamaes-column-3 {
+  margin-left: 6px;
+}
+
+#our-gamaes-column-4 {
+  margin-left: 2px;
+}
+
 @media (max-width: 376px) {
   #introCarousel .news-outer {
     left: 56%;
@@ -3887,6 +3900,11 @@ footer {
   #col2Lottery {
     margin-left: inherit;
     margin-top: inherit;
+  }
+  #our-gamaes-column-2,
+  #our-gamaes-column-3,
+  #our-gamaes-column-4 {
+    margin-left: 0px;
   }
 }
 
@@ -3975,19 +3993,6 @@ footer {
   }
 }
 
-@media (orientation: landscape) and (max-width: 767px) {
-  #our-gamaes-column-2 {
-    margin-left: 4px;
-    margin-top: 26px;
-  }
-  #our-gamaes-column-3 {
-    margin-left: 6px;
-  }
-  #our-gamaes-column-4 {
-    margin-left: 2px;
-  }
-}
-
 @media (orientation: landscape) and (max-width: 992px) {
   #diamondCarousel .diamond-item::before {
     bottom: 8%;
@@ -3996,7 +4001,7 @@ footer {
     bottom: -10%;
   }
   #diamondCarousel .owl-dots {
-    bottom: 5%;
+    bottom: 20%;
   }
   .our-gamaes .expand-deco .expand-icon {
     -webkit-transform: scale(0.7);
