@@ -3035,7 +3035,7 @@ footer {
   height: 230px;
   bottom: 23%;
   left: 0;
-  background-color: red;
+  opacity: 0;
   background: -webkit-gradient(linear, left bottom, left top, from(#060B1A), to(rgba(0, 15, 36, 0)));
   background: linear-gradient(0deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
   z-index: 1;
