@@ -569,7 +569,7 @@
         }
         picture:after {
             width: 150px;
-            height: 310px;
+            height: 200px;
         }
         picture:before {
             width: 150px;
@@ -649,3 +649,9 @@
         width: 357px;
       }
 }
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 991px){
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
+        bottom: -28%;
+    }
+}
+

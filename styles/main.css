@@ -4017,9 +4017,6 @@ footer {
     margin-left: 1px;
     margin-top: 37px;
   }
-  .our-gamaes #col2LiveGames {
-    bottom: 26%;
-  }
 }
 
 @media (orientation: landscape) and (min-width: 667px) and (max-width: 700px) {
@@ -8440,7 +8437,7 @@ svg.gal-frame {
   }
   #allLiveGame .allLiveGame-main .game-item-wrap picture:after {
     width: 150px;
-    height: 310px;
+    height: 200px;
   }
   #allLiveGame .allLiveGame-main .game-item-wrap picture:before {
     width: 150px;
@@ -8518,6 +8515,12 @@ svg.gal-frame {
   }
   #allLiveGame.AllBCgames .bottom-deco {
     width: 357px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 991px) {
+  #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
+    bottom: -28%;
   }
 }
 
