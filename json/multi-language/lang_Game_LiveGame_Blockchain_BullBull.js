@@ -115,7 +115,7 @@ var arrLang = {
       'feature_1.1': 'SHA-256 Ensuring',
       'feature_1.2': 'Accuracy and Safety',
       'feature_1_p': 'Each card of Blockchain Bull Bull are encrypted by SHA-256 cryptography. The "Published Serial Number" will be shown before the release of game results which prohibit any chance of tampering. After game, player could verify related result on the third-party independent platform. Dual verification can surely guarantee the fairness and justice of the game.',
-      'feature_2.1': 'Blus vs Red',
+      'feature_2.1': 'Blue vs Red',
       'feature_2.2': '',
       'feature_2_p': 'This game wisely uses blue and red as the theme colors to optimize the clarity as well as artistic expression of the battle between Banker and Players. Meanwhile, we have specially designed a panoramic card areas for "Banker" and all "Players"  which surely let our players instantly grasp the updated game situation at a glance.',
       'feature_3.1': 'Detailed Game Records',

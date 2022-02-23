@@ -57,7 +57,7 @@ var arrLang = {
     'PrivacyPolicy_Third_li_4': "- Protect someone's safety or the integrity of the site",
     //Security
     'PrivacyPolicy_Security': "Security",
-    'PrivacyPolicy_Security_p1': "To keep your order information secure, our website are secured with industry standard security encryption protocols.",
+    'PrivacyPolicy_Security_p': "To keep your order information secure, our website are secured with industry standard security encryption protocols.",
     //Third Party Sites
     'PrivacyPolicy_ThirdSite': "Third Party Sites",
     'PrivacyPolicy_ThirdSite_p': "World Entertainment is only responsible to control the use and disclosure of information we collect on this site. The privacy of other sites or third parties to whom you may link from our site is not covered in this policy.",

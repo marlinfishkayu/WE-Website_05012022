@@ -83,7 +83,7 @@ var arrLang = {
       'Cookie_p1' : 'WE use cookies to ensure you get the best experience on our website. WE will assume you have agreed to our Privacy Policy by continuing to use our website henceforth.',
       'Accept' : 'Accept',
       //Footer
-      'WorldEnt' : 'ENTERTAINMENT.',
+      'WorldEnt' : 'WORLD ENTERTAINMENT.',
       'Subscribe' : 'Subscribe',
       'Subscribe_btn' : 'Subscribe Now',
       'Subscribe_p' : 'Be the first to know about our latest news and exclusive offers from WE.',
