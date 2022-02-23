@@ -410,7 +410,7 @@ var arrImg = {
       //Feature
       'feature1': 'images/game/game_BC_SicBo/tc/game_BC_SicBo_feature1_1x.png 500w, images/game/game_BC_SicBo/tc/game_BC_SicBo_feature1_2x.png 1000w',
       'feature2': 'images/game/game_BC_SicBo/tc/game_BC_SicBo_feature2_1x.png 500w, images/game/game_BC_SicBo/tc/game_BC_SicBo_feature2_2x.png 1000w',
-      'feature3': 'images/game/game_BC_SicBo/tc/game_BC_SicBo_feature3_1x.png 500w, images/game/game_BC_SicBo/tc/game_BC_SicBo_feature3_2x.png 1000w',  
+      'feature3': 'images/game/game_BC_SicBo/tc/game_BC_Sicbo_feature3_1x.png 500w, images/game/game_BC_SicBo/tc/game_BC_Sicbo_feature3_2x.png 1000w',  
     }],
   'SC': [{
       //WE Logo
