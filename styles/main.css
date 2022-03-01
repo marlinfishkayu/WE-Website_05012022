@@ -2444,7 +2444,7 @@ footer {
   border: 1px solid #B0936D;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 #slider-area .owl-dots {
